@@ -1,0 +1,197 @@
+Chunk 1:
+####Documents_1
+Instructions for Online Trading Approved by the Board of Directors of the Securities and Exchange 
+Organization on 06/06/1398  
+This instruction, based on clause 7 of article 2 of the Securities Market Act of the Islamic Republic of 
+Iran, aims to organize the electronic infrastructure for receiving orders from customers, recording them 
+with the brokerage, and sending them to the tr ading systems online. It was approved by the Board of 
+Directors of the Securities and Exchange Organization on 06/06/1398.  
+Article 1: Definitions  
+The terms and phrases used in this instruction are defined as follows:  
+1. Stock Exchange : Refers to the Tehran Stock Exchange, Iran Fara Bourse, Iran Mercantile 
+Exchange, Iran Energy Exchange, or any other exchange company formed with the approval of 
+the board.  
+2. Association : Refers to the Association of Brokers and Securities Dealers.  
+3. Order : Refers to the request to buy or sell securities or commodities submitted by the customer 
+to the broker or broker/dealer.  
+4. Online Infrastructure : Refers to the electronic infrastructure designed to enable customers to 
+place, modify, or cancel orders online with the broker or broker/dealer.  
+5. Direct Online Order Sending Infrastructure : Refers to the electronic infrastructure allowing 
+customers to send their recorded orders directly to the trading system without intermediary 
+intervention, automatically and directly.  
+6. Grouped Online Order Sending Infrastructure : Refers to the electronic infrastructure that 
+allows authorized traders to send grouped orders to the trading system without intermediary 
+intervention.  
+7. Online Trading : Refers to trading where the broker or broker/dealer receives orders online from 
+customers through the online infrastructure, performs the necessary controls, and sends them to 
+the trading system.  
+8. Customer : Refers to an individual or legal entity whose order is sent to the trading system 
+according to this instruction.  
+9. Broker/Broker -Dealer : Refers to a licensed broker or broker/dealer authorized to provide 
+trading services to customers and authorized traders according to the provisions of this 
+instruction.  
+10. Application Programming Interface (API) : Refers to the practical interface related to the 
+online infrastructures mentioned in clauses 4, 5, and 6 of this article.  
+Article 2:  
+The broker or broker/dealer is responsible for ensuring the compliance of all regulations related to the 
+registration and sending of orders in the market. They must provide the necessary technical and 
+operational capabilities to maintain the security and f unctionality of the infrastructures mentioned in 
+clauses 4, 5, and 6 of article 1 of this instruction.  
+Article 3:  Before utilizing any of the online infrastructures mentioned in clauses 4, 5, and 6 of this instruction, the 
+broker or broker/dealer must obtain the necessary technical approval from the relevant trading system 
+and the organization.  
+Note 1:  
+The broker or broker/dealer is responsible for ensuring the continuous security and functionality of the 
+technical and operational capabilities mentioned in this article.  
+Note 2:  
+The broker or broker/dealer must provide suitable means to continuously monitor and maintain the 
+conditions specified in this instruction as per the organization's announcements.  
+Note 3:  
+Utilizing the grouped online trading station infrastructure mentioned in clause 6 of this instruction 
+requires separate approval from the exchange.  
+Article 4:  
+The application for approval mentioned in article 3 must be submitted in writing by the broker or 
+broker/dealer to the organization along with the necessary documents. The organization will respond 
+with its approval or rejection within 20 working days from  the date of receiving the complete 
+information and documents.  
+Article 5:  
+If a customer opts to send orders through an intermediary trader without direct intervention, the broker 
+or broker/dealer must immediately forward the orders to the trading system according to the 
+chronological order of receipt and other regulations.  
+Article 6:  
+The online infrastructures mentioned in clauses 4 and 6 of article 1 of this instruction must be equipped 
+with secure multi -factor authentication in accordance with the organization's announcements.  
+Article 7:  
+The broker or broker/dealer must adhere to all security requirements specified by the organization, 
+including the requirements announced by the organization.  
+Article 8:  
+The broker or broker/dealer must notify the organization of any changes in the online infrastructures 
+mentioned in clauses 4, 5, and 6 of article 1 before utilization and must act according to the 
+organization's requirements.  Repeating Article 8:  
+The broker or broker/dealer must provide the organization with information on the application 
+programming interfaces (APIs) used for online trading before any utilization.  
+Article 9:  
+The broker or broker/dealer must publicly announce on its official website the operational 
+infrastructures related to clause 4 of article 1 that have received organizational approval, including the 
+access methods.  
+Article 10:  
+Offering new financial instruments or providing other services through the infrastructures mentioned in 
+clauses 4, 5, and 6 of article 1 of this instruction is subject to the organization's requirements.  
+Article 11:  
+In case of any violation of the requirements related to the infrastructures mentioned in clauses 4, 5, and 
+6 of article 1 of this instruction, the broker or broker/dealer is responsible unless they prove otherwise.  
+Article 12:  
+If there are indications of violations of laws and regulations or any risk to the transparency and fairness 
+of the market, the broker or broker/dealer must take preventive actions and inform the organization and 
+the exchange within one working day of the d etails and reasons for such actions.  
+Note:  
+Preventive actions, as determined by the organization or exchange, must be implemented by the broker 
+or broker/dealer.  
+Article 13:  
+The broker or broker/dealer can provide the customer with the infrastructures mentioned in clauses 4 
+and 5 of article 1 of this instruction, provided the customer has acquired the necessary skills and is 
+familiar with the related regulations on trading sec urities or commodities.  
+Note 1:  
+Legal representatives and real representatives of customers must meet the conditions mentioned in this 
+article if they are 18 years or older.  
+Note 2:  
+The operational procedures for assessing the customer's ability in relation to the conditions of this article 
+will be announced to the members by the association.  Article 14:  
+Using the infrastructures mentioned in clauses 4 and 5 of article 1 of this instruction is subject to a 
+contract between the customer and the broker or broker/dealer. This contract must be in accordance with 
+the framework approved by the association and in clude the organization's announced requirements.  
+Article 15:  
+To manage the services provided through the infrastructures mentioned in clauses 4, 5, and 6 of article 
+1, the broker or broker/dealer must establish at least one separate unit within their administrative 
+structure to continuously monitor the risks associa ted with online trading and the grouped online order 
+infrastructure, and take necessary control and supervisory measures according to the organization's 
+requirements. The minimum conditions for occupying this unit will be announced by the organization.  
+Article 16:  
+The broker or broker/dealer must provide the capability to apply restrictions mentioned in article 1 in 
+the online infrastructures announced by the organization, as follows:  
+1. Restriction on the type of order.  
+2. Restriction on the time of activity.  
+3. Restriction on trading activities on a particular trading symbol, session, industry, market, or 
+specific offering in each exchange.  
+4. Restriction on order volume, including the visible and hidden parts.  
+5. Restriction on order price.  
+6. Restriction on trading activities for specific customers or groups of customers.  
+7. Restriction on the number of customers for each broker or broker/dealer.  
+8. Restriction on the volume and value of customer trades.  
+9. Restriction on the permissible price fluctuation.  
+10. Restriction on the percentage difference between the order price and the market quote range.  
+11. Restriction on the percentage difference between the order price and the last trade price.  
+12. Restriction on the price difference compared to the previous trade for orders with significant 
+volume and value.  
+13. Restriction on minimum or maximum purchase amount.  
+14. Restriction on the minimum price change of an order.  
+15. Restriction on whether an order is a buy or sell order.  
+16. Restriction on the execution method of the order.  
+17. Restriction on the order's validity period.  
+18. Restriction on the number of open commitment positions in a specific symbol.  
+19. Restriction on the number of open commitment positions across all symbols.  
+20. Restriction on the initial margin amount per customer.  
+21. Restriction on the initial margin amount per symbol.  
+22. Capability to apply discounts for calculating the initial margin across different maturities.  
+23. Restriction on taking increasing commitment positions, whether buy or sell.  
+24. Restriction on the daily trading volume, separated by buy and sell positions or both.  
+25. Restriction on activities in a particular commodity group or subgroup.  
+26. Restriction on activities in primary or secondary markets.  27. Restriction on activities in specific sectors (e.g., agriculture, industry and mining, bitumen and 
+petroleum products, petrochemicals, chemical fertilizers, etc.).  
+28. Restriction on order registration (maximum and minimum order registration).  
+29. Restriction on order registration volume for each broker or broker/dealer.  
+30. Restriction on order registration volume for each share in the market.  
+31. Capability to determine the fee amount for receiving orders.  
+32. Determining the validity period for sell orders (offers) in surplus transactions.  
+33. Restriction on the execution deadline for order registration in the rings.  
+34. Capability to apply restrictions on order registration as announced by other legal authorities.  
+35. Other restrictions as determined by the exchanges and approved by the organization.  
+Note 1:  
+In case new restrictions are announced by the organization, in addition to the ones mentioned in this 
+article, the broker or broker/dealer must provide the capability to apply these restrictions in the 
+infrastructures mentioned in clauses 4, 5, and 6 of ar ticle 1 of this instruction.  
+Note 2:  
+The infrastructures mentioned in clauses 4, 5, and 6 of article 1 of this instruction must be configured in 
+a way that allows the application of these restrictions in real -time and online.  
+Note 3:  
+The broker or broker/dealer must inform customers of any restrictions or changes in restrictions 
+according to the methods specified in the customer -broker or broker/dealer contract.  
+Article 17:  
+The broker or broker/dealer must have the capability to block or modify customer orders when 
+regulatory requirements necessitate. The broker or broker/dealer also has the authority to block or 
+modify orders in compliance with laws and regulations and must keep appropriate records and 
+documentation.  
+Article 18:  
+Orders received from customers should not be sent to the trading system if they do not comply with the 
+restrictions mentioned in clauses 4, 5, and 6 of article 1 of this instruction. In such cases, a message 
+must be sent to the customer immediately, inform ing them of the rejection and the reason for it.  
+Article 19:  
+Any restriction applied to customer trades must be based on related laws and regulations. The broker or 
+broker/dealer must inform the customer accordingly if any restriction is applied. The broker or 
+broker/dealer will not be held responsible for any damag es resulting from the implementation of 
+restrictions mentioned in this article.  
+Article 20:  The broker or broker/dealer must record and maintain all activities, events, and incidents related to 
+customer orders and trading activities in compliance with the organization's requirements, including the 
+infrastructures mentioned in clauses 4, 5, and 6 of article 1. These records must be provided to the 
+organization or exchange upon request.  
+Note:  
+The broker or broker/dealer must record and maintain orders rejected due to non -compliance with the 
+restrictions mentioned in clauses 4, 5, and 6 of article 1 of this instruction.  
+Article 21:  
+In case of violation of any provisions of this instruction, the competent authority may impose one or 
+more of the following penalties on the offender:  
+1. Restriction on order registration based on the type of order (buy or sell).  
+Article 22:  
+In case of non -compliance with any of the technical and security requirements announced by the 
+organization in the infrastructures mentioned in clauses 4, 5, and 6 of article 1 of this instruction, the 
+organization may restrict or suspend access to these i nfrastructures for the broker or broker/dealer until 
+the requirements are met.  
+Article 23:  
+The broker or broker/dealer may not charge any fees for providing the services mentioned in clauses 4, 
+5, and 6 of article 1 of this instruction, except for the approved fees by the organization.  
+Article 24:  
+The broker or broker/dealer must publish the conditions and procedures for trading through the 
+infrastructures mentioned in clauses 4, 5, and 6 of article 1 on their official website, along with any 
+changes to these conditions and procedures.  
+
+

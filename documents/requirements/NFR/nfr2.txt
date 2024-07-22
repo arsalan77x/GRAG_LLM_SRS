@@ -1,0 +1,9 @@
+Security
+Information security in the brokerage system refers to preventing unauthorized access and data
+destruction. The following are the security requirements for the system:
+• Data Validation
+• Authentication
+• Authorization
+• Exception Management
+• Session Management
+These requirements must be supported by appropriate mechanisms.

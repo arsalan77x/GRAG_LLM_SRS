@@ -1,0 +1,264 @@
+Chunk 8:
+ a stock to the current list when it is
+bought from the history list.
+The system will automatically move a stock to the current list when it is
+bought initially.
+Pre-Conditions: - The user must logon before performing this function
+- The database must be loaded at user login
+Post Conditions: - The quotes database will be saved when the user logs off
+Other attributes: - Make sure multiple click does not yield multiple adds
+- A link to symbol look up will be provided in case the user does
+not know the stock symbol.
+
+10
+4.3 “LOGIN AND SECURITY” REQUIREMENTS
+Requirement Title: Log on
+Sequence No: 001
+Short description: Log on to the system
+Description: User will enter user name and password then press submit.
+If the user does not have an account, a link to create account will be
+provided.
+If the user name and password fields are not provided, the user will be
+notified to fill in the appropriate fields.
+The user name is checked against the list of user names in the database.
+If the user name is a match to one in the database, then the password will
+also be checked.
+If the user name or password, the user will be asked to verify and resubmit
+their user name and password.
+Pre-Conditions: -There must not be a user currently logged in to the system
+from that computer.
+Post Conditions: -The user will be taken back to the main user screen when
+he successfully logs in
+Other attributes: -The user will only be allowed up to four attempts to login.
+The system will offer to reset password after the fourth
+attempt.
+
+11
+4.4 “ACCOUNT SET UP” REQUIREMENTS
+Requirement Title: Account Setup
+Sequence No: 001
+Short description: Functionality to set up a user account
+Description: User will proceed to setup his account by providing the following:
+- First Name, Last Name
+- SSN
+- Date of Birth
+- Street Address, City, State, Zip Code
+- Phone 1, Phone 2
+- Email
+- Marital Status
+- Beneficiary Name, Beneficiary SSN, and Beneficiary
+Relationship
+The system will assign an account number automatically.
+A confirmation page will be displayed to make sure all the information is
+entered correctly.
+The user will be able to press cancel at any point during the account
+setup process.
+Pre-Conditions: - The user must not have an account.
+- The user must have a valid bank account.
+- The user must be 18 years of age.
+Post Conditions: - A confirmation page will be displayed or an error message
+displayed to show whether or not the account setup was
+successful.
+Other attributes: - Will check that each input field has valid data if being changed
+(won’t allow letters in the phone number field etc)
+- Error message will be displayed if changes were not completed
+- Confirmation message will be displayed if the changes were
+completed
+
+12
+4.5 “ACCOUNT MAINTENANCE” REQUIREMENTS
+Account maintenance requirements follow in sequence for editing personal information and
+closing accounts.
+4.5A “ACCOUNT MAINTENANCE” REQUIREMENT 1 EDIT PERSONAL INFO
+Requirement Title: Account Maintenance
+Sequence No: 001
+Short description:
+Edit Personal Account Information
+Description: “Account Maintenance” page will display an option to “Edit Personal
+Information”.
+Once the user selects “Edit Personal Information” the user will have the
+option to change the following fields: First Name, Last Name, SSN, Date
+of Birth, Street Address, City, State, Zip Code, Phone 1, Phone 2, Email,
+Marital Status, Beneficiary Name, Beneficiary SSN, and Beneficiary
+Relationship.
+Once the user is finished changing the fields the user can either choose
+to confirm or cancel the changes.
+If “Confirm” is selected the changes will be save to the database a
+conformation message will be displayed and user will be taken back to
+the “Main User” page.
+If “Cancel” is selected no changes will be saved and the user will be
+taken back to the “Account Maintenance” page.
+Pre-Conditions: - User must logon before performing this function.
+- User must select “Edit Personal Information” button
+Post Conditions: - User must have filled out the appropriate field in which they
+chose to edit
+- User must confirm their changes
+- After conformation changes will be saved to the database and
+user will be returned to the main user page
+Other attributes: - Will check that each input field has valid data if being changed
+(won’t allow letters in the phone number field etc)
+- Error message will be displayed if changes were not completed
+- Conformation message will be displayed if the changes were
+completed
+
+13
+4.5B “ACCOUNT MAINTENANCE” REQUIREMENT 2 CLOSE ACCOUNT
+Requirement Title: Account Maintenance
+Sequence No: 002
+Short description:
+Close Account
+Description: “Account Maintenance” page will display an option to “Close Account”.
+Once the user selects the option to “Close Account” the system will ask
+the user if he wishes to sell all stocks. If the user confirms, the system
+will sell all stocks at market price. If user cancels the system will display
+message “You must sell all stocks to close account”
+The system will then refund all money to user’s bank account and
+display a conformation.
+User will be asked to “confirm” or “cancel” closing account.
+If “Confirm” is selected the user will be deleted from the database, a
+confirmation message will be displayed and user will be logged out and
+taken to “thank you” page.
+If “Cancel” is selected user will be taken back to the “Account
+Maintenance” page.
+Pre-Conditions: - User must logon before performing this function.
+- User must select “Close Account” button
+Post Conditions: - System will sell stocks
+- System will refund accounts
+- User must confirm their changes
+- After conformation user will be deleted from database and
+logged out
+- If user cancels, user will still have account but will have no
+stocks or cash in account
+Other attributes: - Error message will be displayed if function cannot be completed
+- Conformation message will be displayed if the functions were
+completed
+- System will not re-use account numbers
+4.6 “CASH MANAGEMENT” REQUIREMENTS
+Requirement Title: Cash Management
+Sequence No: 001
+Short description: Credits and Debits to Cash Account
+Description: User will proceed to deposit and withdraw cash from account by
+providing the following fields:
+- Action: {Button: Deposit or Withdraw}
+- Amount:{Amount to be deposited or withdrawn}
+- Account Number: {Bank Account number to be credited to or
+debited from}
+Above information together with today’s date and customer’s account
+number is packaged and sent to the server upon pressing the “Submit”
+button.
+An order confirmation will be automatically generated and displayed on
+the screen. Customer will be encouraged to print or write down this
+screen.
+User can press cancel to ignore this deposit or withdrawal. A cancel
+confirmation message will be displayed.
+The system will withdraw money from the account when a stock is
+bought.
+The system will deposit money into the account when a stock is sold.
+Pre-Conditions: - The user must logon before performing this function
+- The user must have cash in his account before he/she can buy
+stock
+Post Conditions: - An order confirmation number will be issued or an error
+message displayed in case credit/debit did not take place
+Other attributes: - Make sure multiple click does not yield multiple transactions
+- US Currency Only
+- Must verify to see if sufficient funds exist to proceed with deposit
+- Must verify to see if sufficient funds exists to proceed with
+withdrawal
+- Must verify to see if sufficient funds exists to proceed with
+purchase of stock
+- User must be notified if he/she is required to make a deposit
+when a stock is sold
+- A print functionality will be provided (to print order confirmation)
+
+15
+4.7 “INFRASTRUCTURE MANAGEMENT” REQUIREMENTS
+Requirement Title: Infrastructure Management
+Sequence No:
+001
+Short description:
+Requirements for the back-office administration such as maintaining
+Database and Web hosting.
+Description: The system will use GoDaddy for web hosting.
+The system will use MySQL for the database.
+Pre-Conditions: Group 6 has a GoDaddy Account.
+Post Conditions: The system will have a working website.
+Other attributes: The system will not take into consideration Networking Issues.
+
+16
+4.8 “TRANSACTION MANAGEMENT” REQUIREMENTS
+Transaction management requirements follow in sequence for purchasing and selling stocks.
+4.8A “TRANSACTION MANAGEMENT” REQUIREMENT 1 PURCHASE STOCK
+Requirement Title: Trade
+Sequence No: 001
+Short description: Purchase Stock
+Description: User will proceed to purchase stocks by providing the following fields:
+-Stock symbol (In case they do not know the stock symbol, a link to
+look up symbol will be provided)
+-Order Type (Buy Now or good-till-cancel)
+-Price (Applicable for good-till-cancel orders only)
+Above information is packaged together with the current date and
+customer account number and sent to the server upon pressing the
+“Buy” button.
+An order confirmation number will be automatically generated and
+displayed on the screen with an option to print or email a confirmation
+to the customer.
+Customers will be informed to check the status of their order by going to
+the “Order Status” page, a link will be provided.
+Pre-Conditions: -User must logon before performing this function
+-The most current stock quote that the customer is requesting to
+purchase will be displayed before purchase
+Post Conditions: -An order conformation number will be displayed or an error
+message if the order did not take place
+-User will be informed with a message to select order status to see
+the status of the order
+-Market orders will be canceled at the end of the trading day if they
+are not filled
+-Users transaction history will be updated
+Other attributes: -Make sure multiple clicks do not yield multiple transactions
+-US stocks only
+-Must verify to see if sufficient funds exits to proceed with purchase
+-A print and email function will be provided for conformation
+-A link to symbol look up will be provided
+
+17
+4.8B “TRANSACTION MANAGEMENT” REQUIREMENT 2 SELL STOCK
+Requirement Title: Sell
+Sequence No: 001
+Short description: Sell Stock
+Description: User will proceed to sell stocks by providing the following fields:
+-Number of shares to sell
+-Stop-Loss Price if (user wishes to use this option)
+A pop up will ask user to confirm transaction upon pressing the “sell”
+button.
+Above information is packaged together with the current date and
+customer account number and sent to the server upon pressing the
+“yes” button.
+An order confirmation number will be automatically generated and
+displayed on the screen with an option to print or email a
+confirmation to the customer. Display message will give the detail of
+the transaction or let the customer know the transaction is still
+pending.
+Customers will be informed to check the status of their order by
+going to the “Order Status” page, a link will be provided.
+Pre-Conditions: - User must logon before performing this function
+- The most current stock quote that the customer is
+requesting to sell will be displayed before purchase
+Post Conditions: - An order conformation number will be displayed or an
+error message if the order did not take place
+- User will be informed with a message to select order
+status to see the status of the order
+- Requests to sell will be canceled at the end of the
+trading day if they are not filled
+- Users transaction history will be updated
+Other attributes: - Make sure multiple clicks do not yield multiple
+transactions
+- US stocks only
+- Must update balance to account for the stocks sold
+- A print and email function will be provided for
+confirmation
+
+
+ 
+ 
+ 
+

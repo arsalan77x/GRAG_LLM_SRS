@@ -1,0 +1,189 @@
+Chunk 2:
+Article 25:  
+If the infrastructures mentioned in clauses 4 or 5 of article 1 of this instruction are disrupted for any 
+reason, the broker or broker/dealer must immediately notify the customers and provide alternative 
+methods for order registration and transmission. Thi s does not absolve the broker or broker/dealer from 
+their contractual obligations to the customers.  
+Note:  
+In case of a disruption in the infrastructures mentioned in clauses 4, 5, or 6 of article 1 of this 
+instruction, the broker or broker/dealer must immediately inform the organization and the exchange, 
+providing documented reasons within two working days.  Article 26:  
+In case of a disruption or loss of access to the organization's systems or trading systems, the 
+organization and the relevant exchange must immediately inform their members so they can notify the 
+customers.  
+Note:  
+The exchange must keep records of the incidents mentioned in this article and provide them to the 
+organization upon request.  
+Article 27:  
+Upon learning of any defect in the infrastructures mentioned in clauses 4, 5, or 6 of article 1 of this 
+instruction, the broker or broker/dealer must rectify the issue promptly and report it to the organization 
+and the exchange.  
+Article 28:  
+If the preparation, operation, or maintenance of the infrastructures mentioned in clauses 4, 5, or 6 of 
+article 1 of this instruction is outsourced to another entity, a written contract must be signed in 
+compliance with the organization's requirements and within the framework approved by the association.  
+Note:  
+Outsourcing the preparation, operation, or maintenance of the infrastructures mentioned in clauses 4, 5, 
+or 6 of article 1 of this instruction does not absolve the broker or broker/dealer from their 
+responsibilities.  
+Article 29:  
+The broker or broker/dealer must provide necessary support services for the infrastructures mentioned in 
+clauses 4, 5, or 6 of article 1, announce the methods of using these services on their official website, and 
+ensure immediate problem resolution for cu stomers upon request.  
+Article 30:  
+The broker or broker/dealer must inform the organization of the list of individuals who have access to 
+the trading systems and any changes to this list. This list should include:  
+1. All individuals who, through the infrastructures mentioned in clauses 4, 5, or 6 of article 1, have 
+access to criminal information of customers, including orders, trades, assets, and their records.  
+2. The CEO and members of the board of directors of the broker or broker/dealer, or any other 
+individual to whom the preparation, operation, or maintenance of the infrastructures mentioned 
+in clauses 4, 5, or 6 of article 1 of this instruction has been outsou rced.  
+3. All individuals involved in the management, maintenance, or operation of the infrastructures 
+mentioned in clauses 4, 5, or 6 of article 1, who have access to at least one of the following: a. Network equipment, security, and infrastructure b. Operating systems c. Databases d. Software 
+management or reporting sections  
+Note 1:  
+The broker or broker/dealer must obtain commitments from all their employees, including sufficient 
+guarantees to compensate for potential damages caused by the breach of these commitments.  
+Note 2:  
+If the preparation, operation, or maintenance of the infrastructures mentioned in clauses 4, 5, or 6 of 
+article 1 is outsourced to another entity, the broker or broker/dealer must obtain commitments from that 
+entity and sufficient guarantees to compensate for potential damages caused by the breach of these 
+commitments.  
+Article 31:  
+Within one month of the publication of this instruction, the organization must prepare and announce the 
+requirements specified in articles 6, 7, 8, 14, 15, 20, 28, and 30.  
+Conclusion:  
+This instruction, consisting of 31 articles and 16 notes, was approved by the Board of Directors of the 
+Securities and Exchange Organization on 06/06/1398 and is effective one month after its publication. 
+Upon its approval, the previous instructions for on line securities trading in the Tehran Stock Exchange 
+and Iran Fara Bourse, approved on 03/07/1389 by the Board of Directors of the Securities and Exchange 
+Organization, and the instructions for online commodity and securities trading in the Iran Mercantile  
+Exchange, approved on 13/08/1392, and the electronic securities order instructions approved by the 
+Board of Directors of the Tehran Stock Exchange on 14/04/1383, will be repealed.  
+
+
+####Documents_2
+ ISO/IEC 27001:2013(E)
+0 Introduction
+0.1 General
+This International Standard has been prepared to provide requirements for establishing, implementing, 
+maintaining and continually improving an information security management system. The adoption of an information security management system is a strategic decision for an organization. The establishment and implementation of an organization’s information security management system is influenced by the organization’s needs and objectives, security requirements, the organizational processes used and the size and structure of the organization. All of these influencing factors are expected to change over time.
+The information security management system preserves the confidentiality, integrity and availability 
+of information by applying a risk management process and gives confidence to interested parties that risks are adequately managed.
+It is important that the information security management system is part of and integrated with the 
+organization’s processes and overall management structure and that information security is considered 
+in the design of processes, information systems, and controls. It is expected that an information security 
+management system implementation will be scaled in accordance with the needs of the organization.
+This International Standard can be used by internal and external parties to assess the organization’s 
+ability to meet the organization’s own information security requirements.
+The order in which requirements are presented in this International Standard does not reflect their 
+importance or imply the order in which they are to be implemented. The list items are enumerated for reference purpose only.
+ISO/IEC 27000 describes the overview and the vocabulary of information security management 
+systems, referencing the information security management system family of standards (including 
+ISO/IEC 27003
+[2], ISO/IEC 27004 [3] and ISO/IEC 27005 [4]), with related terms and definitions.
+ 
+0.2 Compatibility with other management system standards
+This International Standard applies the high-level structure, identical sub-clause titles, identical text, 
+common terms, and core definitions defined in Annex SL of ISO/IEC Directives, Part 1, Consolidated ISO 
+Supplement, and therefore maintains compatibility with other management system standards that have adopted the Annex SL.
+This common approach defined in the Annex  SL will be useful for those organizations that choose to operate 
+a single management system that meets the requirements of two or more management system standards. 
+© ISO/IEC 2013 – All rights reserved v
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`---Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- Information technology  — Security techniques — 
+Information security management systems — Requirements
+1 Scope
+This International Standard specifies the requirements for establishing, implementing, maintaining 
+and continually improving an information security management system within the context of the organization. This International Standard also includes requirements for the assessment and treatment of information security risks tailored to the needs of the organization. The requirements set out in this International Standard are generic and are intended to be applicable to all organizations, regardless 
+of type, size or nature. Excluding any of the requirements specified in Clauses  4 to 10  is not acceptable 
+when an organization claims conformity to this International Standard.
+2 Normative references
+The following documents, in whole or in part, are normatively referenced in this document and are 
+indispensable for its application. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.
+ISO/IEC 27000, Information technology — Security techniques — Information security management 
+systems — Overview and vocabulary
+3	 Terms	and	definitions
+For the purposes of this document, the terms and definitions given in ISO/IEC 27000 apply.
+4 Context of the organization
+4.1 Understanding the organization and its context
+The organization shall determine external and internal issues that are relevant to its purpose and that 
+affect its ability to achieve the intended outcome(s) of its information security management system.
+NOTE Determining these issues refers to establishing the external and internal context of the organization 
+considered in Clause 5.3 of ISO 31000:2009 [5].
+4.2 Understanding the needs and expectations of interested parties
+The organization shall determine:
+a) interested parties that are relevant to the information security management system; and
+b) the requirements of these interested parties relevant to information security.
+NOTE The requirements of interested parties may include legal and regulatory requirements and 
+contractual obligations.
+4.3 Determining the scope of the information security management system
+The organization shall determine the boundaries and applicability of the information security 
+management system to establish its scope.INTERNATIONAL ST ANDARD  ISO/IEC 27001:2013(E)
+© ISO/IEC 2013 – All rights reserved 1
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+When determining this scope, the organization shall consider:
+a) the external and internal issues referred to in 4.1 ;
+b) the requirements referred to in 4.2 ; and
+c) interfaces and dependencies between activities performed by the organization, and those that are 
+performed by other organizations.
+The scope shall be available as documented information.
+4.4 Information security management system
+The organization shall establish, implement, maintain and continually improve an information security management system, in accordance with the requirements of this International Standard.
+5 Leadership
+5.1 Leadership and commitment
+Top management shall demonstrate leadership and commitment with respect to the information security management system by:
+a) ensuring the information security policy and the information security objectives are established 
+and are compatible with the strategic direction of the organization;
+b) ensuring the integration of the information security management system requirements into the organization’s processes;
+c) ensuring that the resources needed for the information security management system are available;
+d) communicating the importance of effective information security management and of conforming to the information security management system requirements;
+e) ensuring that the information security management system achieves its intended outcome(s);
+f) directing and supporting persons to contribute to the effectiveness of the information security 
+management system;
+g) promoting continual improvement; and
+h) supporting other relevant management roles to demonstrate their leadership as it applies to their 
+areas of responsibility.
+5.2 Policy
+Top management shall establish an information security policy that:
+a) is appropriate to the purpose of the organization;
+b) includes information security objectives (see 6.2) or provides the framework for setting information 
+security objectives;
+c) includes a commitment to satisfy applicable requirements related to information security; and
+d) includes a commitment to continual improvement of the information security management system.
+The information security policy shall:e) be available as documented information; 
+2 © ISO/IEC 2013 – All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+f) be communicated within the organization; and
+g) be available to interested parties, as appropriate.
+5.3 Organizational roles, responsibilities and authorities
+Top management shall ensure that the responsibilities and authorities for roles relevant to information 
+security are assigned and communicated.
+Top management shall assign the responsibility and authority for:
+a) ensuring that the information security management system conforms to the requirements of this 
+International Standard; and
+b) reporting on the performance of the information security management system to top management.
+NOTE Top management may also assign responsibilities and authorities for reporting performance of the 
+information security management system within the organization.
+6 Planning
+
+

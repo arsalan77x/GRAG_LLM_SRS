@@ -1,0 +1,248 @@
+Chunk 6:
+ packagesControl
+Modifications to software packages shall be discouraged, limited to 
+necessary changes and all changes shall be strictly controlled.
+A.14.2.5Secure system engi -
+neering principlesControl
+Principles for engineering secure systems shall be established, 
+documented, maintained and applied to any information system implementation efforts. 
+Table A.1  (continued)
+18 © ISO/IEC 2013 – All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.14.2.6Secure development 
+environmentControl
+Organizations shall establish and appropriately protect secure 
+development environments for system development and integra -
+tion efforts that cover the entire system development lifecycle.
+A.14.2.7Outsourced develop -
+mentControl
+The organization shall supervise and monitor the activity of out -
+sourced system development.
+A.14.2.8System security test -
+ingControlTesting of security functionality shall be carried out during devel -
+opment.
+A.14.2.9System acceptance 
+testingControl
+Acceptance testing programs and related criteria shall be estab -
+lished for new information systems, upgrades and new versions.
+A.14.3 Test data
+Objective: To ensure the protection of data used for testing.
+A.14.3.1 Protection of test dataControl
+Test data shall be selected carefully, protected and controlled.
+A.15  Supplier relationships
+A.15.1 Information security in supplier relationships
+Objective: To ensure protection of the organization’s assets that is accessible by suppliers.
+A.15.1.1Information security 
+policy for supplier relationshipsControl
+Information security requirements for mitigating the risks associ -
+ated with supplier’s access to the organization’s assets shall be 
+agreed with the supplier and documented.
+A.15.1.2Addressing security within supplier agree -
+mentsControl
+All relevant information security requirements shall be established 
+and agreed with each supplier that may access, process, store, communicate, or provide IT infrastructure components for, the organization’s information.
+A.15.1.3Information and com -
+munication technology supply chainControl
+Agreements with suppliers shall include requirements to address 
+the information security risks associated with information and communications technology services and product supply chain.
+A.15.2  Supplier service delivery management
+Objective: To maintain an agreed level of information security and service delivery in line with sup -
+plier agreements.
+A.15.2.1Monitoring and review 
+of supplier servicesControl
+Organizations shall regularly monitor, review and audit supplier 
+service delivery.
+A.15.2.2Managing changes to supplier servicesControl
+Changes to the provision of services by suppliers, including 
+maintaining and improving existing information security policies, procedures and controls, shall be managed, taking account of the criticality of business information, systems and processes involved and re-assessment of risks. 
+Table A.1  (continued)
+© ISO/IEC 2013 – All rights reserved 19
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.16  Information security incident management
+A.16.1  Management of information security incidents and improvements
+Objective: To ensure a consistent and effective approach to the management of information security 
+incidents, including communication on security events and weaknesses.
+A.16.1.1Responsibilities and 
+proceduresControl
+Management responsibilities and procedures shall be established 
+to ensure a quick, effective and orderly response to information security incidents.
+A.16.1.2Reporting information security eventsControl
+Information security events shall be reported through appropriate 
+management channels as quickly as possible.
+A.16.1.3Reporting information security weaknessesControl
+Employees and contractors using the organization’s information 
+systems and services shall be required to note and report any 
+observed or suspected information security weaknesses in sys -
+tems or services.
+A.16.1.4Assessment of and 
+decision on informa -
+tion security eventsControl
+Information security events shall be assessed and it shall be 
+decided if they are to be classified as information security inci -
+dents.
+A.16.1.5Response to informa -
+tion security incidentsControl
+Information security incidents shall be responded to in accordance 
+with the documented procedures.
+A.16.1.6Learning from information security incidentsControl
+Knowledge gained from analysing and resolving information secu -
+rity incidents shall be used to reduce the likelihood or impact of 
+future incidents.
+A.16.1.7 Collection of evidenceControl
+The organization shall define and apply procedures for the iden -
+tification, collection, acquisition and preservation of information, 
+which can serve as evidence.
+A.17 Information security aspects of business continuity management
+A.17.1  Information security continuity
+Objective: Information security continuity shall be embedded in the organization’s business continu -
+ity management systems.
+A.17.1.1Planning information 
+security continuityControl
+The organization shall determine its requirements for information 
+security and the continuity of information security management in 
+adverse situations, e.g. during a crisis or disaster.
+A.17.1.2Implementing infor -
+mation security conti -
+nuityControl
+The organization shall establish, document, implement and main -
+tain processes, procedures and controls to ensure the required 
+level of continuity for information security during an adverse situa -
+tion. 
+Table A.1  (continued)
+20 © ISO/IEC 2013 – All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.17.1.3Verify, review and 
+evaluate information security continuityControl
+The organization shall verify the established and implemented 
+information security continuity controls at regular intervals in order to ensure that they are valid and effective during adverse situations.
+A.17.2  Redundancies
+Objective: To ensure availability of information processing facilities.
+A.17.2.1Availability of infor -
+mation processing 
+facilitiesControl
+Information processing facilities shall be implemented with redun -
+dancy sufficient to meet availability requirements.
+A.18  Compliance
+A.18.1 Compliance with legal and contractual requirements
+Objective: To avoid breaches of legal, statutory, regulatory or contractual obligations related to infor -
+mation security and of any security requirements.
+A.18.1.1Identification of appli -
+cable legislation and 
+contractual require -
+mentsControl
+All relevant legislative statutory, regulatory, contractual require -
+ments and the organization’s approach to meet these requirements 
+shall be explicitly identified, documented and kept up to date for each information system and the organization.
+A.18.1.2Intellectual property rightsControl
+Appropriate procedures shall be implemented to ensure compli -
+ance with legislative, regulatory and contractual requirements 
+related to intellectual property rights and use of proprietary soft -
+ware products.
+A.18.1.3 Protection of recordsControl
+Records shall be protected from loss, destruction, falsification, 
+unauthorized access and unauthorized release, in accordance with legislatory, regulatory, contractual and business requirements.
+A.18.1.4Privacy and protection of personally identifi -
+able informationControl
+Privacy and protection of personally identifiable information shall 
+be ensured as required in relevant legislation and regulation where applicable.
+A.18.1.5Regulation of crypto -
+graphic controlsControl
+Cryptographic controls shall be used in compliance with all rel -
+evant agreements, legislation and regulations.
+A.18.2 Information security reviews
+Objective: To ensure that information security is implemented and operated in accordance with the 
+organizational policies and procedures.
+A.18.2.1Independent review of 
+information securityControl
+The organization’s approach to managing information security and 
+its implementation (i.e. control objectives, controls, policies, pro -
+cesses and procedures for information security) shall be reviewed independently at planned intervals or when significant changes occur. 
+Table A.1  (continued)
+© ISO/IEC 2013 – All rights reserved 21
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.18.2.2Compliance with 
+security policies and standardsControl
+Managers shall regularly review the compliance of information 
+processing and procedures within their area of responsibility with the appropriate security policies, standards and any other security requirements.
+A.18.2.3Technical compliance reviewControl
+Information systems shall be regularly reviewed for compliance 
+with the organization’s information security policies and stand -
+ards. 
+Table A.1  (continued)
+22 © ISO/IEC 2013 – All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+Bibliography
+[1] ISO/IEC 27002:2013, Information technology — Security Techniques — Code of practice for 
+information security controls
+[2] ISO/IEC  27003, Information technology — Security techniques — Information security management 
+system implementation guidance
+[3] ISO/IEC 27004, Information technology — Security techniques — Information security 
+management  — Measurement
+[4] ISO/IEC  270 05, Information technology — Security techniques — Information security risk management
+[5] ISO 31000:2009, Risk management  — Principles and guidelines
+[6] ISO/IEC Directives, Part 1, Consolidated ISO Supplement – Procedures specific to ISO , 2012 
+© ISO/IEC 2013 – All rights reserved 23
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+ 
+© ISO/IEC 2013 – All rights reservedICS 35.040
+Price based on 23 pages
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+
+ 
+
+####Document_3
+
+SECTION 2  
+BROKER BACK OFFICE VENDORS  
+This section defines the eligibility criteria for selection of Broker Back -Office Vendors by the Exchange 
+and contains the list of eligible vendors permitted by the Exchange to provide services to the Brokers.  
+2.1 Eligibility Criteria for Broker Back Office Application  
+Detailed below is the Eligibility criterion  for a Vendor of Broker Back Office Application to apply  for 
+and continue to stay as PSX -authorized vendor for  Broker Back Office Application:  
+2.1.1  Company Registration  
+Vendor must be a registered company of Pakistan/International Origin OR their authorized business 
+partner with registered office in Karachi, Pakistan.  
+2.1.2  Minimum Cetification Requirements  
+Ensure that cer tain level of competency, the vendor must be minimum ISO9001 and ISO27001 
+certified    
+2.1.3  Relevant Experience  
+Vendor must have at least 5 Years of experience in the area of application development /support  in 
+the Financial Industry . New Vendors without prior e xperience shall be required to present credentials 
+and their application shall undergo a thorough and rigorous evaluation process by the Exchange.  
+2.1.4  Profitability  
+The Company should be profit making for at least  last
+

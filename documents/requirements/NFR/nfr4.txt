@@ -1,0 +1,10 @@
+Authentication
+Authentication is the process of verifying the identity of clients (users, processes, or systems) interacting
+with the application. Key features to be considered in the authentication process include:
+• Secure Mechanism for Authentication: The system must implement a reliable mechanism for
+authentication.
+• Protection of Sensitive Functions: All sensitive functions and resources must be protected by
+authentication mechanisms.
+• Storage of Credentials: User credentials must be hashed using a secure algorithm before
+storage.
+• Encrypted Communication: User credentials must be transmitted over encrypted connections.

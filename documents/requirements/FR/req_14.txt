@@ -1,0 +1,17 @@
+Online Sale of Stocks and Other Securities by Brokers  
+Title  Online sale of stocks and other securities by brokers  
+Description  Brokers can sell stocks and other securities online on behalf of customers.  
+Input  The first online sale request in the request queue  
+Processing  The system presents the first online sale request to the broker. If the customer has 
+specified the investment price, the broker sets the price. The broker checks the customer's 
+account balance. If sufficient, the amount is blocked. The system automatically  records 
+the sale request. The request status is updated from "in queue" to "completed" after the 
+sale. The money is deposited into the customer's bank account and the sold shares are 
+removed from the user's portfolio. The sale report is added to the list of transactions by 
+the broker.  
+Output  Addition of the sale report to the list of transactions by the broker, decrease in sold shares 
+from the user's portfolio  
+Error 
+Handling  If any of the following occur, an appropriate error message is displayed: - The order 
+number is not assigned - The sold shares are not removed from the user's portfolio - The 
+order is not added to the user's order list and the list of transactions by the b roker

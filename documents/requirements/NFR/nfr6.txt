@@ -1,0 +1,7 @@
+Session Management
+Session management involves maintaining user state after the initial connection. Key considerations for
+session management include:
+• Session ID Security: Session IDs must be secure and randomly generated.
+• Session Expiration: Sessions must expire after a defined period.
+• Session Termination: Users must be able to log out and terminate their sessions.
+• Secure Transmission: Session IDs and cookies must be transmitted over encrypted connections

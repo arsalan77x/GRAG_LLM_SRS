@@ -1,0 +1,1849 @@
+####Documents_1
+Instructions for Online Trading Approved by the Board of Directors of the Securities and Exchange 
+Organization on 06/06/1398  
+This instruction, based on clause 7 of article 2 of the Securities Market Act of the Islamic Republic of 
+Iran, aims to organize the electronic infrastructure for receiving orders from customers, recording them 
+with the brokerage, and sending them to the tr ading systems online. It was approved by the Board of 
+Directors of the Securities and Exchange Organization on 06/06/1398.  
+Article 1: Definitions  
+The terms and phrases used in this instruction are defined as follows:  
+1. Stock Exchange : Refers to the Tehran Stock Exchange, Iran Fara Bourse, Iran Mercantile 
+Exchange, Iran Energy Exchange, or any other exchange company formed with the approval of 
+the board.  
+2. Association : Refers to the Association of Brokers and Securities Dealers.  
+3. Order : Refers to the request to buy or sell securities or commodities submitted by the customer 
+to the broker or broker/dealer.  
+4. Online Infrastructure : Refers to the electronic infrastructure designed to enable customers to 
+place, modify, or cancel orders online with the broker or broker/dealer.  
+5. Direct Online Order Sending Infrastructure : Refers to the electronic infrastructure allowing 
+customers to send their recorded orders directly to the trading system without intermediary 
+intervention, automatically and directly.  
+6. Grouped Online Order Sending Infrastructure : Refers to the electronic infrastructure that 
+allows authorized traders to send grouped orders to the trading system without intermediary 
+intervention.  
+7. Online Trading : Refers to trading where the broker or broker/dealer receives orders online from 
+customers through the online infrastructure, performs the necessary controls, and sends them to 
+the trading system.  
+8. Customer : Refers to an individual or legal entity whose order is sent to the trading system 
+according to this instruction.  
+9. Broker/Broker -Dealer : Refers to a licensed broker or broker/dealer authorized to provide 
+trading services to customers and authorized traders according to the provisions of this 
+instruction.  
+10. Application Programming Interface (API) : Refers to the practical interface related to the 
+online infrastructures mentioned in clauses 4, 5, and 6 of this article.  
+Article 2:  
+The broker or broker/dealer is responsible for ensuring the compliance of all regulations related to the 
+registration and sending of orders in the market. They must provide the necessary technical and 
+operational capabilities to maintain the security and f unctionality of the infrastructures mentioned in 
+clauses 4, 5, and 6 of article 1 of this instruction.  
+Article 3:  Before utilizing any of the online infrastructures mentioned in clauses 4, 5, and 6 of this instruction, the 
+broker or broker/dealer must obtain the necessary technical approval from the relevant trading system 
+and the organization.  
+Note 1:  
+The broker or broker/dealer is responsible for ensuring the continuous security and functionality of the 
+technical and operational capabilities mentioned in this article.  
+Note 2:  
+The broker or broker/dealer must provide suitable means to continuously monitor and maintain the 
+conditions specified in this instruction as per the organization's announcements.  
+Note 3:  
+Utilizing the grouped online trading station infrastructure mentioned in clause 6 of this instruction 
+requires separate approval from the exchange.  
+Article 4:  
+The application for approval mentioned in article 3 must be submitted in writing by the broker or 
+broker/dealer to the organization along with the necessary documents. The organization will respond 
+with its approval or rejection within 20 working days from  the date of receiving the complete 
+information and documents.  
+Article 5:  
+If a customer opts to send orders through an intermediary trader without direct intervention, the broker 
+or broker/dealer must immediately forward the orders to the trading system according to the 
+chronological order of receipt and other regulations.  
+Article 6:  
+The online infrastructures mentioned in clauses 4 and 6 of article 1 of this instruction must be equipped 
+with secure multi -factor authentication in accordance with the organization's announcements.  
+Article 7:  
+The broker or broker/dealer must adhere to all security requirements specified by the organization, 
+including the requirements announced by the organization.  
+Article 8:  
+The broker or broker/dealer must notify the organization of any changes in the online infrastructures 
+mentioned in clauses 4, 5, and 6 of article 1 before utilization and must act according to the 
+organization's requirements.  Repeating Article 8:  
+The broker or broker/dealer must provide the organization with information on the application 
+programming interfaces (APIs) used for online trading before any utilization.  
+Article 9:  
+The broker or broker/dealer must publicly announce on its official website the operational 
+infrastructures related to clause 4 of article 1 that have received organizational approval, including the 
+access methods.  
+Article 10:  
+Offering new financial instruments or providing other services through the infrastructures mentioned in 
+clauses 4, 5, and 6 of article 1 of this instruction is subject to the organization's requirements.  
+Article 11:  
+In case of any violation of the requirements related to the infrastructures mentioned in clauses 4, 5, and 
+6 of article 1 of this instruction, the broker or broker/dealer is responsible unless they prove otherwise.  
+Article 12:  
+If there are indications of violations of laws and regulations or any risk to the transparency and fairness 
+of the market, the broker or broker/dealer must take preventive actions and inform the organization and 
+the exchange within one working day of the d etails and reasons for such actions.  
+Note:  
+Preventive actions, as determined by the organization or exchange, must be implemented by the broker 
+or broker/dealer.  
+Article 13:  
+The broker or broker/dealer can provide the customer with the infrastructures mentioned in clauses 4 
+and 5 of article 1 of this instruction, provided the customer has acquired the necessary skills and is 
+familiar with the related regulations on trading sec urities or commodities.  
+Note 1:  
+Legal representatives and real representatives of customers must meet the conditions mentioned in this 
+article if they are 18 years or older.  
+Note 2:  
+The operational procedures for assessing the customer's ability in relation to the conditions of this article 
+will be announced to the members by the association.  Article 14:  
+Using the infrastructures mentioned in clauses 4 and 5 of article 1 of this instruction is subject to a 
+contract between the customer and the broker or broker/dealer. This contract must be in accordance with 
+the framework approved by the association and in clude the organization's announced requirements.  
+Article 15:  
+To manage the services provided through the infrastructures mentioned in clauses 4, 5, and 6 of article 
+1, the broker or broker/dealer must establish at least one separate unit within their administrative 
+structure to continuously monitor the risks associa ted with online trading and the grouped online order 
+infrastructure, and take necessary control and supervisory measures according to the organization's 
+requirements. The minimum conditions for occupying this unit will be announced by the organization.  
+Article 16:  
+The broker or broker/dealer must provide the capability to apply restrictions mentioned in article 1 in 
+the online infrastructures announced by the organization, as follows:  
+1. Restriction on the type of order.  
+2. Restriction on the time of activity.  
+3. Restriction on trading activities on a particular trading symbol, session, industry, market, or 
+specific offering in each exchange.  
+4. Restriction on order volume, including the visible and hidden parts.  
+5. Restriction on order price.  
+6. Restriction on trading activities for specific customers or groups of customers.  
+7. Restriction on the number of customers for each broker or broker/dealer.  
+8. Restriction on the volume and value of customer trades.  
+9. Restriction on the permissible price fluctuation.  
+10. Restriction on the percentage difference between the order price and the market quote range.  
+11. Restriction on the percentage difference between the order price and the last trade price.  
+12. Restriction on the price difference compared to the previous trade for orders with significant 
+volume and value.  
+13. Restriction on minimum or maximum purchase amount.  
+14. Restriction on the minimum price change of an order.  
+15. Restriction on whether an order is a buy or sell order.  
+16. Restriction on the execution method of the order.  
+17. Restriction on the order's validity period.  
+18. Restriction on the number of open commitment positions in a specific symbol.  
+19. Restriction on the number of open commitment positions across all symbols.  
+20. Restriction on the initial margin amount per customer.  
+21. Restriction on the initial margin amount per symbol.  
+22. Capability to apply discounts for calculating the initial margin across different maturities.  
+23. Restriction on taking increasing commitment positions, whether buy or sell.  
+24. Restriction on the daily trading volume, separated by buy and sell positions or both.  
+25. Restriction on activities in a particular commodity group or subgroup.  
+26. Restriction on activities in primary or secondary markets.  27. Restriction on activities in specific sectors (e.g., agriculture, industry and mining, bitumen and 
+petroleum products, petrochemicals, chemical fertilizers, etc.).  
+28. Restriction on order registration (maximum and minimum order registration).  
+29. Restriction on order registration volume for each broker or broker/dealer.  
+30. Restriction on order registration volume for each share in the market.  
+31. Capability to determine the fee amount for receiving orders.  
+32. Determining the validity period for sell orders (offers) in surplus transactions.  
+33. Restriction on the execution deadline for order registration in the rings.  
+34. Capability to apply restrictions on order registration as announced by other legal authorities.  
+35. Other restrictions as determined by the exchanges and approved by the organization.  
+Note 1:  
+In case new restrictions are announced by the organization, in addition to the ones mentioned in this 
+article, the broker or broker/dealer must provide the capability to apply these restrictions in the 
+infrastructures mentioned in clauses 4, 5, and 6 of ar ticle 1 of this instruction.  
+Note 2:  
+The infrastructures mentioned in clauses 4, 5, and 6 of article 1 of this instruction must be configured in 
+a way that allows the application of these restrictions in real -time and online.  
+Note 3:  
+The broker or broker/dealer must inform customers of any restrictions or changes in restrictions 
+according to the methods specified in the customer -broker or broker/dealer contract.  
+Article 17:  
+The broker or broker/dealer must have the capability to block or modify customer orders when 
+regulatory requirements necessitate. The broker or broker/dealer also has the authority to block or 
+modify orders in compliance with laws and regulations and must keep appropriate records and 
+documentation.  
+Article 18:  
+Orders received from customers should not be sent to the trading system if they do not comply with the 
+restrictions mentioned in clauses 4, 5, and 6 of article 1 of this instruction. In such cases, a message 
+must be sent to the customer immediately, inform ing them of the rejection and the reason for it.  
+Article 19:  
+Any restriction applied to customer trades must be based on related laws and regulations. The broker or 
+broker/dealer must inform the customer accordingly if any restriction is applied. The broker or 
+broker/dealer will not be held responsible for any damag es resulting from the implementation of 
+restrictions mentioned in this article.  
+Article 20:  The broker or broker/dealer must record and maintain all activities, events, and incidents related to 
+customer orders and trading activities in compliance with the organization's requirements, including the 
+infrastructures mentioned in clauses 4, 5, and 6 of article 1. These records must be provided to the 
+organization or exchange upon request.  
+Note:  
+The broker or broker/dealer must record and maintain orders rejected due to non -compliance with the 
+restrictions mentioned in clauses 4, 5, and 6 of article 1 of this instruction.  
+Article 21:  
+In case of violation of any provisions of this instruction, the competent authority may impose one or 
+more of the following penalties on the offender:  
+1. Restriction on order registration based on the type of order (buy or sell).  
+Article 22:  
+In case of non -compliance with any of the technical and security requirements announced by the 
+organization in the infrastructures mentioned in clauses 4, 5, and 6 of article 1 of this instruction, the 
+organization may restrict or suspend access to these i nfrastructures for the broker or broker/dealer until 
+the requirements are met.  
+Article 23:  
+The broker or broker/dealer may not charge any fees for providing the services mentioned in clauses 4, 
+5, and 6 of article 1 of this instruction, except for the approved fees by the organization.  
+Article 24:  
+The broker or broker/dealer must publish the conditions and procedures for trading through the 
+infrastructures mentioned in clauses 4, 5, and 6 of article 1 on their official website, along with any 
+changes to these conditions and procedures.  
+Article 25:  
+If the infrastructures mentioned in clauses 4 or 5 of article 1 of this instruction are disrupted for any 
+reason, the broker or broker/dealer must immediately notify the customers and provide alternative 
+methods for order registration and transmission. Thi s does not absolve the broker or broker/dealer from 
+their contractual obligations to the customers.  
+Note:  
+In case of a disruption in the infrastructures mentioned in clauses 4, 5, or 6 of article 1 of this 
+instruction, the broker or broker/dealer must immediately inform the organization and the exchange, 
+providing documented reasons within two working days.  Article 26:  
+In case of a disruption or loss of access to the organization's systems or trading systems, the 
+organization and the relevant exchange must immediately inform their members so they can notify the 
+customers.  
+Note:  
+The exchange must keep records of the incidents mentioned in this article and provide them to the 
+organization upon request.  
+Article 27:  
+Upon learning of any defect in the infrastructures mentioned in clauses 4, 5, or 6 of article 1 of this 
+instruction, the broker or broker/dealer must rectify the issue promptly and report it to the organization 
+and the exchange.  
+Article 28:  
+If the preparation, operation, or maintenance of the infrastructures mentioned in clauses 4, 5, or 6 of 
+article 1 of this instruction is outsourced to another entity, a written contract must be signed in 
+compliance with the organization's requirements and within the framework approved by the association.  
+Note:  
+Outsourcing the preparation, operation, or maintenance of the infrastructures mentioned in clauses 4, 5, 
+or 6 of article 1 of this instruction does not absolve the broker or broker/dealer from their 
+responsibilities.  
+Article 29:  
+The broker or broker/dealer must provide necessary support services for the infrastructures mentioned in 
+clauses 4, 5, or 6 of article 1, announce the methods of using these services on their official website, and 
+ensure immediate problem resolution for cu stomers upon request.  
+Article 30:  
+The broker or broker/dealer must inform the organization of the list of individuals who have access to 
+the trading systems and any changes to this list. This list should include:  
+1. All individuals who, through the infrastructures mentioned in clauses 4, 5, or 6 of article 1, have 
+access to criminal information of customers, including orders, trades, assets, and their records.  
+2. The CEO and members of the board of directors of the broker or broker/dealer, or any other 
+individual to whom the preparation, operation, or maintenance of the infrastructures mentioned 
+in clauses 4, 5, or 6 of article 1 of this instruction has been outsou rced.  
+3. All individuals involved in the management, maintenance, or operation of the infrastructures 
+mentioned in clauses 4, 5, or 6 of article 1, who have access to at least one of the following: a. Network equipment, security, and infrastructure b. Operating systems c. Databases d. Software 
+management or reporting sections  
+Note 1:  
+The broker or broker/dealer must obtain commitments from all their employees, including sufficient 
+guarantees to compensate for potential damages caused by the breach of these commitments.  
+Note 2:  
+If the preparation, operation, or maintenance of the infrastructures mentioned in clauses 4, 5, or 6 of 
+article 1 is outsourced to another entity, the broker or broker/dealer must obtain commitments from that 
+entity and sufficient guarantees to compensate for potential damages caused by the breach of these 
+commitments.  
+Article 31:  
+Within one month of the publication of this instruction, the organization must prepare and announce the 
+requirements specified in articles 6, 7, 8, 14, 15, 20, 28, and 30.  
+Conclusion:  
+This instruction, consisting of 31 articles and 16 notes, was approved by the Board of Directors of the 
+Securities and Exchange Organization on 06/06/1398 and is effective one month after its publication. 
+Upon its approval, the previous instructions for on line securities trading in the Tehran Stock Exchange 
+and Iran Fara Bourse, approved on 03/07/1389 by the Board of Directors of the Securities and Exchange 
+Organization, and the instructions for online commodity and securities trading in the Iran Mercantile  
+Exchange, approved on 13/08/1392, and the electronic securities order instructions approved by the 
+Board of Directors of the Tehran Stock Exchange on 14/04/1383, will be repealed.  
+
+
+####Documents_2
+ ISO/IEC 27001:2013(E)
+0 Introduction
+0.1 General
+This International Standard has been prepared to provide requirements for establishing, implementing, 
+maintaining and continually improving an information security management system. The adoption of an information security management system is a strategic decision for an organization. The establishment and implementation of an organizations information security management system is influenced by the organizations needs and objectives, security requirements, the organizational processes used and the size and structure of the organization. All of these influencing factors are expected to change over time.
+The information security management system preserves the confidentiality, integrity and availability 
+of information by applying a risk management process and gives confidence to interested parties that risks are adequately managed.
+It is important that the information security management system is part of and integrated with the 
+organizations processes and overall management structure and that information security is considered 
+in the design of processes, information systems, and controls. It is expected that an information security 
+management system implementation will be scaled in accordance with the needs of the organization.
+This International Standard can be used by internal and external parties to assess the organizations 
+ability to meet the organizations own information security requirements.
+The order in which requirements are presented in this International Standard does not reflect their 
+importance or imply the order in which they are to be implemented. The list items are enumerated for reference purpose only.
+ISO/IEC 27000 describes the overview and the vocabulary of information security management 
+systems, referencing the information security management system family of standards (including 
+ISO/IEC 27003
+[2], ISO/IEC 27004 [3] and ISO/IEC 27005 [4]), with related terms and definitions.
+ 
+0.2 Compatibility with other management system standards
+This International Standard applies the high-level structure, identical sub-clause titles, identical text, 
+common terms, and core definitions defined in Annex SL of ISO/IEC Directives, Part 1, Consolidated ISO 
+Supplement, and therefore maintains compatibility with other management system standards that have adopted the Annex SL.
+This common approach defined in the Annex  SL will be useful for those organizations that choose to operate 
+a single management system that meets the requirements of two or more management system standards. 
+ ISO/IEC 2013  All rights reserved v
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`---Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- Information technology   Security techniques  
+Information security management systems  Requirements
+1 Scope
+This International Standard specifies the requirements for establishing, implementing, maintaining 
+and continually improving an information security management system within the context of the organization. This International Standard also includes requirements for the assessment and treatment of information security risks tailored to the needs of the organization. The requirements set out in this International Standard are generic and are intended to be applicable to all organizations, regardless 
+of type, size or nature. Excluding any of the requirements specified in Clauses  4 to 10  is not acceptable 
+when an organization claims conformity to this International Standard.
+2 Normative references
+The following documents, in whole or in part, are normatively referenced in this document and are 
+indispensable for its application. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.
+ISO/IEC 27000, Information technology  Security techniques  Information security management 
+systems  Overview and vocabulary
+3	 Terms	and	definitions
+For the purposes of this document, the terms and definitions given in ISO/IEC 27000 apply.
+4 Context of the organization
+4.1 Understanding the organization and its context
+The organization shall determine external and internal issues that are relevant to its purpose and that 
+affect its ability to achieve the intended outcome(s) of its information security management system.
+NOTE Determining these issues refers to establishing the external and internal context of the organization 
+considered in Clause 5.3 of ISO 31000:2009 [5].
+4.2 Understanding the needs and expectations of interested parties
+The organization shall determine:
+a) interested parties that are relevant to the information security management system; and
+b) the requirements of these interested parties relevant to information security.
+NOTE The requirements of interested parties may include legal and regulatory requirements and 
+contractual obligations.
+4.3 Determining the scope of the information security management system
+The organization shall determine the boundaries and applicability of the information security 
+management system to establish its scope.INTERNATIONAL ST ANDARD  ISO/IEC 27001:2013(E)
+ ISO/IEC 2013  All rights reserved 1
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+When determining this scope, the organization shall consider:
+a) the external and internal issues referred to in 4.1 ;
+b) the requirements referred to in 4.2 ; and
+c) interfaces and dependencies between activities performed by the organization, and those that are 
+performed by other organizations.
+The scope shall be available as documented information.
+4.4 Information security management system
+The organization shall establish, implement, maintain and continually improve an information security management system, in accordance with the requirements of this International Standard.
+5 Leadership
+5.1 Leadership and commitment
+Top management shall demonstrate leadership and commitment with respect to the information security management system by:
+a) ensuring the information security policy and the information security objectives are established 
+and are compatible with the strategic direction of the organization;
+b) ensuring the integration of the information security management system requirements into the organizations processes;
+c) ensuring that the resources needed for the information security management system are available;
+d) communicating the importance of effective information security management and of conforming to the information security management system requirements;
+e) ensuring that the information security management system achieves its intended outcome(s);
+f) directing and supporting persons to contribute to the effectiveness of the information security 
+management system;
+g) promoting continual improvement; and
+h) supporting other relevant management roles to demonstrate their leadership as it applies to their 
+areas of responsibility.
+5.2 Policy
+Top management shall establish an information security policy that:
+a) is appropriate to the purpose of the organization;
+b) includes information security objectives (see 6.2) or provides the framework for setting information 
+security objectives;
+c) includes a commitment to satisfy applicable requirements related to information security; and
+d) includes a commitment to continual improvement of the information security management system.
+The information security policy shall:e) be available as documented information; 
+2  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+f) be communicated within the organization; and
+g) be available to interested parties, as appropriate.
+5.3 Organizational roles, responsibilities and authorities
+Top management shall ensure that the responsibilities and authorities for roles relevant to information 
+security are assigned and communicated.
+Top management shall assign the responsibility and authority for:
+a) ensuring that the information security management system conforms to the requirements of this 
+International Standard; and
+b) reporting on the performance of the information security management system to top management.
+NOTE Top management may also assign responsibilities and authorities for reporting performance of the 
+information security management system within the organization.
+6 Planning
+6.1 Actions to address risks and opportunities
+6.1.1 General
+When planning for the information security management system, the organization shall consider the 
+issues referred to in 4.1  and t he requirement s refer red to in 4.2  and determine the risks and opportunities 
+that need to be addressed to:
+a) ensure the information security management system can achieve its intended outcome(s);
+b) prevent, or reduce, undesired effects; and
+c) achieve continual improvement.
+The organization shall plan:d) actions to address these risks and opportunities; and
+e) how to
+1) integrate and implement the actions into its information security management system 
+processes; and
+2) evaluate the effectiveness of these actions.
+6.1.2 Information security risk assessment
+The organization shall define and apply an information security risk assessment process that:
+a) establishes and maintains information security risk criteria that include:
+1) the risk acceptance criteria; and
+2) criteria for performing information security risk assessments;
+b) ensures that repeated information security risk assessments produce consistent, valid and 
+comparable results; 
+ ISO/IEC 2013  All rights reserved 3
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+c) identifies the information security risks:
+1) apply the information security risk assessment process to identify risks associated with the loss 
+of confidentiality, integrity and availability for information within the scope of the information security management system; and
+2) identify the risk owners;
+d) analyses the information security risks:
+1) assess the potential consequences that would result if the risks identified in 6.1.2  c) 1) were 
+to materialize;
+2) assess the realistic likelihood of the occurrence of the risks identified in 6.1.2  c) 1); and
+3) determine the levels of risk;
+e) evaluates the information security risks:
+1) compare the results of risk analysis with the risk criteria established in 6.1.2  a); and
+2) prioritize the analysed risks for risk treatment.
+The organization shall retain documented information about the information security risk assessment process.
+6.1.3 Information security risk treatment
+The organization shall define and apply an information security risk treatment process to:
+a) select appropriate information security risk treatment options, taking account of the risk 
+assessment results;
+b) determine all controls that are necessary to implement the information security risk treatment option(s) chosen;
+NOTE Organizations can design controls as required, or identify them from any source.
+c) compare the controls determined in 6.1.3  b) above with those in Annex  A and verify that no necessary 
+controls have been omitted;
+NOTE 1 A n nex  A contains a comprehensive list of control objectives and controls. Users of this International 
+Standard are directed to Annex A  to ensure that no necessary controls are overlooked.
+NOTE 2 Control objectives are implicitly included in the controls chosen. The control objectives and 
+controls listed in Annex A  are not exhaustive and additional control objectives and controls may be needed.
+d) produce a Statement of Applicability that contains the necessary controls (see 6.1.3  b) and c)) and 
+justification for inclusions, whether they are implemented or not, and the justification for exclusions of controls from Annex A ;
+e) formulate an information security risk treatment plan; and
+f) obtain risk owners approval of the information security risk treatment plan and acceptance of the residual information security risks.
+The organization shall retain documented information about the information security risk treatment process.
+NOTE The information security risk assessment and treatment process in this International Standard aligns 
+with the principles and generic guidelines provided in ISO 31000 [5]. 
+4  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+6.2 Information security objectives and planning to achieve them
+The organization shall establish information security objectives at relevant functions and levels.
+The information security objectives shall:a) be consistent with the information security policy;
+b) be measurable (if practicable);
+c) take into account applicable information security requirements, and results from risk assessment 
+and risk treatment;
+d) be communicated; and
+e) be updated as appropriate.
+The organization shall retain documented information on the information security objectives.
+When planning how to achieve its information security objectives, the organization shall determine:
+f) what will be done;
+g) what resources will be required;
+h) who will be responsible;
+i) when it will be completed; and
+j) how the results will be evaluated.
+7 Support
+7.1 Resources
+The organization shall determine and provide the resources needed for the establishment, implementation, 
+maintenance and continual improvement of the information security management system.
+7.2 Competence
+The organization shall:
+a) determine the necessary competence of person(s) doing work under its control that affects its 
+information security performance;
+b) ensure that these persons are competent on the basis of appropriate education, training, or experience;
+c) where applicable, take actions to acquire the necessary competence, and evaluate the effectiveness of the actions taken; and
+d) retain appropriate documented information as evidence of competence.
+NOTE Applicable actions may include, for example: the provision of training to, the mentoring of, or the re-
+assignment of current employees; or the hiring or contracting of competent persons.
+7.3 Awareness
+Persons doing work under the organizations control shall be aware of:
+a) the information security policy; 
+ ISO/IEC 2013  All rights reserved 5
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+b) their contribution to the effectiveness of the information security management system, including 
+the benefits of improved information security performance; and
+c) the implications of not conforming with the information security management system requirements.
+7.4 Communication
+The organization shall determine the need for internal and external communications relevant to the information security management system including:
+a) on what to communicate;
+b) when to communicate;
+c) with whom to communicate;
+d) who shall communicate; and
+e) the processes by which communication shall be effected.
+7.5 Documented information
+7.5.1 General
+The organizations information security management system shall include:a) documented information required by this International Standard; and
+b) documented information determined by the organization as being necessary for the effectiveness of 
+the information security management system.
+NOTE The extent of documented information for an information security management system can differ 
+from one organization to another due to:
+1) the size of organization and its type of activities, processes, products and services;
+2) the complexity of processes and their interactions; and
+3) the competence of persons.
+7.5.2 Creating and updating
+When creating and updating documented information the organization shall ensure appropriate:
+a) identification and description (e.g. a title, date, author, or reference number);
+b) format (e.g. language, software version, graphics) and media (e.g. paper, electronic); and
+c) review and approval for suitability and adequacy.
+7.5.3 Control of documented information
+Documented information required by the information security management system and by this 
+International Standard shall be controlled to ensure:
+a) it is available and suitable for use, where and when it is needed; and
+b) it is adequately protected (e.g. from loss of confidentiality, improper use, or loss of integrity). 
+6  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+ISO/IEC 27001:2013(E)
+For the control of documented information, the organization shall address the following activities, 
+as applicable:
+c) distribution, access, retrieval and use;
+d) storage and preservation, including the preservation of legibility;
+e) control of changes (e.g. version control); and
+f) retention and disposition.
+Documented information of external origin, determined by the organization to be necessary for 
+the planning and operation of the information security management system, shall be identified as 
+appropriate, and controlled.
+NOTE Access implies a decision regarding the permission to view the documented information only, or the 
+permission and authority to view and change the documented information, etc.
+8 Operation
+8.1 Operational planning and control
+The organization shall plan, implement and control the processes needed to meet information security 
+requirements, and to implement the actions determined in 6.1. The organization shall also implement 
+plans to achieve information security objectives determined in 6.2.
+The organization shall keep documented information to the extent necessary to have confidence that 
+the processes have been carried out as planned.
+The organization shall control planned changes and review the consequences of unintended changes, 
+taking action to mitigate any adverse effects, as necessary.
+The organization shall ensure that outsourced processes are determined and controlled.
+8.2 Information security risk assessment
+The organization shall perform information security risk assessments at planned intervals or when 
+significant changes are proposed or occur, taking account of the criteria established in 6.1.2  a).
+The organization shall retain documented information of the results of the information security risk assessments.
+8.3 Information security risk treatment
+The organization shall implement the information security risk treatment plan.
+The organization shall retain documented information of the results of the information security 
+risk treatment.
+9 Performance evaluation
+9.1 Monitoring, measurement, analysis and evaluation
+The organization shall evaluate the information security performance and the effectiveness of the information security management system.
+The organization shall determine:a) what needs to be monitored and measured, including information security processes and controls; 
+ ISO/IEC 2013  All rights reserved 7
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+b) the methods for monitoring, measurement, analysis and evaluation, as applicable, to ensure 
+valid results;
+NOTE The methods selected should produce comparable and reproducible results to be considered valid.
+c) when the monitoring and measuring shall be performed;
+d) who shall monitor and measure;
+e) when the results from monitoring and measurement shall be analysed and evaluated; and
+f) who shall analyse and evaluate these results.
+The organization shall retain appropriate documented information as evidence of the monitoring and 
+measurement results.
+9.2 Internal audit
+The organization shall conduct internal audits at planned intervals to provide information on whether 
+the information security management system:
+a) conforms to
+1) the organizations own requirements for its information security management system; and
+2) the requirements of this International Standard;
+b) is effectively implemented and maintained.
+The organization shall:c) plan, establish, implement and maintain an audit programme(s), including the frequency, methods, 
+responsibilities, planning requirements and reporting. The audit programme(s) shall take into consideration the importance of the processes concerned and the results of previous audits;
+d) define the audit criteria and scope for each audit;
+e) select auditors and conduct audits that ensure objectivity and the impartiality of the audit process;
+f) ensure that the results of the audits are reported to relevant management; and
+g) retain documented information as evidence of the audit programme(s) and the audit results.
+9.3 Management review
+Top management shall review the organizations information security management system at planned intervals to ensure its continuing suitability, adequacy and effectiveness.
+The management review shall include consideration of:a) the status of actions from previous management reviews;
+b) changes in external and internal issues that are relevant to the information security management 
+system;
+c) feedback on the information security performance, including trends in:
+1) nonconformities and corrective actions;
+2) monitoring and measurement results;
+3) audit results; and 
+8  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+4) fulfilment of information security objectives;
+d) feedback from interested parties;
+e) results of risk assessment and status of risk treatment plan; and
+f) opportunities for continual improvement.
+The outputs of the management review shall include decisions related to continual improvement 
+opportunities and any needs for changes to the information security management system.
+The organization shall retain documented information as evidence of the results of management reviews.
+10 Improvement
+10.1 Nonconformity and corrective action
+When a nonconformity occurs, the organization shall:
+a) react to the nonconformity, and as applicable:
+1) take action to control and correct it; and
+2) deal with the consequences;
+b) evaluate the need for action to eliminate the causes of nonconformity, in order that it does not recur 
+or occur elsewhere, by:
+1) reviewing the nonconformity;
+2) determining the causes of the nonconformity; and
+3) determining if similar nonconformities exist, or could potentially occur;
+c) implement any action needed;
+d) review the effectiveness of any corrective action taken; and
+e) make changes to the information security management system, if necessary.
+Corrective actions shall be appropriate to the effects of the nonconformities encountered.
+The organization shall retain documented information as evidence of:
+f) the nature of the nonconformities and any subsequent actions taken, and
+g) the results of any corrective action.
+10.2 Continual improvement
+The organization shall continually improve the suitability, adequacy and effectiveness of the information 
+security management system. 
+ ISO/IEC 2013  All rights reserved 9
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+Annex A 
+(normative) 
+ 
+Reference control objectives and controls
+The control objectives and controls listed in Table A.1  are directly derived from and aligned with those 
+listed in ISO/IEC 27002:2013 [1], Clauses 5 to 18 and are to be used in context with Clause 6.1.3 .
+Table A.1  Control objectives and controls
+A.5  Information security policies
+A.5.1 Management direction for information security
+Objective: To provide management direction and support for information security in accordance with 
+business requirements and relevant laws and regulations.
+A.5.1.1Policies for informa -
+tion securityControl
+A set of policies for information security shall be defined, approved 
+by management, published and communicated to employees and relevant external parties.
+A.5.1.2Review of the poli -
+cies for information securityControl
+The policies for information security shall be reviewed at planned 
+intervals or if significant changes occur to ensure their continuing suitability, adequacy and effectiveness.
+A.6  Organization of information security
+A.6.1  Internal organization
+Objective: To establish a management framework to initiate and control the implementation and operation of information security within the organization.
+A.6.1.1Information security 
+roles and responsibili -
+tiesControl
+All information security responsibilities shall be defined and allo -
+cated.
+A.6.1.2 Segregation of dutiesControlConflicting duties and areas of responsibility shall be segregated to 
+reduce opportunities for unauthorized or unintentional modifica -
+tion or misuse of the organizations assets.
+A.6.1.3Contact with authori -
+tiesControl
+Appropriate contacts with relevant authorities shall be maintained.
+A.6.1.4Contact with special 
+interest groupsControl
+Appropriate contacts with special interest groups or other special -
+ist security forums and professional associations shall be main -
+tained.
+A.6.1.5Information security 
+in project managementControl
+Information security shall be addressed in project management, 
+regardless of the type of the project.
+A.6.2 Mobile devices and teleworking
+Objective: To ensure the security of teleworking and use of mobile devices. 
+10  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.6.2.1 Mobile device policyControl
+A policy and supporting security measures shall be adopted to 
+manage the risks introduced by using mobile devices.
+A.6.2.2 TeleworkingControl
+A policy and supporting security measures shall be implemented to 
+protect information accessed, processed or stored at teleworking 
+sites.
+A.7  Human resource security
+A.7.1 Prior to employment
+Objective: To ensure that employees and contractors understand their responsibilities and are suit -
+able for the roles for which they are considered.
+A.7.1.1 ScreeningControl
+Background verification checks on all candidates for employment 
+shall be carried out in accordance with relevant laws, regulations and ethics and shall be proportional to the business requirements, the classification of the information to be accessed and the per -
+ceived risks.
+A .7.1.2Terms and conditions of employmentControl
+The contractual agreements with employees and contractors shall 
+state their and the organizations responsibilities for information security.
+A.7.2  During employment
+Objective: To ensure that employees and contractors are aware of and fulfil their information security responsibilities.
+A .7.2.1Management responsi -
+bilitiesControl
+Management shall require all employees and contractors to apply 
+information security in accordance with the established policies and procedures of the organization.
+A.7.2.2Information security awareness, education and trainingControl
+All employees of the organization and, where relevant, contrac -
+tors shall receive appropriate awareness education and training 
+and regular updates in organizational policies and procedures, as relevant for their job function.
+A .7.2.3 Disciplinary processControl
+There shall be a formal and communicated disciplinary process 
+in place to take action against employees who have committed an information security breach.
+A.7.3 Termination and change of employment
+Objective: To protect the organizations interests as part of the process of changing or terminating employment.
+A .7.3.1Termination or change 
+of employment respon -
+sibilitiesControl
+Information security responsibilities and duties that remain valid 
+after termination or change of employment shall be defined, com -
+municated to the employee or contractor and enforced.
+A.8  Asset management
+A.8.1 Responsibility for assets 
+Table A.1  (continued)
+ ISO/IEC 2013  All rights reserved 11
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+Objective: To identify organizational assets and define appropriate protection responsibilities.
+A.8.1.1 Inventory of assetsControl
+Assets associated with information and information processing 
+facilities shall be identified and an inventory of these assets shall 
+be drawn up and maintained.
+A.8.1.2 Ownership of assetsControl
+Assets maintained in the inventory shall be owned.
+A.8.1.3Acceptable use of 
+assetsControl
+Rules for the acceptable use of information and of assets associated 
+with information and information processing facilities shall be identified, documented and implemented.
+A.8.1.4 Return of assetsControl
+All employees and external party users shall return all of the 
+organizational assets in their possession upon termination of their employment, contract or agreement.
+A.8.2	 Information 	classification
+Objective: To ensure that information receives an appropriate level of protection in accordance with its importance to the organization.
+A.8.2.1Classification of infor -
+mationControl
+Information shall be classified in terms of legal requirements, 
+value, criticality and sensitivity to unauthorised disclosure or 
+modification.
+A.8.2.2Labelling of informa -
+tionControl
+An appropriate set of procedures for information labelling shall be 
+developed and implemented in accordance with the information classification scheme adopted by the organization.
+A.8.2.3 Handling of assetsControl
+Procedures for handling assets shall be developed and imple -
+mented in accordance with the information classification scheme 
+adopted by the organization.
+A.8.3  Media handling
+Objective: To prevent unauthorized disclosure, modification, removal or destruction of information stored on media.
+A.8.3.1Management of remov -
+able mediaControl
+Procedures shall be implemented for the management of remov -
+able media in accordance with the classification scheme adopted by 
+the organization.
+A.8.3.2 Disposal of mediaControl
+Media shall be disposed of securely when no longer required, using 
+formal procedures.
+A.8.3.3Physical media trans -
+ferControl
+Media containing information shall be protected against unauthor -
+ized access, misuse or corruption during transportation.
+A.9  Access control
+A.9.1 Business requirements of access control 
+Table A.1  (continued)
+12  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+Objective: To limit access to information and information processing facilities.
+A.9.1.1 Access control policyControl
+An access control policy shall be established, documented and 
+reviewed based on business and information security require -
+ments.
+A.9.1.2Access to networks 
+and network servicesControl
+Users shall only be provided with access to the network and net -
+work services that they have been specifically authorized to use.
+A.9.2  User access management
+Objective: To ensure authorized user access and to prevent unauthorized access to systems and ser -
+vices.
+A.9.2.1User registration and 
+de-registrationControl
+A formal user registration and de-registration process shall be 
+implemented to enable assignment of access rights.
+A.9.2.2User access provision -
+ingControl
+A formal user access provisioning process shall be implemented to 
+assign or revoke access rights for all user types to all systems and services.
+A.9.2.3Management of privi -
+leged access rightsControl
+The allocation and use of privileged access rights shall be 
+restricted and controlled.
+A.9.2.4Management of secret authentication infor -
+mation of usersControl
+The allocation of secret authentication information shall be con -
+trolled through a formal management process.
+A.9.2.5Review of user access 
+rightsControl
+Asset owners shall review users access rights at regular intervals.
+A.9.2.6Removal or adjustment 
+of access rightsControl
+The access rights of all employees and external party users to 
+information and information processing facilities shall be removed upon termination of their employment, contract or agreement, or adjusted upon change.
+A.9.3  User responsibilities
+Objective: To make users accountable for safeguarding their authentication information.
+A.9.3.1Use of secret authenti -
+cation informationControl
+Users shall be required to follow the organizations practices in the 
+use of secret authentication information.
+A.9.4 System and application access control
+Objective: To prevent unauthorized access to systems and applications.
+A.9.4.1Information access 
+restrictionControl
+Access to information and application system functions shall be 
+restricted in accordance with the access control policy.
+A.9.4.2Secure log-on proce -
+duresControl
+Where required by the access control policy, access to systems and 
+applications shall be controlled by a secure log-on procedure. 
+Table A.1  (continued)
+ ISO/IEC 2013  All rights reserved 13
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.9.4.3Password manage -
+ment systemControl
+Password management systems shall be interactive and shall 
+ensure quality passwords.
+A.9.4.4Use of privileged util -
+ity programsControl
+The use of utility programs that might be capable of overriding 
+system and application controls shall be restricted and tightly 
+controlled.
+A.9.4.5Access control to pro -
+gram source codeControl
+Access to program source code shall be restricted.
+A.10   Cryptography
+A.10.1  Cryptographic controls
+Objective: To ensure proper and effective use of cryptography to protect the confidentiality, authen -
+ticity and/or integrity of information.
+A.10.1.1Policy on the use of 
+cryptographic controlsControl
+A policy on the use of cryptographic controls for protection of 
+information shall be developed and implemented.
+A.10.1.2 Key managementControl
+A policy on the use, protection and lifetime of cryptographic keys 
+shall be developed and implemented through their whole lifecycle.
+A.11  Physical and environmental security
+A.11.1 Secure areas
+Objective: To prevent unauthorized physical access, damage and interference to the organizations information and information processing facilities.
+A.11.1.1Physical security 
+perimeterControl
+Security perimeters shall be defined and used to protect areas that 
+contain either sensitive or critical information and information processing facilities.
+A.11.1.2 Physical entry controlsControl
+Secure areas shall be protected by appropriate entry controls to 
+ensure that only authorized personnel are allowed access.
+A.11.1.3Securing offices, rooms and facilitiesControl
+Physical security for offices, rooms and facilities shall be designed 
+and applied.
+A.11.1.4Protecting against external and environ -
+mental threatsControl
+Physical protection against natural disasters, malicious attack or 
+accidents shall be designed and applied.
+A.11.1.5Working in secure areasControl
+Procedures for working in secure areas shall be designed and 
+applied.
+A.11.1.6Delivery and loading areasControl
+Access points such as delivery and loading areas and other points 
+where unauthorized persons could enter the premises shall be controlled and, if possible, isolated from information processing facilities to avoid unauthorized access. 
+Table A.1  (continued)
+14  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.11.2  Equipment
+Objective: To prevent loss, damage, theft or compromise of assets and interruption to the organiza -
+tions operations.
+A.11.2.1Equipment siting and 
+protectionControl
+Equipment shall be sited and protected to reduce the risks from 
+environmental threats and hazards, and opportunities for unau -
+thorized access.
+A.11.2.2 Supporting utilitiesControl
+Equipment shall be protected from power failures and other dis -
+ruptions caused by failures in supporting utilities.
+A.11.2.3 Cabling securityControlPower and telecommunications cabling carrying data or support -
+ing information services shall be protected from interception, 
+interference or damage.
+A.11.2.4Equipment mainte -
+nanceControl
+Equipment shall be correctly maintained to ensure its continued 
+availability and integrity.
+A.11.2.5 Removal of assetsControl
+Equipment, information or software shall not be taken off-site 
+without prior authorization.
+A.11.2.6Security of equipment and assets off-prem -
+isesControl
+Security shall be applied to off-site assets taking into account the 
+different risks of working outside the organizations premises.
+A.11.2.7Secure disposal or re-use of equipmentControl
+All items of equipment containing storage media shall be verified 
+to ensure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.
+A.11.2.8Unattended user equipmentControl
+Users shall ensure that unattended equipment has appropriate 
+protection.
+A.11.2.9Clear desk and clear screen policyControl
+A clear desk policy for papers and removable storage media and 
+a clear screen policy for information processing facilities shall be 
+adopted.
+A.12   Operations security
+A.12.1  Operational procedures and responsibilities
+Objective: To ensure correct and secure operations of information processing facilities.
+A.12.1.1Documented operating 
+proceduresControl
+Operating procedures shall be documented and made available to 
+all users who need them.
+A.12.1.2 Change managementControl
+Changes to the organization, business processes, information pro -
+cessing facilities and systems that affect information security shall 
+be controlled. 
+Table A.1  (continued)
+ ISO/IEC 2013  All rights reserved 15
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.12.1.3 Capacity managementControl
+The use of resources shall be monitored, tuned and projections 
+made of future capacity requirements to ensure the required sys -
+tem performance.
+A.12.1.4Separation of devel -
+opment, testing and 
+operational environ -
+mentsControl
+Development, testing, and operational environments shall be sepa -
+rated to reduce the risks of unauthorized access or changes to the 
+operational environment.
+A.12.2 Protection from malware
+Objective: To ensure that information and information processing facilities are protected against malware.
+A.12.2.1Controls against mal -
+wareControl
+Detection, prevention and recovery controls to protect against 
+malware shall be implemented, combined with appropriate user 
+awareness.
+A.12.3  Backup
+Objective: To protect against loss of data.
+A.12.3.1 Information backupControl
+Backup copies of information, software and system images shall be 
+taken and tested regularly in accordance with an agreed backup policy.
+A.12.4  Logging and monitoring
+Objective: To record events and generate evidence.
+A.12.4.1 Event loggingControl
+Event logs recording user activities, exceptions, faults and infor -
+mation security events shall be produced, kept and regularly 
+reviewed.
+A.12.4.2Protection of log infor -
+mationControl
+Logging facilities and log information shall be protected against 
+tampering and unauthorized access.
+A.12.4.3Administrator and operator logsControl
+System administrator and system operator activities shall be 
+logged and the logs protected and regularly reviewed.
+A.12.4.4 Clock synchronisationControl
+The clocks of all relevant information processing systems within 
+an organization or security domain shall be synchronised to a sin -
+gle reference time source.
+A.12.5 Control of operational software
+Objective: To ensure the integrity of operational systems.
+A.12.5.1Installation of soft -
+ware on operational 
+systemsControl
+Procedures shall be implemented to control the installation of soft -
+ware on operational systems.
+A.12.6  Technical vulnerability management
+Objective: To prevent exploitation of technical vulnerabilities. 
+Table A.1  (continued)
+16  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.12.6.1Management of techni -
+cal vulnerabilitiesControl
+Information about technical vulnerabilities of information systems 
+being used shall be obtained in a timely fashion, the organizations exposure to such vulnerabilities evaluated and appropriate meas -
+ures taken to address the associated risk.
+A.12.6.2Restrictions on soft -
+ware installationControl
+Rules governing the installation of software by users shall be 
+established and implemented.
+A.12.7  Information systems audit considerations
+Objective: To minimise the impact of audit activities on operational systems.
+A.12.7.1Information systems 
+audit controlsControl
+Audit requirements and activities involving verification of opera -
+tional systems shall be carefully planned and agreed to minimise 
+disruptions to business processes.
+A.13   Communications security
+A.13.1 Network security management
+Objective: To ensure the protection of information in networks and its supporting information pro -
+cessing facilities.
+A.13.1.1 Network controlsControl
+Networks shall be managed and controlled to protect information 
+in systems and applications.
+A.13.1.2Security of network servicesControl
+Security mechanisms, service levels and management require -
+ments of all network services shall be identified and included in 
+network services agreements, whether these services are provided in-house or outsourced.
+A.13.1.3Segregation in net -
+worksControl
+Groups of information services, users and information systems 
+shall be segregated on networks.
+A.13.2  Information transfer
+Objective: To maintain the security of information transferred within an organization and with any external entity.
+A.13.2.1Information transfer 
+policies and proce -
+duresControl
+Formal transfer policies, procedures and controls shall be in place 
+to protect the transfer of information through the use of all types of communication facilities.
+A.13.2.2Agreements on infor -
+mation transferControl
+Agreements shall address the secure transfer of business informa -
+tion between the organization and external parties.
+A.13.2.3 Electronic messagingControlInformation involved in electronic messaging shall be appropri -
+ately protected. 
+Table A.1  (continued)
+ ISO/IEC 2013  All rights reserved 17
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.13.2.4Confidentiality or non-
+disclosure agreementsControl
+Requirements for confidentiality or non-disclosure agreements 
+reflecting the organizations needs for the protection of informa -
+tion shall be identified, regularly reviewed and documented.
+A.14   System acquisition, development and maintenance
+A.14.1 Security requirements of information systems
+Objective: To ensure that information security is an integral part of information systems across the 
+entire lifecycle. This also includes the requirements for information systems which provide services over public networks.
+A.14.1.1Information security 
+requirements analysis and specificationControl
+The information security related requirements shall be included in 
+the requirements for new information systems or enhancements to existing information systems.
+A.14.1.2Securing application services on public networksControl
+Information involved in application services passing over public 
+networks shall be protected from fraudulent activity, contract dis -
+pute and unauthorized disclosure and modification.
+A.14.1.3Protecting application services transactionsControl
+Information involved in application service transactions shall be 
+protected to prevent incomplete transmission, mis-routing, unau -
+thorized message alteration, unauthorized disclosure, unauthor -
+ized message duplication or replay.
+A.14.2 Security in development and support processes
+Objective: To ensure that information security is designed and implemented within the development lifecycle of information systems.
+A.14.2.1Secure development 
+policyControl
+Rules for the development of software and systems shall be estab -
+lished and applied to developments within the organization.
+A.14.2.2System change control 
+proceduresControl
+Changes to systems within the development lifecycle shall be con -
+trolled by the use of formal change control procedures.
+A.14.2.3Technical review of 
+applications after 
+operating platform 
+changesControl
+When operating platforms are changed, business critical applica -
+tions shall be reviewed and tested to ensure there is no adverse 
+impact on organizational operations or security.
+A.14.2.4Restrictions on changes to software packagesControl
+Modifications to software packages shall be discouraged, limited to 
+necessary changes and all changes shall be strictly controlled.
+A.14.2.5Secure system engi -
+neering principlesControl
+Principles for engineering secure systems shall be established, 
+documented, maintained and applied to any information system implementation efforts. 
+Table A.1  (continued)
+18  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.14.2.6Secure development 
+environmentControl
+Organizations shall establish and appropriately protect secure 
+development environments for system development and integra -
+tion efforts that cover the entire system development lifecycle.
+A.14.2.7Outsourced develop -
+mentControl
+The organization shall supervise and monitor the activity of out -
+sourced system development.
+A.14.2.8System security test -
+ingControlTesting of security functionality shall be carried out during devel -
+opment.
+A.14.2.9System acceptance 
+testingControl
+Acceptance testing programs and related criteria shall be estab -
+lished for new information systems, upgrades and new versions.
+A.14.3 Test data
+Objective: To ensure the protection of data used for testing.
+A.14.3.1 Protection of test dataControl
+Test data shall be selected carefully, protected and controlled.
+A.15  Supplier relationships
+A.15.1 Information security in supplier relationships
+Objective: To ensure protection of the organizations assets that is accessible by suppliers.
+A.15.1.1Information security 
+policy for supplier relationshipsControl
+Information security requirements for mitigating the risks associ -
+ated with suppliers access to the organizations assets shall be 
+agreed with the supplier and documented.
+A.15.1.2Addressing security within supplier agree -
+mentsControl
+All relevant information security requirements shall be established 
+and agreed with each supplier that may access, process, store, communicate, or provide IT infrastructure components for, the organizations information.
+A.15.1.3Information and com -
+munication technology supply chainControl
+Agreements with suppliers shall include requirements to address 
+the information security risks associated with information and communications technology services and product supply chain.
+A.15.2  Supplier service delivery management
+Objective: To maintain an agreed level of information security and service delivery in line with sup -
+plier agreements.
+A.15.2.1Monitoring and review 
+of supplier servicesControl
+Organizations shall regularly monitor, review and audit supplier 
+service delivery.
+A.15.2.2Managing changes to supplier servicesControl
+Changes to the provision of services by suppliers, including 
+maintaining and improving existing information security policies, procedures and controls, shall be managed, taking account of the criticality of business information, systems and processes involved and re-assessment of risks. 
+Table A.1  (continued)
+ ISO/IEC 2013  All rights reserved 19
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.16  Information security incident management
+A.16.1  Management of information security incidents and improvements
+Objective: To ensure a consistent and effective approach to the management of information security 
+incidents, including communication on security events and weaknesses.
+A.16.1.1Responsibilities and 
+proceduresControl
+Management responsibilities and procedures shall be established 
+to ensure a quick, effective and orderly response to information security incidents.
+A.16.1.2Reporting information security eventsControl
+Information security events shall be reported through appropriate 
+management channels as quickly as possible.
+A.16.1.3Reporting information security weaknessesControl
+Employees and contractors using the organizations information 
+systems and services shall be required to note and report any 
+observed or suspected information security weaknesses in sys -
+tems or services.
+A.16.1.4Assessment of and 
+decision on informa -
+tion security eventsControl
+Information security events shall be assessed and it shall be 
+decided if they are to be classified as information security inci -
+dents.
+A.16.1.5Response to informa -
+tion security incidentsControl
+Information security incidents shall be responded to in accordance 
+with the documented procedures.
+A.16.1.6Learning from information security incidentsControl
+Knowledge gained from analysing and resolving information secu -
+rity incidents shall be used to reduce the likelihood or impact of 
+future incidents.
+A.16.1.7 Collection of evidenceControl
+The organization shall define and apply procedures for the iden -
+tification, collection, acquisition and preservation of information, 
+which can serve as evidence.
+A.17 Information security aspects of business continuity management
+A.17.1  Information security continuity
+Objective: Information security continuity shall be embedded in the organizations business continu -
+ity management systems.
+A.17.1.1Planning information 
+security continuityControl
+The organization shall determine its requirements for information 
+security and the continuity of information security management in 
+adverse situations, e.g. during a crisis or disaster.
+A.17.1.2Implementing infor -
+mation security conti -
+nuityControl
+The organization shall establish, document, implement and main -
+tain processes, procedures and controls to ensure the required 
+level of continuity for information security during an adverse situa -
+tion. 
+Table A.1  (continued)
+20  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.17.1.3Verify, review and 
+evaluate information security continuityControl
+The organization shall verify the established and implemented 
+information security continuity controls at regular intervals in order to ensure that they are valid and effective during adverse situations.
+A.17.2  Redundancies
+Objective: To ensure availability of information processing facilities.
+A.17.2.1Availability of infor -
+mation processing 
+facilitiesControl
+Information processing facilities shall be implemented with redun -
+dancy sufficient to meet availability requirements.
+A.18  Compliance
+A.18.1 Compliance with legal and contractual requirements
+Objective: To avoid breaches of legal, statutory, regulatory or contractual obligations related to infor -
+mation security and of any security requirements.
+A.18.1.1Identification of appli -
+cable legislation and 
+contractual require -
+mentsControl
+All relevant legislative statutory, regulatory, contractual require -
+ments and the organizations approach to meet these requirements 
+shall be explicitly identified, documented and kept up to date for each information system and the organization.
+A.18.1.2Intellectual property rightsControl
+Appropriate procedures shall be implemented to ensure compli -
+ance with legislative, regulatory and contractual requirements 
+related to intellectual property rights and use of proprietary soft -
+ware products.
+A.18.1.3 Protection of recordsControl
+Records shall be protected from loss, destruction, falsification, 
+unauthorized access and unauthorized release, in accordance with legislatory, regulatory, contractual and business requirements.
+A.18.1.4Privacy and protection of personally identifi -
+able informationControl
+Privacy and protection of personally identifiable information shall 
+be ensured as required in relevant legislation and regulation where applicable.
+A.18.1.5Regulation of crypto -
+graphic controlsControl
+Cryptographic controls shall be used in compliance with all rel -
+evant agreements, legislation and regulations.
+A.18.2 Information security reviews
+Objective: To ensure that information security is implemented and operated in accordance with the 
+organizational policies and procedures.
+A.18.2.1Independent review of 
+information securityControl
+The organizations approach to managing information security and 
+its implementation (i.e. control objectives, controls, policies, pro -
+cesses and procedures for information security) shall be reviewed independently at planned intervals or when significant changes occur. 
+Table A.1  (continued)
+ ISO/IEC 2013  All rights reserved 21
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.18.2.2Compliance with 
+security policies and standardsControl
+Managers shall regularly review the compliance of information 
+processing and procedures within their area of responsibility with the appropriate security policies, standards and any other security requirements.
+A.18.2.3Technical compliance reviewControl
+Information systems shall be regularly reviewed for compliance 
+with the organizations information security policies and stand -
+ards. 
+Table A.1  (continued)
+22  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+Bibliography
+[1] ISO/IEC 27002:2013, Information technology  Security Techniques  Code of practice for 
+information security controls
+[2] ISO/IEC  27003, Information technology  Security techniques  Information security management 
+system implementation guidance
+[3] ISO/IEC 27004, Information technology  Security techniques  Information security 
+management   Measurement
+[4] ISO/IEC  270 05, Information technology  Security techniques  Information security risk management
+[5] ISO 31000:2009, Risk management   Principles and guidelines
+[6] ISO/IEC Directives, Part 1, Consolidated ISO Supplement  Procedures specific to ISO , 2012 
+ ISO/IEC 2013  All rights reserved 23
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+ 
+ ISO/IEC 2013  All rights reservedICS35.040
+Price based on 23 pages
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+
+ 
+
+####Document_3
+
+SECTION 2  
+BROKER BACK OFFICE VENDORS  
+This section defines the eligibility criteria for selection of Broker Back -Office Vendors by the Exchange 
+and contains the list of eligible vendors permitted by the Exchange to provide services to the Brokers.  
+2.1 Eligibility Criteria for Broker Back Office Application  
+Detailed below is the Eligibility criterion  for a Vendor of Broker Back Office Application to apply  for 
+and continue to stay as PSX -authorized vendor for  Broker Back Office Application:  
+2.1.1  Company Registration  
+Vendor must be a registered company of Pakistan/International Origin OR their authorized business 
+partner with registered office in Karachi, Pakistan.  
+2.1.2  Minimum Cetification Requirements  
+Ensure that cer tain level of competency, the vendor must be minimum ISO9001 and ISO27001 
+certified    
+2.1.3  Relevant Experience  
+Vendor must have at least 5 Years of experience in the area of application development /support  in 
+the Financial Industry . New Vendors without prior e xperience shall be required to present credentials 
+and their application shall undergo a thorough and rigorous evaluation process by the Exchange.  
+2.1.4  Profitability  
+The Company should be profit making for at least  last three years.  
+2.1.5  Skilled Resources  
+Vendor should have sufficient pool of qualified and skilled technical resources  having business and 
+IT graduates  or Certified  with at least 2-3 years of application development or system support 
+experience in the Capital Market  Industry . 
+Sufficient pool of qualif ied resource is defined as a group having two professionals as per above  
+stated stature for each group of 20 brokers so as to ensure that adequate services are provided in a 
+timely manner by the Broker Back Office Vendor to the Brokers.   
+ 
+Broker Back -Office Application Standards, Practice and Conventions                                   
+2.2 Application and Ven dor Evaluation Process   
+Software Service Vendors intending to apply and become Exchange approved Back -Office -System -
+Vendors shall apply to Exchange in writing along with their credentials, relevant documents, list of 
+their Skilled -worked -force .  
+2.2.1  Term a nd Duration of Vendor E ligibility  
+The Exchange shall authorize the vendor for a period of three years and Vendors shall be required to 
+attain renewal after successful completion of term . Vendors once approved by the Exchange shall 
+ensure that provisioning should be made in their system with regard to regulatory changes that takes 
+place after the approval and before the expiry date.  
+2.2.2  Software vendor and Security vendor should be independent of 
+each other  
+Software vendor and security vendor of any securities broker should not be the same during a 
+particular given period.  
+2.2.3  Eligibility criteria for brokers who have developed their own back 
+office systems   
+In order to ensure standardiz ation and consistency of IT and reporting infrastructure, the 
+regulatory requirements relating to selection of eligible vendors shall also be applicable to 
+such brokers  who have developed their own back office systems . 
+2.2.4  List of Eligible Vendor(s)  
+Please ref er to t he latest captioned list on PSX website under section Product and 
+Services > Broker Back Office System > List of Eligible Broker Back Office System 
+Vendor(s) *. 
+ 
+*This is neither approved nor a final list of eligible back -office -vendors.  
+ 
+ 
+ 
+Broker Back -Office Application Standards, Practice and Conventions                                   4 SECTION 3  
+THE BARE MINIMAL STANDARDS  
+The Exchange Regulations require that the Software or application which TREC Holders use for 
+trade -facilitation of their client and the Software that they use for risk-management and record -
+keeping shall meet some  bare-minimal standards and specifications.  
+The general controls for Broker Back Office  (BBO)  System must entail in the following manner:  
+1. There shall be only single back office software and single book of accounts at any given time.  
+2. Each application shall  be connected with single database.  
+3. The remote access to applications and database shall be controlled. The on -demand access for 
+the vendor shall be enabled for support purposes only via access request approval process only 
+for the duration required. Remot e access users should be separately defined and clearly 
+identified. For remote access by the vendor, only remote access users should be used and their 
+activity should be fully logged and maintained.  
+4. Formal change management procedures should be employed to  document the nature of 
+change, justification, authorization, and other related business or technical level details.  
+5. The Trade Log shall be updated online in the BBO System.  
+6. The manual process to update the BBO system with trade log shall be discontinued.  
+7. The broker should prepare clear written procedure regarding handling of all types of entries 
+including amendments or change in the application/system  
+8. All software changes must be deployed in presence of the TREC Holder support staff.  
+9. The back office syst em should be capable to auto generate cheque from the system and 
+simultaneous auto updating respective ledger account  
+10. The software should only use supported technology  
+In regards to the above, t he areas of  Account Opening, Trading, Clearing, Settlement an d Custody  
+shall comply with Information and Application Security Standards specified by the Exchange along  
+with the standards and specification s prescribed in this document.  
+  
+ 
+Broker Back -Office Application Standards, Practice and Conventions                                   5 3.1 Account Opening  
+3.1.1  Client Account Management  
+Client information stored in the system at the time of opening of the account shall not be allowed to 
+be deleted once a client account is operational. However, modification with regard to client details 
+shall be controlled and the system should be capable of storing the original information that has been 
+modified . This may be noted that there no provisions in law which could allow the change of title of 
+account of Client name . The system shall also have the provision to upload the client information 
+from CD S  client setup report.  
+3.1.1.1  KYC Principles  
+The system should comply with KYC principles and standards and should have provision to 
+electronically store the  scanned documents leading to the identity of the Client.  
+3.1.1.2  Client / Account Classification  
+The system should have provision to classify client s into various categories on the basis of  most 
+recen t payment trend s in relation to the information obtained through KYC, so as to help identify 
+high, low and medium risk clients.  
+3.1.1.3  Reasignment of Client Code  
+Further, the system shall ensure that client codes once assigned to any client shall not be reassigned 
+to another client of the brokers even after the closure of account  so as to ensure the compliance of 
+PSX rule book clause 8.6.1 as reproduced hereunder:   
+Every B roker while inserting a bid and offer through KATS for each of his clients, shall insert 
+unique Client Codes for those clients which are maintained by them in their back office 
+system and registered with NCCPL. These Client Codes are linked/mapped to UIN t hrough 
+the interface of NCCPL. These Client Codes should not be re -assigned to another 
+client of the Brokers even after the closure of the account  
+3.1.1.4  Web access for Clients   
+The system should be provided a secure access through a URL for enquiring and viewing account 
+statement s on real -time basis  or EOD basis . 
+3.2 Trading  
+Apart from complying with relevant regulations and storing information relating to trading of the client , 
+the system should have provisions to have trade -time and trade -confirmation -SMS sent time stored 
+in the system.    
+ 
+Broker Back -Office Application Standards, Practice and Conventions                                   6 3.3 Maker and Checker functionality  
+In order to facilitate role based permissions and auditing , the system should have provisions of 
+maker and checker functionality  for each and every transactions/account entry which is substantial 
+and material.  
+The principle of maker and checker means that in order to have proper segregation of duties for each 
+transaction  (wherever required) , there must be at least two individuals necessary for its completion. 
+While one individual may create a trans action, the other individual should be involved in 
+confirmation/authorization of the same.  
+3.4 Audit Logs  and Privil ege Roles 
+The system shall be capable of generating and storing audit logs for all users and information in 
+respect of login, data entry, and trail of modification /deletion  with date and time along with 
+exception al reporting  at user and system level.  
+The Broker Back Office System should e stablish and maintain operational and systems in -built audit 
+control to facilitate automatic reconciliations  and perform exceptional reporting:  
+ Number of Order, their quantities and values entered  
+ Number of Clients, their quantities, volumes and executed values  
+ Number of Stocks, Markets and types of order and values processed  
+ Gross Settlement values versus  totals at Client, Market and Stocks level    
+3.5 Reports to comply with regulatory requirements  
+The system should be capable of generating and processing reports in the manner to enable TREC 
+holders to comply with the requirements of regulatory framework . At minimum, the system shall be 
+capable of generating /processing  the following reports;  
+1- Wash trade report (company level/branch level/agent level)  
+2- Blank  sale report (company level/branch level/agent level)  
+3- Trade rectification report (company level/branch level/agent level)  
+4- Cross trade report (company level/branch level/agent level)  
+5- Employee s investment holding period report (as required under section 16(3)f of 
+Securities Brokers (Licensing And Operations) Regulations 2016  
+6- Client assets segregation and rec onciliation report  
+7- Order register in the manner prescribed under section 19(4) of Securities Brokers 
+(Licensing And Operations) Regulations 2016   
+ 
+Broker Back -Office Application Standards, Practice and Conventions                                   
+8- Monthly IBTS reports as in the manner prescribed under Section 9.11(a) and 9.11(b) of 
+PSX Rule Book.  
+9- Securitie s Balance Movement Report  
+10- Margin Trading System & Margin Financing Detail Report  
+11- Monthly statements of liquid capital  
+3.6 Other Key Areas  
+The system must also include the provision for setting -up of branches, catering to accounting needs 
+of various market s, multiple settlement cycles, maintenance of General and Su b-General Ledger and 
+mapping of  client with a  ledger account.  The system shall contain provisions for recording and 
+maintenance of the following details/records;  
+1- Fixed asset register report  
+2- Accounting ledgers  
+3- Client trial balance  
+4- Accounting trial balance  
+5- Income statement  
+6- Balance sheet  
+7- Bank reconciliation report  
+3.7 Reconciliations  and Back Office Accounting System   
+The System should contain provisions for day-end-reconciliation s of back -office sys tems custody 
+with CDC and NCCPL. The system must  also ensure the segregations of customer money and own 
+funds by the way of maintenance of proper  books and account, recording of liabilities , ledgers 
+reflecting cash and custody movement  and day -end-reconc iliations of clients funds with client bank 
+accounts.  
+ 
+
+
+####Document_4  
+
+2. Objectives
+2.1 BUSINESS OBJECTIVES
+The following is a list of business objectives:
+Objective 1: System will require registration and will be password protected.
+Objective 2: Account Setup functionality must be supported that includes the following
+customer data:
+ First Name, Middle Name {Optional}, Last Name
+ Home and Mailing Addresses
+ E-mail Address
+ Social Security Number
+ Two Phone Numbers
+ Marital Status
+ Beneficiary Name, Beneficiary SSN, and Beneficiary Relationship
+Objective 3: Account Maintenance functionality must be supported that allows user to close
+account and edit personal information and includes the following customer data:
+ First Name, Middle Name {Optional}, Last Name
+ Home and Mailing Addresses
+ E-mail Address
+ Social Security Number
+ Two Phone Numbers
+ Marital Status
+ Beneficiary Name, Beneficiary SSN, and Beneficiary Relationship
+Objective 4: Cash Management functionality must be supported that allows user to
+withdraw and deposit money and includes the following customer data:
+ Transaction type
+ Amount
+ Account Number
+Objective 5: Quotes functionality must be supported that displays the following quotes:
+ Current
+ Past
+ Watched
+
+7
+Objective 6: Transaction functionality must be supported that includes the following types:
+ Buying stock
+ Market Price
+ Good-till-Cancel
+ Selling Stock
+ Market Price
+ Stop Loss
+ Good-till-Cancel
+2.2 SYSTEM OBJECTIVES
+The following is a list of system objectives:
+Objective 1: System will be Web-based.
+Objective 2: MySQL will be used as the database.
+Objective 3: GoDaddy will be used for webhosting.
+Objective 4: System will use PHP.
+Objective 5: System will support Internet Explorer.
+Objective 6: User interface will be intuitive.
+
+8
+3. Project Context Diagram
+3.1 CONTEXT DIAGRAM
+The context diagram displays all high-level components.
+3.2 CONTEXT DIAGRAM UML
+
+9
+4. Systems Requirements
+4.1 REQUIREMENTS OVERVIEW
+The following are the requirements for each component of our system.
+4.2 QUOTES REQUIREMENTS
+Requirement Title: Quotes
+Sequence No: 001
+Short description: Display currently owned stock quotes, previously owned stock quotes,
+watched stock quotes and quote lookup
+Description: The system will display all currently owned stock quotes by querying a
+database on a regular basis.
+The system will display all previously owned stock quotes by querying a
+database on a regular basis.
+The system will display all watched stock quotes by querying a
+database on a regular basis.
+User will proceed to add/remove quotes from his/her watched list by
+providing the following fields:
+- Action: {Click Button: Add or Remove}
+- Stock Symbol:{Stock Symbol to be Added only}
+All quotes will be updated in real time as the user uses the page.
+An add/remove confirmation will be automatically generated and
+displayed on the screen.
+The system will automatically move a stock to the current list when it is
+bought from the watch list.
+The system will automatically move a stock to the previous list when it is
+sold from the current list.
+The system will automatically move a stock to the current list when it is
+bought from the history list.
+The system will automatically move a stock to the current list when it is
+bought initially.
+Pre-Conditions: - The user must logon before performing this function
+- The database must be loaded at user login
+Post Conditions: - The quotes database will be saved when the user logs off
+Other attributes: - Make sure multiple click does not yield multiple adds
+- A link to symbol look up will be provided in case the user does
+not know the stock symbol.
+
+10
+4.3 LOGIN AND SECURITY REQUIREMENTS
+Requirement Title: Log on
+Sequence No: 001
+Short description: Log on to the system
+Description: User will enter user name and password then press submit.
+If the user does not have an account, a link to create account will be
+provided.
+If the user name and password fields are not provided, the user will be
+notified to fill in the appropriate fields.
+The user name is checked against the list of user names in the database.
+If the user name is a match to one in the database, then the password will
+also be checked.
+If the user name or password, the user will be asked to verify and resubmit
+their user name and password.
+Pre-Conditions: -There must not be a user currently logged in to the system
+from that computer.
+Post Conditions: -The user will be taken back to the main user screen when
+he successfully logs in
+Other attributes: -The user will only be allowed up to four attempts to login.
+The system will offer to reset password after the fourth
+attempt.
+
+11
+4.4 ACCOUNT SET UP REQUIREMENTS
+Requirement Title: Account Setup
+Sequence No: 001
+Short description: Functionality to set up a user account
+Description: User will proceed to setup his account by providing the following:
+- First Name, Last Name
+- SSN
+- Date of Birth
+- Street Address, City, State, Zip Code
+- Phone 1, Phone 2
+- Email
+- Marital Status
+- Beneficiary Name, Beneficiary SSN, and Beneficiary
+Relationship
+The system will assign an account number automatically.
+A confirmation page will be displayed to make sure all the information is
+entered correctly.
+The user will be able to press cancel at any point during the account
+setup process.
+Pre-Conditions: - The user must not have an account.
+- The user must have a valid bank account.
+- The user must be 18 years of age.
+Post Conditions: - A confirmation page will be displayed or an error message
+displayed to show whether or not the account setup was
+successful.
+Other attributes: - Will check that each input field has valid data if being changed
+(wont allow letters in the phone number field etc)
+- Error message will be displayed if changes were not completed
+- Confirmation message will be displayed if the changes were
+completed
+
+12
+4.5 ACCOUNT MAINTENANCE REQUIREMENTS
+Account maintenance requirements follow in sequence for editing personal information and
+closing accounts.
+4.5A ACCOUNT MAINTENANCE REQUIREMENT 1 EDIT PERSONAL INFO
+Requirement Title: Account Maintenance
+Sequence No: 001
+Short description:
+Edit Personal Account Information
+Description: Account Maintenance page will display an option to Edit Personal
+Information.
+Once the user selects Edit Personal Information the user will have the
+option to change the following fields: First Name, Last Name, SSN, Date
+of Birth, Street Address, City, State, Zip Code, Phone 1, Phone 2, Email,
+Marital Status, Beneficiary Name, Beneficiary SSN, and Beneficiary
+Relationship.
+Once the user is finished changing the fields the user can either choose
+to confirm or cancel the changes.
+If Confirm is selected the changes will be save to the database a
+conformation message will be displayed and user will be taken back to
+the Main User page.
+If Cancel is selected no changes will be saved and the user will be
+taken back to the Account Maintenance page.
+Pre-Conditions: - User must logon before performing this function.
+- User must select Edit Personal Information button
+Post Conditions: - User must have filled out the appropriate field in which they
+chose to edit
+- User must confirm their changes
+- After conformation changes will be saved to the database and
+user will be returned to the main user page
+Other attributes: - Will check that each input field has valid data if being changed
+(wont allow letters in the phone number field etc)
+- Error message will be displayed if changes were not completed
+- Conformation message will be displayed if the changes were
+completed
+
+13
+4.5B ACCOUNT MAINTENANCE REQUIREMENT 2 CLOSE ACCOUNT
+Requirement Title: Account Maintenance
+Sequence No: 002
+Short description:
+Close Account
+Description: Account Maintenance page will display an option to Close Account.
+Once the user selects the option to Close Account the system will ask
+the user if he wishes to sell all stocks. If the user confirms, the system
+will sell all stocks at market price. If user cancels the system will display
+message You must sell all stocks to close account
+The system will then refund all money to users bank account and
+display a conformation.
+User will be asked to confirm or cancel closing account.
+If Confirm is selected the user will be deleted from the database, a
+confirmation message will be displayed and user will be logged out and
+taken to thank you page.
+If Cancel is selected user will be taken back to the Account
+Maintenance page.
+Pre-Conditions: - User must logon before performing this function.
+- User must select Close Account button
+Post Conditions: - System will sell stocks
+- System will refund accounts
+- User must confirm their changes
+- After conformation user will be deleted from database and
+logged out
+- If user cancels, user will still have account but will have no
+stocks or cash in account
+Other attributes: - Error message will be displayed if function cannot be completed
+- Conformation message will be displayed if the functions were
+completed
+- System will not re-use account numbers
+4.6 CASH MANAGEMENT REQUIREMENTS
+Requirement Title: Cash Management
+Sequence No: 001
+Short description: Credits and Debits to Cash Account
+Description: User will proceed to deposit and withdraw cash from account by
+providing the following fields:
+- Action: {Button: Deposit or Withdraw}
+- Amount:{Amount to be deposited or withdrawn}
+- Account Number: {Bank Account number to be credited to or
+debited from}
+Above information together with todays date and customers account
+number is packaged and sent to the server upon pressing the Submit
+button.
+An order confirmation will be automatically generated and displayed on
+the screen. Customer will be encouraged to print or write down this
+screen.
+User can press cancel to ignore this deposit or withdrawal. A cancel
+confirmation message will be displayed.
+The system will withdraw money from the account when a stock is
+bought.
+The system will deposit money into the account when a stock is sold.
+Pre-Conditions: - The user must logon before performing this function
+- The user must have cash in his account before he/she can buy
+stock
+Post Conditions: - An order confirmation number will be issued or an error
+message displayed in case credit/debit did not take place
+Other attributes: - Make sure multiple click does not yield multiple transactions
+- US Currency Only
+- Must verify to see if sufficient funds exist to proceed with deposit
+- Must verify to see if sufficient funds exists to proceed with
+withdrawal
+- Must verify to see if sufficient funds exists to proceed with
+purchase of stock
+- User must be notified if he/she is required to make a deposit
+when a stock is sold
+- A print functionality will be provided (to print order confirmation)
+
+15
+4.7 INFRASTRUCTURE MANAGEMENT REQUIREMENTS
+Requirement Title: Infrastructure Management
+Sequence No:
+001
+Short description:
+Requirements for the back-office administration such as maintaining
+Database and Web hosting.
+Description: The system will use GoDaddy for web hosting.
+The system will use MySQL for the database.
+Pre-Conditions: Group 6 has a GoDaddy Account.
+Post Conditions: The system will have a working website.
+Other attributes: The system will not take into consideration Networking Issues.
+
+16
+4.8 TRANSACTION MANAGEMENT REQUIREMENTS
+Transaction management requirements follow in sequence for purchasing and selling stocks.
+4.8A TRANSACTION MANAGEMENT REQUIREMENT 1 PURCHASE STOCK
+Requirement Title: Trade
+Sequence No: 001
+Short description: Purchase Stock
+Description: User will proceed to purchase stocks by providing the following fields:
+-Stock symbol (In case they do not know the stock symbol, a link to
+look up symbol will be provided)
+-Order Type (Buy Now or good-till-cancel)
+-Price (Applicable for good-till-cancel orders only)
+Above information is packaged together with the current date and
+customer account number and sent to the server upon pressing the
+Buy button.
+An order confirmation number will be automatically generated and
+displayed on the screen with an option to print or email a confirmation
+to the customer.
+Customers will be informed to check the status of their order by going to
+the Order Status page, a link will be provided.
+Pre-Conditions: -User must logon before performing this function
+-The most current stock quote that the customer is requesting to
+purchase will be displayed before purchase
+Post Conditions: -An order conformation number will be displayed or an error
+message if the order did not take place
+-User will be informed with a message to select order status to see
+the status of the order
+-Market orders will be canceled at the end of the trading day if they
+are not filled
+-Users transaction history will be updated
+Other attributes: -Make sure multiple clicks do not yield multiple transactions
+-US stocks only
+-Must verify to see if sufficient funds exits to proceed with purchase
+-A print and email function will be provided for conformation
+-A link to symbol look up will be provided
+
+17
+4.8B TRANSACTION MANAGEMENT REQUIREMENT 2 SELL STOCK
+Requirement Title: Sell
+Sequence No: 001
+Short description: Sell Stock
+Description: User will proceed to sell stocks by providing the following fields:
+-Number of shares to sell
+-Stop-Loss Price if (user wishes to use this option)
+A pop up will ask user to confirm transaction upon pressing the sell
+button.
+Above information is packaged together with the current date and
+customer account number and sent to the server upon pressing the
+yes button.
+An order confirmation number will be automatically generated and
+displayed on the screen with an option to print or email a
+confirmation to the customer. Display message will give the detail of
+the transaction or let the customer know the transaction is still
+pending.
+Customers will be informed to check the status of their order by
+going to the Order Status page, a link will be provided.
+Pre-Conditions: - User must logon before performing this function
+- The most current stock quote that the customer is
+requesting to sell will be displayed before purchase
+Post Conditions: - An order conformation number will be displayed or an
+error message if the order did not take place
+- User will be informed with a message to select order
+status to see the status of the order
+- Requests to sell will be canceled at the end of the
+trading day if they are not filled
+- Users transaction history will be updated
+Other attributes: - Make sure multiple clicks do not yield multiple
+transactions
+- US stocks only
+- Must update balance to account for the stocks sold
+- A print and email function will be provided for
+confirmation
+
+
+ 
+ 
+ 

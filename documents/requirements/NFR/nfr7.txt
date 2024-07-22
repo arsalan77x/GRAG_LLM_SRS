@@ -1,0 +1,15 @@
+Volume Management
+The quality requirement for volume management aims to define the maximum amount of data that can
+be stored in the database. Due to the possibility of up to 4 million users accessing the brokerage system
+simultaneously within a 3-hour window (9 AM to 12 PM), with each user submitting at least one request
+(usually more), a large volume of data must be processed and stored in the database. The system must
+have appropriate mechanisms for managing this vast amount of data and consider the following points:
+• Processing Speed: The system's processing speed should not slow down due to the large
+volume of data exchanged.
+• Data Integrity: In case of exchanging a large volume of data, the data should not reach its
+threshold and cause database corruption. Appropriate warnings should be displayed when
+nearing thresholds.
+• Data Loss Prevention: Exchanging a large volume of data should not lead to data loss or failure
+to store new data.
+• Maximum Disk Volume: The maximum number of requests during the 3-hour window must be
+considered for setting the maximum file size and buffer size in the file system.

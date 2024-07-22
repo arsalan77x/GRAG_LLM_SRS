@@ -1,0 +1,11 @@
+Viewing and Printing Transfer Certificates  
+Title  Viewing and printing transfer certificates  
+Description  The user can view and print any of their transfer certificates.  
+Input  None  
+Processing  The system displays a table of all the user's transfer certificates. Clicking on any row 
+loads the corresponding transfer certificate file. The user can then print the certificate.  
+Output  Opening and printing the transfer certificate file  
+Error 
+Handling  If the transfer certificate file fails to load, an appropriate error message is displayed, and 
+the user can retry. If there is an error in printing, the user can request another print 
+attempt.

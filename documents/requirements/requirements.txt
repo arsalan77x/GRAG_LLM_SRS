@@ -1,0 +1,272 @@
+1. Logging Out of the System  
+Title  Logging out of the system  
+Description  User logs out of their account.  
+Input  None  Title  Logging out of the system  
+Processing  If the user selects the "Logout" option, they are logged out of their account and 
+redirected to the main page.  
+Output  User logged out of their account and redirected to the main page.  
+Error 
+Handling  Display an appropriate error message if there is an error during logout.
+
+2. Reporting the Stock Market Status  Title  Providing a tabular report of the stock market status  
+Description  Displaying the current market status in a tabular format.  
+Input  None  
+Processing  The system updates the market status in real-time with every change provided through 
+the stock market web service.  
+Output  A table with columns for symbol, company name, highest price, lowest price, last price, 
+previous price, change, percentage change, best bid, and best ask. Each row shows the 
+status of a stock symbol.  
+Error 
+Handling  Display an appropriate error message if the market status is not displayed.
+3. Online Purchase of Stocks and Other Securities by Regular and Special 
+Customers  
+Title  Online purchase of stocks and other securities by regular and special customers  
+Description  All customers, both regular and special, can request online purchases.  
+Input  Type of stock, number of shares, investment price (market price, specified, limited), 
+validity date  Title  Online purchase of stocks and other securities by regular and special customers  
+Processing  The user must log into their account in the system. The user selects the desired stock and 
+number of shares. The user sets the investment price (market, specified, limited). The 
+system checks if the number of shares does not exceed the available shares. Th e user 
+specifies the source account for payment (Mellat Bank, Saman Bank, brokerage account). 
+The system checks the account balance. If sufficient, the amount is blocked until the final 
+confirmation. The system assigns a unique order number and records the  order. Each 
+online purchase order is recorded in the user's order list with the status "in queue."  
+Output  Adding the order report to the user's order list  
+Error 
+Handling  If the number of shares exceeds the available shares, an appropriate error message is 
+displayed.
+4. Online Sale of Stocks and Other Securities by Special Customers  
+Title  Online sale of stocks and other securities by special customers  
+Description  Special customers can sell their stocks and other securities online.  
+Input  Type of stock, number of shares, investment price, minimum price  
+Processing  The user must log into their account in the system. The "special" access type is checked. If 
+the access type is "special," the online sale feature is enabled. The user selects the desired 
+stock and number of shares. The user sets the investment price (specified or limited), and 
+the minimum price. The system checks if the number of shares does not exceed the user's 
+available shares. The user s pecifies the destination account for payment (Mellat Bank, 
+Saman Bank, brokerage account). The system automatically records the sale request. The 
+system assigns a unique order number and records the order. The order is recorded in the 
+user's order list.
+5. Online Sale of Stocks and Other Securities by Special Customers  
+Title  Online sale of stocks and other securities by special customers  
+Description  Special customers can sell their stocks and other securities online.  
+Input  Type of stock, number of shares, investment price, minimum price  
+Processing  The user must log into their account in the system. The "special" access type is checked. 
+If the access type is "special," the online sale feature is enabled. The user selects the 
+desired stock and number of shares. The user sets the investment price (spec ified or 
+limited), and the minimum price. The system checks if the number of shares does not 
+exceed the user's available shares. The user specifies the destination account for payment 
+(Mellat Bank, Saman Bank, brokerage account). The system automatically r ecords the 
+sale request. The system assigns a unique order number and records the order. The order 
+is recorded in the user's order list with the status "completed." Once the sale is confirmed, 
+the money is deposited into the user's bank account.  
+Output  Decrease in sold shares from the user's portfolio, addition of the sale report to the user's 
+order list  
+Error 
+Handling  If any of the following occur, an appropriate error message is displayed: - The user's 
+access type is "regular" - The number of shares exceeds the available shares - The sold Title  Online sale of stocks and other securities by special customers  
+shares are not removed from the user's portfolio - The sale report is not added to the user's 
+order list - The order number is not assigned
+6. Online Sale of Stocks and Other Securities by Brokers  
+Title  Online sale of stocks and other securities by brokers  
+Description  Brokers can sell stocks and other securities online on behalf of customers.  
+Input  The first online sale request in the request queue  
+Processing  The system presents the first online sale request to the broker. If the customer has 
+specified the investment price, the broker sets the price. The broker checks the customer's 
+account balance. If sufficient, the amount is blocked. The system automatically  records 
+the sale request. The request status is updated from "in queue" to "completed" after the 
+sale. The money is deposited into the customer's bank account and the sold shares are 
+removed from the user's portfolio. The sale report is added to the list of transactions by 
+the broker.  
+Output  Addition of the sale report to the list of transactions by the broker, decrease in sold shares 
+from the user's portfolio  
+Error 
+Handling  If any of the following occur, an appropriate error message is displayed: - The order 
+number is not assigned - The sold shares are not removed from the user's portfolio - The 
+order is not added to the user's order list and the list of transactions by the b roker
+7. Online Sale of Stocks and Other Securities by Regular and Special Customers  
+Title  Online sale of stocks and other securities by regular and special customers  
+Description  All customers, both regular and special, can request online sales.  
+Input  Type of stock, number of shares, sale price (market price, specified, limited), validity 
+date, minimum price  
+Processing  The user must log into their account in the system. The user selects the desired stock and 
+number of shares. The user sets the sale price (market, specified, limited), and the 
+minimum price. The system checks if the number of shares does not exceed the ava ilable 
+shares. The user specifies the destination account for payment (Mellat Bank, Saman Bank, 
+brokerage account). The system automatically records the sale request. The system 
+assigns a unique order number and records the order. Each online sale order is  recorded in 
+the user's order list with the status "in queue."  
+Output  Addition of the sale report to the user's order list  
+Error 
+Handling  If the number of shares exceeds the available shares, an appropriate error message is 
+displayed.
+8. Editing Purchase Orders in the Queue  
+Title  Editing purchase orders in the queue  
+Description  The user can edit purchase orders in their order list that are in the "in queue" status.  Title  Editing purchase orders in the queue  
+Input  Type of stock, number of shares, investment price, maximum price, validity date  
+Processing  All purchase orders with the "in queue" status are displayed to the user. The fields, except 
+for the type of stock, are editable. If the user edits the number of shares, the system 
+checks if the new number does not exceed the available shares. If there is no error, the 
+order is updated.  
+Output  Change in some characteristics of the purchase orders in the queue  
+Error 
+Handling  If the number of shares exceeds the available shares, an appropriate error message is 
+displayed. If there is an error in entering the information, the field is cleared and an error 
+message is displayed. The user can re -enter the information.
+9. Editing Sale Orders in the Queue  
+Title  Editing sale orders in the queue  
+Description  The user can edit sale orders in their order list that are in the "in queue" status.  
+Input  Type of stock, number of shares, investment price, minimum price, validity date  
+Processing  All sale orders with the "in queue" status are displayed to the user. The fields, except for 
+the type of stock, are editable. If the user edits the number of shares, the system checks if 
+the new number does not exceed the user's available shares. If there is no error, the order 
+is upd ated.  
+Output  Change in some characteristics of the sale orders in the queue  
+Error 
+Handling  If the number of shares exceeds the available shares, an appropriate error message is 
+displayed. If there is an error in entering the information, the field is cleared and an error 
+message is displayed. The user can re -enter the information.
+10. Canceling Orders in the Queue  
+Title  Canceling orders in the queue  
+Description  The user can cancel orders in their order list that are in the "in queue" status.  
+Input  One of the orders in the user's order list  
+Processing  All orders with the "in queue" status are displayed to the user. The user selects the order 
+to cancel. The selected order is removed from the online order queue and marked as 
+"canceled."  
+Output  Canceling one of the orders in the queue  
+Error 
+Handling  If the canceled order is not removed from the online order queue, an appropriate error 
+message is displayed. The user is asked to resubmit the cancellation request.
+11. Generating Reports of All Customer Transactions  
+Title  Generating reports of all customer transactions (creating order lists)  
+Description  Each purchase and sale order of the customer, whether online or internet -based, should be 
+stored in a report.  Title  Generating reports of all customer transactions (creating order lists)  
+Input  Order number, transaction type, stock type, number of shares, investment price, 
+minimum/maximum price, order status, validity date  
+Processing  After each purchase or sale transaction, a report of that transaction is generated. As report 
+generation occurs during the transaction process, all transaction details are predefined and 
+automatically recorded during the purchase or sale.  
+Output  Adding each transaction to the complete order list  
+Error 
+Handling  If the report is not added to the list after each transaction, an appropriate error message is 
+displayed.
+12. User Account Management  
+Title  User Account Management  
+Description  The user can edit their account information.  
+Input  The user can enter any information related to personal details, contact details, bank details 
+(related to the account at the brokerage), and username for changes.  
+Processing  All fields related to the customer account are displayed as editable. The user can change 
+any information and enter new information. If the user changes their bank account, the 
+validity of the new bank account must be checked. Therefore, the request for ba nk 
+account validation is sent to the bank. If there is no error in entering the new information 
+and the bank confirms the new account, the new information is recorded in the database.  
+Output  The new information related to the user account is recorded in the database.  
+Error 
+Handling  If there is an error in entering any of the information, an appropriate error message is 
+displayed, and the user is allowed to re -enter the information.
+13. Creating a List of Customer Shares (Creating a Portfolio)  
+Title  Creating a list of customer shares (creating a portfolio)  
+Description  Whenever a purchase or sale is completed, the purchased or sold shares are added to a list 
+called the portfolio.  
+Input  Order number, transaction type, stock type, number of shares, investment price  
+Processing  From the existing transactions in the order list, those with the status field set to 
+"completed" are added to another list called the portfolio. The required fields for the 
+portfolio list are fewer and only include some fields from the order list transactions: order 
+number, transaction type, stock type, number of shares, investment price. The order list 
+and the po rtfolio list should be synchronized. Whenever an order status in the order list 
+changes from "in queue" to "completed," the following scenarios are checked:  
+• If the completed order is for the purchase of a new stock type, a new report is added to the 
+portfolio.  
+• If the completed order is for the purchase of more shares of an existing stock type, the number of 
+shares field is updated.  
+• If the completed order is for the sale of all shares of a stock type, the report is removed from the 
+portfolio.  
+• If the completed order is for the sale of some shares, the number of shares field is updated. | | 
+Output | Increasing or decreasing shares in the portfolio | | Error Handling | If the status change 
+of an order in the order list to "completed" does not upda te the portfolio, it indicates an error. 
+This can occur if the addition of a new report, removal of an existing report, or updating the 
+number of shares field does not happen. An appropriate error message is displayed, and the 
+system attempts to update aga in. |
+14. Searching for a Symbol  
+Title  Searching for a stock symbol  
+Description  Users can search for a specific stock symbol within the market status table.  
+Input  Stock symbol name  
+Processing  The user enters the desired symbol, and the system searches for this symbol in the 
+market status table provided by the stock exchange organization.  
+Output  All stocks matching the searched symbol are displayed in a table with their information.  
+Error 
+Handling  Display an appropriate error message if the entered symbol name is invalid.
+15. Deleting Completed and Canceled Orders from Customer Order List  
+Title  Deleting completed and canceled orders from customer order list  
+Description  The user can delete orders from their order list that have the status "completed" or 
+"canceled."  
+Input  Each row in the customer's order list that the user selects for deletion  Title  Deleting completed and canceled orders from customer order list  
+Processing  The entire order list is displayed to the user, excluding orders in the queue. The user can 
+select any row for deletion. The selected row is removed from the order list. The user can 
+also select all completed and canceled orders for deletion.  
+Output  Deleting selected completed and canceled orders from the customer's order list  
+Error 
+Handling  If the user selects inactive rows for deletion, an appropriate error message is displayed. If 
+the deletion of a selected transaction does not occur, an error message is displayed, and 
+the user is asked to retry.
+16. Generating a Transfer Certificate after Each Transaction  
+Title  Generating a transfer certificate after each transaction  
+Description  After each purchase or sale transaction, a transfer certificate is generated for that 
+transaction.  
+Input  Name, surname, national ID, shareholder ID, order number, transaction type, stock type, 
+number of shares, share amount, deducted fee amount  
+Processing  A certificate is generated for each transaction in the order list with the status "completed." 
+The certificate, in a specific and printable format (e.g., PDF or Word), includes the details 
+of the transaction requester (shareholder) and the order details. T he creation date is 
+automatically recorded. A summary of each transfer certificate is recorded in a separate 
+table with columns equivalent to the input fields. Clicking on any row in this table allows 
+the corresponding transfer certificate file to be loade d. 
+Output  Generating a transfer certificate for each completed order  
+Error 
+Handling  If there is an error in retrieving data from the database or the order list, an appropriate 
+error message is displayed.
+17. Viewing and Printing Transfer Certificates  
+Title  Viewing and printing transfer certificates  
+Description  The user can view and print any of their transfer certificates.  
+Input  None  
+Processing  The system displays a table of all the user's transfer certificates. Clicking on any row 
+loads the corresponding transfer certificate file. The user can then print the certificate.  
+Output  Opening and printing the transfer certificate file  
+Error 
+Handling  If the transfer certificate file fails to load, an appropriate error message is displayed, and 
+the user can retry. If there is an error in printing, the user can request another print 
+attempt.
+18. Registering Phone Orders in the Internet System  
+Title  Registering phone orders in the internet system  
+Description  Orders registered in the phone system are registered in the internet system for processing 
+by the broker.  Title  Registering phone orders in the internet system  
+Input  Orders registered in the phone system  
+Processing  All orders from the phone system are processed in the brokerage system database. Based 
+on the order registration date, all orders are sorted, whether internet or phone orders.  
+Output  Adding phone system orders to the internet order database  
+Error 
+Handling  In case of disruption in phone orders, an appropriate message is displayed to the user.
+19. Providing Stock Market News  
+Title  Providing stock market news  
+Description  Display stock market news from the newest to the oldest.  
+Input  None  
+Processing  When the user clicks on the "Stock Market News" option, the news should be displayed 
+in a table format. The news is obtained directly from the stock exchange organization's 
+web service. Any new news published will appear at the top of the table.  
+Output  A table with columns for news date and news title. Each row represents a news item, with 
+the newest news at the top.  
+Error 
+Handling  Display an appropriate error message if there is an error in loading the news.
+20. Providing Company Announcements  
+Title  Providing company announcements  
+Description  Display company announcements from the newest to the oldest.  
+Input  None  
+Processing  When the user clicks on the "Company Announcements" option, a table containing the 
+announcements is displayed. The table is sorted by the time of announcement publication Title  Providing company announcements  
+and the announcements are received from the stock exchange organization's web service. 
+Any new announcements will appear at the top of the table.  
+Output  A table with columns for symbol, company name, announcement title, submission time, 
+publication time, and attachment. Each row shows information about an announcement.  
+Error 
+Handling  Display an appropriate error message if there is an error in displaying the announcements 
+or in loading the attachment file.

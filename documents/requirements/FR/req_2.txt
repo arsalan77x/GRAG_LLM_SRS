@@ -1,0 +1,14 @@
+User Account Management  
+Title  User Account Management  
+Description  The user can edit their account information.  
+Input  The user can enter any information related to personal details, contact details, bank details 
+(related to the account at the brokerage), and username for changes.  
+Processing  All fields related to the customer account are displayed as editable. The user can change 
+any information and enter new information. If the user changes their bank account, the 
+validity of the new bank account must be checked. Therefore, the request for ba nk 
+account validation is sent to the bank. If there is no error in entering the new information 
+and the bank confirms the new account, the new information is recorded in the database.  
+Output  The new information related to the user account is recorded in the database.  
+Error 
+Handling  If there is an error in entering any of the information, an appropriate error message is 
+displayed, and the user is allowed to re -enter the information.

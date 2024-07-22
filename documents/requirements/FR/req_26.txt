@@ -1,0 +1,11 @@
+Providing Stock Market News  
+Title  Providing stock market news  
+Description  Display stock market news from the newest to the oldest.  
+Input  None  
+Processing  When the user clicks on the "Stock Market News" option, the news should be displayed 
+in a table format. The news is obtained directly from the stock exchange organization's 
+web service. Any new news published will appear at the top of the table.  
+Output  A table with columns for news date and news title. Each row represents a news item, with 
+the newest news at the top.  
+Error 
+Handling  Display an appropriate error message if there is an error in loading the news.

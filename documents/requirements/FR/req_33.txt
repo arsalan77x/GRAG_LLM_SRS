@@ -1,0 +1,6 @@
+Title: Order Execution
+Description: Efficiently handle buy/sell orders, including market, limit, and stop orders.
+Input: User account details, order type, stock symbol, number of shares, order price
+Processing: The system validates the user account, processes the order based on the specified type (market, limit, stop), and executes the trade on the stock exchange. The system then updates the user's portfolio and order history.
+Output: Confirmation of order execution, updated portfolio, and order history.
+Error Handling: Display an appropriate error message if the order cannot be processed due to validation issues, insufficient funds, or market conditions.

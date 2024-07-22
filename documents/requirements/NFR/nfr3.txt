@@ -1,0 +1,13 @@
+Data Validation
+Data validation involves reviewing, filtering, and removing malicious input to ensure data security. The
+following are common attacks mitigated by input validation:
+• SQL Injection: This attack exploits vulnerabilities in the application's data validation process,
+allowing attackers to execute database commands. It occurs when user input is used in SQL
+queries without proper validation, enabling attackers to perform actions like impersonation,
+altering or deleting data, and denial of service.
+• Buffer Overflow: A buffer is a temporary storage area in memory. If an attacker inputs data
+exceeding the buffer's capacity, it may cause unpredictable behavior, including denial of service
+or code injection attacks.
+• Code Injection: This attack aims to exploit web applications by injecting malicious code. The
+attacker uses the application to steal user information, such as login credentials and banking
+information.

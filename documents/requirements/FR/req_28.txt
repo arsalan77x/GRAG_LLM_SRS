@@ -1,0 +1,12 @@
+Providing Market Supervisor Messages  
+Title  Providing market supervisor messages  
+Description  Display market supervisor messages in chronological order.  
+Input  None  
+Processing  When the user clicks on the "Market Supervisor Messages" option, a table containing the 
+messages is displayed. The messages are sorted by date and time and are received from 
+the stock exchange organization's web service. Any new messages will appear at the  top 
+of the table.  
+Output  A table with columns for date, time, and message title. Each row corresponds to a market 
+supervisor message.  
+Error 
+Handling  Display an appropriate error message if the market supervisor messages are not displayed.

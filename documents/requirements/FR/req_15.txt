@@ -1,0 +1,16 @@
+Online Sale of Stocks and Other Securities by Regular and Special Customers  
+Title  Online sale of stocks and other securities by regular and special customers  
+Description  All customers, both regular and special, can request online sales.  
+Input  Type of stock, number of shares, sale price (market price, specified, limited), validity 
+date, minimum price  
+Processing  The user must log into their account in the system. The user selects the desired stock and 
+number of shares. The user sets the sale price (market, specified, limited), and the 
+minimum price. The system checks if the number of shares does not exceed the ava ilable 
+shares. The user specifies the destination account for payment (Mellat Bank, Saman Bank, 
+brokerage account). The system automatically records the sale request. The system 
+assigns a unique order number and records the order. Each online sale order is  recorded in 
+the user's order list with the status "in queue."  
+Output  Addition of the sale report to the user's order list  
+Error 
+Handling  If the number of shares exceeds the available shares, an appropriate error message is 
+displayed.

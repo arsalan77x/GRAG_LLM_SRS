@@ -1,0 +1,16 @@
+Managing Interactions between Customer's Bank Accounts and Brokerage 
+Account  
+Title  Managing interactions between customer's bank accounts and their brokerage 
+account  
+Description  The user can transfer funds between their brokerage account and one of their bank 
+accounts.  
+Input  Source account number, desired amount, destination account number  
+Processing  The user selects one of their bank accounts for withdrawal or deposit. The system checks 
+if the source account balance is sufficient. If the balance is sufficient, the transfer 
+continues. If the user selects one of their bank accounts as the source, the br okerage 
+account is automatically chosen as the destination. If the source is the brokerage account, 
+the user selects one of their bank accounts as the destination. The transfer is carried out by 
+the bank interface.  
+Output  Change in the customer's account balances  
+Error 
+Handling  If the transfer fails, an appropriate error message is displayed.

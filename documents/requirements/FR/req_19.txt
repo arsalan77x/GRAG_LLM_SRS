@@ -1,0 +1,13 @@
+Generating Reports of All Customer Transactions  
+Title  Generating reports of all customer transactions (creating order lists)  
+Description  Each purchase and sale order of the customer, whether online or internet -based, should be 
+stored in a report.  Title  Generating reports of all customer transactions (creating order lists)  
+Input  Order number, transaction type, stock type, number of shares, investment price, 
+minimum/maximum price, order status, validity date  
+Processing  After each purchase or sale transaction, a report of that transaction is generated. As report 
+generation occurs during the transaction process, all transaction details are predefined and 
+automatically recorded during the purchase or sale.  
+Output  Adding each transaction to the complete order list  
+Error 
+Handling  If the report is not added to the list after each transaction, an appropriate error message is 
+displayed.

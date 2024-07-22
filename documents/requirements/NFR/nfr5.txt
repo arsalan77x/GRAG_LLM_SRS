@@ -1,0 +1,8 @@
+Authorization
+Authorization determines what actions a user is permitted to perform and which resources they can
+access. System resources include files, databases, registry keys, configuration settings, etc. Key
+considerations for authorization include:
+• Access Control: Users must not be able to access resources without proper authentication.
+• Post-Logout Access Control: Users must not be able to access resources after logging out.
+• Access Level Management: Access to resources must be managed according to user access
+levels.

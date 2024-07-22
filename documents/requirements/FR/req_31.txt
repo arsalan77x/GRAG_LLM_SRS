@@ -1,0 +1,10 @@
+Recovering Password  
+Title  Recovering password  
+Description  Allow users to recover their password if they forget it.  
+Input  Username or email, new password, repeat new password, captcha  
+Processing  The user enters their username or email. The entered information is matched against the 
+database. If correct, a password reset page is opened for the user to enter the new 
+password and captcha. If the information is correct, the password is changed.  
+Output  Password successfully changed.  
+Error 
+Handling  Display an appropriate error message if there is an error in any of the input information.

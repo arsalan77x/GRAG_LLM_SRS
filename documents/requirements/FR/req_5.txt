@@ -1,0 +1,12 @@
+Blocking Funds in Bank Account  
+Title  Blocking Funds in Bank Account  
+Description  A specified amount of money is blocked in the customer's bank account, and the customer 
+cannot access those funds.  
+Input  Amount to be blocked  
+Processing  The bank account is predetermined, and during the purchase process, the account balance 
+is checked to ensure it is greater than the amount to be blocked. If sufficient, a block 
+request is sent to the bank interface. The bank confirms the operation.  
+Output  Blocking a specified amount in the customer's bank account  
+Error 
+Handling  If the amount to be blocked exceeds the total account balance, or if the blocking fails, an 
+appropriate error message is displayed.

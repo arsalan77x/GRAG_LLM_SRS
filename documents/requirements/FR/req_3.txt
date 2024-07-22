@@ -1,0 +1,9 @@
+Bank Account Validation  
+Title  Bank Account Validation  
+Description  Validate the bank account entered by the customer.  
+Input  Account number, bank name  
+Processing  The bank account information is sent to the corresponding bank interface to check if the 
+account is valid. Therefore, the validation is performed by the bank interface. If the 
+account is valid, a confirmation message is sent from the bank interface to the system.  
+Output  Confirmation of account validity or invalidity  
+Error Handling  If the customer's bank account is invalid, an appropriate error message is displayed.

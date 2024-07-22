@@ -1,0 +1,266 @@
+Chunk 5:
+2013 – All rights reserved 13
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.9.4.3Password manage -
+ment systemControl
+Password management systems shall be interactive and shall 
+ensure quality passwords.
+A.9.4.4Use of privileged util -
+ity programsControl
+The use of utility programs that might be capable of overriding 
+system and application controls shall be restricted and tightly 
+controlled.
+A.9.4.5Access control to pro -
+gram source codeControl
+Access to program source code shall be restricted.
+A.10   Cryptography
+A.10.1  Cryptographic controls
+Objective: To ensure proper and effective use of cryptography to protect the confidentiality, authen -
+ticity and/or integrity of information.
+A.10.1.1Policy on the use of 
+cryptographic controlsControl
+A policy on the use of cryptographic controls for protection of 
+information shall be developed and implemented.
+A.10.1.2 Key managementControl
+A policy on the use, protection and lifetime of cryptographic keys 
+shall be developed and implemented through their whole lifecycle.
+A.11  Physical and environmental security
+A.11.1 Secure areas
+Objective: To prevent unauthorized physical access, damage and interference to the organization’s information and information processing facilities.
+A.11.1.1Physical security 
+perimeterControl
+Security perimeters shall be defined and used to protect areas that 
+contain either sensitive or critical information and information processing facilities.
+A.11.1.2 Physical entry controlsControl
+Secure areas shall be protected by appropriate entry controls to 
+ensure that only authorized personnel are allowed access.
+A.11.1.3Securing offices, rooms and facilitiesControl
+Physical security for offices, rooms and facilities shall be designed 
+and applied.
+A.11.1.4Protecting against external and environ -
+mental threatsControl
+Physical protection against natural disasters, malicious attack or 
+accidents shall be designed and applied.
+A.11.1.5Working in secure areasControl
+Procedures for working in secure areas shall be designed and 
+applied.
+A.11.1.6Delivery and loading areasControl
+Access points such as delivery and loading areas and other points 
+where unauthorized persons could enter the premises shall be controlled and, if possible, isolated from information processing facilities to avoid unauthorized access. 
+Table A.1  (continued)
+14 © ISO/IEC 2013 – All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.11.2  Equipment
+Objective: To prevent loss, damage, theft or compromise of assets and interruption to the organiza -
+tion’s operations.
+A.11.2.1Equipment siting and 
+protectionControl
+Equipment shall be sited and protected to reduce the risks from 
+environmental threats and hazards, and opportunities for unau -
+thorized access.
+A.11.2.2 Supporting utilitiesControl
+Equipment shall be protected from power failures and other dis -
+ruptions caused by failures in supporting utilities.
+A.11.2.3 Cabling securityControlPower and telecommunications cabling carrying data or support -
+ing information services shall be protected from interception, 
+interference or damage.
+A.11.2.4Equipment mainte -
+nanceControl
+Equipment shall be correctly maintained to ensure its continued 
+availability and integrity.
+A.11.2.5 Removal of assetsControl
+Equipment, information or software shall not be taken off-site 
+without prior authorization.
+A.11.2.6Security of equipment and assets off-prem -
+isesControl
+Security shall be applied to off-site assets taking into account the 
+different risks of working outside the organization’s premises.
+A.11.2.7Secure disposal or re-use of equipmentControl
+All items of equipment containing storage media shall be verified 
+to ensure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.
+A.11.2.8Unattended user equipmentControl
+Users shall ensure that unattended equipment has appropriate 
+protection.
+A.11.2.9Clear desk and clear screen policyControl
+A clear desk policy for papers and removable storage media and 
+a clear screen policy for information processing facilities shall be 
+adopted.
+A.12   Operations security
+A.12.1  Operational procedures and responsibilities
+Objective: To ensure correct and secure operations of information processing facilities.
+A.12.1.1Documented operating 
+proceduresControl
+Operating procedures shall be documented and made available to 
+all users who need them.
+A.12.1.2 Change managementControl
+Changes to the organization, business processes, information pro -
+cessing facilities and systems that affect information security shall 
+be controlled. 
+Table A.1  (continued)
+© ISO/IEC 2013 – All rights reserved 15
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.12.1.3 Capacity managementControl
+The use of resources shall be monitored, tuned and projections 
+made of future capacity requirements to ensure the required sys -
+tem performance.
+A.12.1.4Separation of devel -
+opment, testing and 
+operational environ -
+mentsControl
+Development, testing, and operational environments shall be sepa -
+rated to reduce the risks of unauthorized access or changes to the 
+operational environment.
+A.12.2 Protection from malware
+Objective: To ensure that information and information processing facilities are protected against malware.
+A.12.2.1Controls against mal -
+wareControl
+Detection, prevention and recovery controls to protect against 
+malware shall be implemented, combined with appropriate user 
+awareness.
+A.12.3  Backup
+Objective: To protect against loss of data.
+A.12.3.1 Information backupControl
+Backup copies of information, software and system images shall be 
+taken and tested regularly in accordance with an agreed backup policy.
+A.12.4  Logging and monitoring
+Objective: To record events and generate evidence.
+A.12.4.1 Event loggingControl
+Event logs recording user activities, exceptions, faults and infor -
+mation security events shall be produced, kept and regularly 
+reviewed.
+A.12.4.2Protection of log infor -
+mationControl
+Logging facilities and log information shall be protected against 
+tampering and unauthorized access.
+A.12.4.3Administrator and operator logsControl
+System administrator and system operator activities shall be 
+logged and the logs protected and regularly reviewed.
+A.12.4.4 Clock synchronisationControl
+The clocks of all relevant information processing systems within 
+an organization or security domain shall be synchronised to a sin -
+gle reference time source.
+A.12.5 Control of operational software
+Objective: To ensure the integrity of operational systems.
+A.12.5.1Installation of soft -
+ware on operational 
+systemsControl
+Procedures shall be implemented to control the installation of soft -
+ware on operational systems.
+A.12.6  Technical vulnerability management
+Objective: To prevent exploitation of technical vulnerabilities. 
+Table A.1  (continued)
+16 © ISO/IEC 2013 – All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.12.6.1Management of techni -
+cal vulnerabilitiesControl
+Information about technical vulnerabilities of information systems 
+being used shall be obtained in a timely fashion, the organization’s exposure to such vulnerabilities evaluated and appropriate meas -
+ures taken to address the associated risk.
+A.12.6.2Restrictions on soft -
+ware installationControl
+Rules governing the installation of software by users shall be 
+established and implemented.
+A.12.7  Information systems audit considerations
+Objective: To minimise the impact of audit activities on operational systems.
+A.12.7.1Information systems 
+audit controlsControl
+Audit requirements and activities involving verification of opera -
+tional systems shall be carefully planned and agreed to minimise 
+disruptions to business processes.
+A.13   Communications security
+A.13.1 Network security management
+Objective: To ensure the protection of information in networks and its supporting information pro -
+cessing facilities.
+A.13.1.1 Network controlsControl
+Networks shall be managed and controlled to protect information 
+in systems and applications.
+A.13.1.2Security of network servicesControl
+Security mechanisms, service levels and management require -
+ments of all network services shall be identified and included in 
+network services agreements, whether these services are provided in-house or outsourced.
+A.13.1.3Segregation in net -
+worksControl
+Groups of information services, users and information systems 
+shall be segregated on networks.
+A.13.2  Information transfer
+Objective: To maintain the security of information transferred within an organization and with any external entity.
+A.13.2.1Information transfer 
+policies and proce -
+duresControl
+Formal transfer policies, procedures and controls shall be in place 
+to protect the transfer of information through the use of all types of communication facilities.
+A.13.2.2Agreements on infor -
+mation transferControl
+Agreements shall address the secure transfer of business informa -
+tion between the organization and external parties.
+A.13.2.3 Electronic messagingControlInformation involved in electronic messaging shall be appropri -
+ately protected. 
+Table A.1  (continued)
+© ISO/IEC 2013 – All rights reserved 17
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+A.13.2.4Confidentiality or non-
+disclosure agreementsControl
+Requirements for confidentiality or non-disclosure agreements 
+reflecting the organization’s needs for the protection of informa -
+tion shall be identified, regularly reviewed and documented.
+A.14   System acquisition, development and maintenance
+A.14.1 Security requirements of information systems
+Objective: To ensure that information security is an integral part of information systems across the 
+entire lifecycle. This also includes the requirements for information systems which provide services over public networks.
+A.14.1.1Information security 
+requirements analysis and specificationControl
+The information security related requirements shall be included in 
+the requirements for new information systems or enhancements to existing information systems.
+A.14.1.2Securing application services on public networksControl
+Information involved in application services passing over public 
+networks shall be protected from fraudulent activity, contract dis -
+pute and unauthorized disclosure and modification.
+A.14.1.3Protecting application services transactionsControl
+Information involved in application service transactions shall be 
+protected to prevent incomplete transmission, mis-routing, unau -
+thorized message alteration, unauthorized disclosure, unauthor -
+ized message duplication or replay.
+A.14.2 Security in development and support processes
+Objective: To ensure that information security is designed and implemented within the development lifecycle of information systems.
+A.14.2.1Secure development 
+policyControl
+Rules for the development of software and systems shall be estab -
+lished and applied to developments within the organization.
+A.14.2.2System change control 
+proceduresControl
+Changes to systems within the development lifecycle shall be con -
+trolled by the use of formal change control procedures.
+A.14.2.3Technical review of 
+applications after 
+operating platform 
+changesControl
+When operating platforms are changed, business critical applica -
+tions shall be reviewed and tested to ensure there is no adverse 
+impact on organizational operations or security.
+A.14.2.4Restrictions on changes to software
+

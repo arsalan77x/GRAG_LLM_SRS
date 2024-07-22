@@ -1,0 +1,16 @@
+Generating a Transfer Certificate after Each Transaction  
+Title  Generating a transfer certificate after each transaction  
+Description  After each purchase or sale transaction, a transfer certificate is generated for that 
+transaction.  
+Input  Name, surname, national ID, shareholder ID, order number, transaction type, stock type, 
+number of shares, share amount, deducted fee amount  
+Processing  A certificate is generated for each transaction in the order list with the status "completed." 
+The certificate, in a specific and printable format (e.g., PDF or Word), includes the details 
+of the transaction requester (shareholder) and the order details. T he creation date is 
+automatically recorded. A summary of each transfer certificate is recorded in a separate 
+table with columns equivalent to the input fields. Clicking on any row in this table allows 
+the corresponding transfer certificate file to be loade d. 
+Output  Generating a transfer certificate for each completed order  
+Error 
+Handling  If there is an error in retrieving data from the database or the order list, an appropriate 
+error message is displayed.

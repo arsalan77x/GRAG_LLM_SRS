@@ -1,0 +1,9 @@
+Logging Out of the System  
+Title  Logging out of the system  
+Description  User logs out of their account.  
+Input  None  Title  Logging out of the system  
+Processing  If the user selects the "Logout" option, they are logged out of their account and 
+redirected to the main page.  
+Output  User logged out of their account and redirected to the main page.  
+Error 
+Handling  Display an appropriate error message if there is an error during logout.

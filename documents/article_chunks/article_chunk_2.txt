@@ -1,0 +1,212 @@
+Chunk 3:
+6.1 Actions to address risks and opportunities
+6.1.1 General
+When planning for the information security management system, the organization shall consider the 
+issues referred to in 4.1  and t he requirement s refer red to in 4.2  and determine the risks and opportunities 
+that need to be addressed to:
+a) ensure the information security management system can achieve its intended outcome(s);
+b) prevent, or reduce, undesired effects; and
+c) achieve continual improvement.
+The organization shall plan:d) actions to address these risks and opportunities; and
+e) how to
+1) integrate and implement the actions into its information security management system 
+processes; and
+2) evaluate the effectiveness of these actions.
+6.1.2 Information security risk assessment
+The organization shall define and apply an information security risk assessment process that:
+a) establishes and maintains information security risk criteria that include:
+1) the risk acceptance criteria; and
+2) criteria for performing information security risk assessments;
+b) ensures that repeated information security risk assessments produce consistent, valid and 
+comparable results; 
+© ISO/IEC 2013 – All rights reserved 3
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+c) identifies the information security risks:
+1) apply the information security risk assessment process to identify risks associated with the loss 
+of confidentiality, integrity and availability for information within the scope of the information security management system; and
+2) identify the risk owners;
+d) analyses the information security risks:
+1) assess the potential consequences that would result if the risks identified in 6.1.2  c) 1) were 
+to materialize;
+2) assess the realistic likelihood of the occurrence of the risks identified in 6.1.2  c) 1); and
+3) determine the levels of risk;
+e) evaluates the information security risks:
+1) compare the results of risk analysis with the risk criteria established in 6.1.2  a); and
+2) prioritize the analysed risks for risk treatment.
+The organization shall retain documented information about the information security risk assessment process.
+6.1.3 Information security risk treatment
+The organization shall define and apply an information security risk treatment process to:
+a) select appropriate information security risk treatment options, taking account of the risk 
+assessment results;
+b) determine all controls that are necessary to implement the information security risk treatment option(s) chosen;
+NOTE Organizations can design controls as required, or identify them from any source.
+c) compare the controls determined in 6.1.3  b) above with those in Annex  A and verify that no necessary 
+controls have been omitted;
+NOTE 1 A n nex  A contains a comprehensive list of control objectives and controls. Users of this International 
+Standard are directed to Annex A  to ensure that no necessary controls are overlooked.
+NOTE 2 Control objectives are implicitly included in the controls chosen. The control objectives and 
+controls listed in Annex A  are not exhaustive and additional control objectives and controls may be needed.
+d) produce a Statement of Applicability that contains the necessary controls (see 6.1.3  b) and c)) and 
+justification for inclusions, whether they are implemented or not, and the justification for exclusions of controls from Annex A ;
+e) formulate an information security risk treatment plan; and
+f) obtain risk owners’ approval of the information security risk treatment plan and acceptance of the residual information security risks.
+The organization shall retain documented information about the information security risk treatment process.
+NOTE The information security risk assessment and treatment process in this International Standard aligns 
+with the principles and generic guidelines provided in ISO 31000 [5]. 
+4 © ISO/IEC 2013 – All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+6.2 Information security objectives and planning to achieve them
+The organization shall establish information security objectives at relevant functions and levels.
+The information security objectives shall:a) be consistent with the information security policy;
+b) be measurable (if practicable);
+c) take into account applicable information security requirements, and results from risk assessment 
+and risk treatment;
+d) be communicated; and
+e) be updated as appropriate.
+The organization shall retain documented information on the information security objectives.
+When planning how to achieve its information security objectives, the organization shall determine:
+f) what will be done;
+g) what resources will be required;
+h) who will be responsible;
+i) when it will be completed; and
+j) how the results will be evaluated.
+7 Support
+7.1 Resources
+The organization shall determine and provide the resources needed for the establishment, implementation, 
+maintenance and continual improvement of the information security management system.
+7.2 Competence
+The organization shall:
+a) determine the necessary competence of person(s) doing work under its control that affects its 
+information security performance;
+b) ensure that these persons are competent on the basis of appropriate education, training, or experience;
+c) where applicable, take actions to acquire the necessary competence, and evaluate the effectiveness of the actions taken; and
+d) retain appropriate documented information as evidence of competence.
+NOTE Applicable actions may include, for example: the provision of training to, the mentoring of, or the re-
+assignment of current employees; or the hiring or contracting of competent persons.
+7.3 Awareness
+Persons doing work under the organization’s control shall be aware of:
+a) the information security policy; 
+© ISO/IEC 2013 – All rights reserved 5
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+b) their contribution to the effectiveness of the information security management system, including 
+the benefits of improved information security performance; and
+c) the implications of not conforming with the information security management system requirements.
+7.4 Communication
+The organization shall determine the need for internal and external communications relevant to the information security management system including:
+a) on what to communicate;
+b) when to communicate;
+c) with whom to communicate;
+d) who shall communicate; and
+e) the processes by which communication shall be effected.
+7.5 Documented information
+7.5.1 General
+The organization’s information security management system shall include:a) documented information required by this International Standard; and
+b) documented information determined by the organization as being necessary for the effectiveness of 
+the information security management system.
+NOTE The extent of documented information for an information security management system can differ 
+from one organization to another due to:
+1) the size of organization and its type of activities, processes, products and services;
+2) the complexity of processes and their interactions; and
+3) the competence of persons.
+7.5.2 Creating and updating
+When creating and updating documented information the organization shall ensure appropriate:
+a) identification and description (e.g. a title, date, author, or reference number);
+b) format (e.g. language, software version, graphics) and media (e.g. paper, electronic); and
+c) review and approval for suitability and adequacy.
+7.5.3 Control of documented information
+Documented information required by the information security management system and by this 
+International Standard shall be controlled to ensure:
+a) it is available and suitable for use, where and when it is needed; and
+b) it is adequately protected (e.g. from loss of confidentiality, improper use, or loss of integrity). 
+6 © ISO/IEC 2013 – All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+For the control of documented information, the organization shall address the following activities, 
+as applicable:
+c) distribution, access, retrieval and use;
+d) storage and preservation, including the preservation of legibility;
+e) control of changes (e.g. version control); and
+f) retention and disposition.
+Documented information of external origin, determined by the organization to be necessary for 
+the planning and operation of the information security management system, shall be identified as 
+appropriate, and controlled.
+NOTE Access implies a decision regarding the permission to view the documented information only, or the 
+permission and authority to view and change the documented information, etc.
+8 Operation
+8.1 Operational planning and control
+The organization shall plan, implement and control the processes needed to meet information security 
+requirements, and to implement the actions determined in 6.1. The organization shall also implement 
+plans to achieve information security objectives determined in 6.2.
+The organization shall keep documented information to the extent necessary to have confidence that 
+the processes have been carried out as planned.
+The organization shall control planned changes and review the consequences of unintended changes, 
+taking action to mitigate any adverse effects, as necessary.
+The organization shall ensure that outsourced processes are determined and controlled.
+8.2 Information security risk assessment
+The organization shall perform information security risk assessments at planned intervals or when 
+significant changes are proposed or occur, taking account of the criteria established in 6.1.2  a).
+The organization shall retain documented information of the results of the information security risk assessments.
+8.3 Information security risk treatment
+The organization shall implement the information security risk treatment plan.
+The organization shall retain documented information of the results of the information security 
+risk treatment.
+9 Performance evaluation
+9.1 Monitoring, measurement, analysis and evaluation
+The organization shall evaluate the information security performance and the effectiveness of the information security management system.
+The organization shall determine:a) what needs to be monitored and measured, including information security processes and controls; 
+© ISO/IEC 2013 – All rights reserved 7
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013 21:40:53 MST
+No reproduction or networking permitted without license from IHS
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+b) the methods for monitoring, measurement, analysis and evaluation, as applicable, to ensure 
+valid results;
+NOTE The methods selected should produce comparable and reproducible results to be considered valid.
+c) when the monitoring and measuring shall be performed;
+d) who shall monitor and measure;
+e) when the results from monitoring and measurement shall be analysed and evaluated; and
+f) who shall analyse and evaluate these results.
+The organization shall retain appropriate documented information as evidence of the monitoring and 
+measurement results.
+9.2 Internal audit
+The organization shall conduct internal audits at planned intervals to provide information on whether 
+the information security management system:
+a) conforms to
+1) the organization’s own requirements for its information security management system; and
+2) the requirements of this International Standard;
+b) is effectively implemented and maintained.
+The organization shall:c) plan, establish, implement and maintain an audit programme(s), including the frequency, methods, 
+responsibilities, planning requirements and reporting. The audit programme(s) shall take into consideration the importance of the processes concerned and the results of previous audits;
+d) define the audit criteria and scope for each audit;
+e) select auditors and conduct audits that ensure objectivity and the impartiality of the audit process;
+f) ensure that the results of the audits are reported to relevant management; and
+g) retain documented information as evidence of the audit programme(s) and the audit results.
+9.3 Management review
+Top management shall review the organization’s information security management system at planned intervals to ensure its continuing suitability, adequacy and effectiveness.
+The management review shall include consideration of:a) the status of actions from previous management reviews;
+b) changes in external and internal issues that are relevant to the information security management 
+system;
+c) feedback on the information security performance, including trends in:
+1) nonconformities and
+

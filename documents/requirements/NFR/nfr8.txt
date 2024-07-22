@@ -1,0 +1,11 @@
+Compatibility
+The brokerage system must be compatible with other applications and services without causing
+interference. The system should continue to operate smoothly alongside other installed applications. The
+following compatibility requirements must be considered:
+• No Adverse Effects: The system should not adversely affect the performance of other
+applications installed in the same environment. This includes both direct effects (like stopping
+other programs) and indirect effects (like consuming all resources).
+• Updates and Compatibility: Updating applications should not damage the system's
+compatibility.
+• Shared Resources: Resources shared among programs should not cause compatibility issues in
+the system.

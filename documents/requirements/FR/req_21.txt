@@ -1,0 +1,9 @@
+Searching for a Symbol  
+Title  Searching for a stock symbol  
+Description  Users can search for a specific stock symbol within the market status table.  
+Input  Stock symbol name  
+Processing  The user enters the desired symbol, and the system searches for this symbol in the 
+market status table provided by the stock exchange organization.  
+Output  All stocks matching the searched symbol are displayed in a table with their information.  
+Error 
+Handling  Display an appropriate error message if the entered symbol name is invalid.

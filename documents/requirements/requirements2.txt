@@ -1,0 +1,232 @@
+21. Providing Market Supervisor Messages  
+Title  Providing market supervisor messages  
+Description  Display market supervisor messages in chronological order.  
+Input  None  
+Processing  When the user clicks on the "Market Supervisor Messages" option, a table containing the 
+messages is displayed. The messages are sorted by date and time and are received from 
+the stock exchange organization's web service. Any new messages will appear at the  top 
+of the table.  
+Output  A table with columns for date, time, and message title. Each row corresponds to a market 
+supervisor message.  
+Error 
+Handling  Display an appropriate error message if the market supervisor messages are not displayed.
+22. Registering a New Member in the System  
+Title  Registering a new member in the system  
+Description  Online registration of a new member in the system and creating a user account for them 
+by the broker.  
+Input  Personal details (name, surname, father's name, ID number, ID serial number, birth date, 
+birth place, national code, education, gender, marital status), contact information (phone 
+number, address, email), bank details (account number, account type: brokera ge-Mellat -
+Saman), user details (username, password, repeat password), shareholder code, access 
+type (regular -special), security question and answer. All necessary information must be 
+entered by the broker.  
+Processing  The entered information is verified for correctness. The bank account details are checked 
+for validity through the bank. The registration date is recorded by the system. If the 
+security question is answered correctly, and the bank accounts are valid withou t errors, the 
+customer registration is confirmed.  
+Output  Successful customer registration in the system.  
+Error 
+Handling  If there is an error in entering the information, such as incorrect format or incorrect 
+security question answer, the incorrect information is cleared and the broker can re -enter 
+the information.
+23. Bank Account Validation  
+Title  Bank Account Validation  
+Description  Validate the bank account entered by the customer.  
+Input  Account number, bank name  
+Processing  The bank account information is sent to the corresponding bank interface to check if the 
+account is valid. Therefore, the validation is performed by the bank interface. If the 
+account is valid, a confirmation message is sent from the bank interface to the system.  
+Output  Confirmation of account validity or invalidity  
+Error Handling  If the customer's bank account is invalid, an appropriate error message is displayed.
+24. Logging into the System  Title  Logging into the system  
+Description  Users log into their user account.  
+Input  Username, password, and captcha  
+Processing  The user enters their username, password, and captcha. The system checks the username 
+and password against the database and verifies the captcha. If the information is correct, 
+the user's account page is displayed.  
+Output  The user logs into their account.  
+Error 
+Handling  Display an appropriate error message if any of the input data is incorrect. If the user 
+enters incorrect information three times consecutively, they must wait 20 seconds before 
+trying again.
+25. Recovering Password  
+Title  Recovering password  
+Description  Allow users to recover their password if they forget it.  
+Input  Username or email, new password, repeat new password, captcha  
+Processing  The user enters their username or email. The entered information is matched against the 
+database. If correct, a password reset page is opened for the user to enter the new 
+password and captcha. If the information is correct, the password is changed.  
+Output  Password successfully changed.  
+Error 
+Handling  Display an appropriate error message if there is an error in any of the input information.
+26. Providing Links to Related Organizations  
+Title  Providing links to related organizations  
+Description  Allow users to navigate to various stock market organizations through the brokerage 
+system.  
+Input  None  
+Processing  On the main page of the system, links to each organization (Tehran Stock Exchange, Iran 
+Mercantile Exchange, Iran Energy Exchange, Iran Fara Bourse, and the Securities and 
+Exchange Organization) are provided. When a user clicks a link, they are redirected to the 
+corre sponding organization's system.  
+Output  User navigation to various stock market organizations.  
+Error 
+Handling  Display an appropriate error message if there is an error in establishing a connection.
+27. Title: Order Execution
+Description: Efficiently handle buy/sell orders, including market, limit, and stop orders.
+Input: User account details, order type, stock symbol, number of shares, order price
+Processing: The system validates the user account, processes the order based on the specified type (market, limit, stop), and executes the trade on the stock exchange. The system then updates the user's portfolio and order history.
+Output: Confirmation of order execution, updated portfolio, and order history.
+Error Handling: Display an appropriate error message if the order cannot be processed due to validation issues, insufficient funds, or market conditions.
+28. Real-Time Market Data
+
+Title: Real-Time Market Data
+Description: Display live stock prices, charts, and market news to keep users informed of current market conditions.
+Input: Stock symbols, market data feeds, news sources
+Processing: The system fetches real-time data from market feeds and news sources, updates stock prices and charts continuously, and displays the latest market news.
+Output: Up-to-date stock prices, interactive charts, and real-time news updates displayed on the user interface.
+Error Handling: If data retrieval fails, display an appropriate error message and retry fetching the data.
+29. Title: Account Management
+Description: User registration, authentication, and secure login to ensure only authorized users can access their trading accounts.
+Input: User registration details (name, email, password), login credentials (username, password), security questions
+Processing: The system registers new users by validating their details and storing them securely. During login, it authenticates users by verifying credentials and security questions. The system uses encryption to secure data transmission and storage.
+Output: Successful registration, secure login, and access to user account dashboard.
+Error Handling: Display an appropriate error message if registration details are invalid or if login credentials do not match the records. Implement account lockout after multiple failed login attempts.
+30. Title: Portfolio Management
+Description: Track and display current holdings, performance, and history of transactions to provide users with an overview of their investments.
+Input: User account details, transaction data, stock symbols, performance metrics
+Processing: The system fetches and calculates the current value of holdings, tracks performance metrics, and compiles historical transaction data. It displays this information in an easy-to-understand format.
+Output: Comprehensive portfolio view, including current holdings, performance graphs, and transaction history.
+Error Handling: If data retrieval fails, display an appropriate error message and attempt to reload the data.
+31. Title: Funds Transfer
+Description: Secure transfer of funds between bank accounts and brokerage accounts, ensuring seamless transactions.
+Input: User account details, bank account numbers, transfer amount, authentication credentials
+Processing: The system validates user credentials, verifies the availability of funds, and processes the transfer request securely between specified accounts.
+Output: Confirmation of successful fund transfer and updated account balances.
+Error Handling: Display an appropriate error message if the transfer fails due to insufficient funds, invalid account details, or connectivity issues.
+32. Title: Transaction History
+Description: Provide detailed records of all past transactions for user reference and analysis.
+Input: User account details, transaction data
+Processing: The system compiles and stores transaction records in a secure database, allowing users to retrieve and view their past transactions at any time.
+Output: Display a detailed list of all transactions, including dates, types, amounts, and statuses.
+Error Handling: If there is an error in retrieving transaction data, display an appropriate error message and retry fetching the data.
+33. Title: Notifications and Alerts
+Description: Real-time updates on order status, market changes, and account activities to keep users informed and responsive.
+Input: User preferences, market data, order status updates
+Processing: The system monitors order statuses, market conditions, and account activities, sending real-time notifications and alerts based on user-defined preferences.
+Output: Timely notifications and alerts delivered via email, SMS, or in-app messages.
+Error Handling: If notifications fail to send, an appropriate error message is displayed, and the system attempts to resend the notifications.
+34. Checking Account Balance  Title  Checking Account Balance  
+Description  The balance of each customer's bank account can be retrieved and viewed.  
+Input  Account number, bank name  
+Processing  The user selects one of their bank accounts. The account number and bank name are sent 
+to the bank interface. The balance is retrieved and sent to the system.  
+Output  Account balance  
+Error 
+Handling  If the account balance is not retrieved within a specified time, a new balance request is 
+sent, and an appropriate error message is displayed.
+35. Transferring Funds for Selling Stocks or Bonds  
+Title  Transferring Funds for Selling Stocks or Bonds  
+Description  The amount corresponding to the sold stocks is deposited into the customer's account, and 
+the amount is withdrawn from the buyer's account. The brokerage fee is also withdrawn 
+from the buyer's account and deposited into the brokerage account.  
+Input  Customer account number, stock or bond amount, brokerage fee, buyer's account number, 
+brokerage account number  
+Processing  During the sale process, the user selects one of their accounts. The account balance is 
+checked, and the system sets the amount for the sold stocks and the brokerage fee. The 
+brokerage account is recorded in the system's database and needs only to be retrieved. The 
+stock exchange interface specifies the bank account of the buyer, and the funds are 
+transferred accordingly.  
+Output  Increase in customer account balance by the stock amount, decrease in customer account 
+balance by the brokerage fee amount, decrease in buyer's account balance by the stock 
+amount, increase in brokerage account balance by the brokerage fee amount.  
+Error Handling  If there is an error in setting the account numbers, amounts, or if the stock exchange 
+interface does not specify the buyer's account number, an appropriate error message is 
+displayed.
+36. Blocking Funds in Bank Account  
+Title  Blocking Funds in Bank Account  
+Description  A specified amount of money is blocked in the customer's bank account, and the customer 
+cannot access those funds.  
+Input  Amount to be blocked  
+Processing  The bank account is predetermined, and during the purchase process, the account balance 
+is checked to ensure it is greater than the amount to be blocked. If sufficient, a block 
+request is sent to the bank interface. The bank confirms the operation.  
+Output  Blocking a specified amount in the customer's bank account  
+Error 
+Handling  If the amount to be blocked exceeds the total account balance, or if the blocking fails, an 
+appropriate error message is displayed.
+37. Transferring Funds for Buying Stocks or Bonds  
+Title  Transferring Funds for Buying Stocks or Bonds  
+Description  The amount corresponding to the purchased stocks is withdrawn from the customer's 
+account and deposited into the account of the stock owner. The brokerage fee is also 
+withdrawn from the customer's account and deposited into the brokerage account.  
+Input  Customer account number, stock or bond amount, brokerage fee, stock owner's account 
+number, brokerage account number  
+Processing  During the purchase process, the user selects one of their accounts, and the balance is 
+checked. If sufficient, the amount for the stocks and the brokerage fee is blocked. The 
+system sets the amount for the purchased stocks and the brokerage fee. The broke rage 
+account is recorded in the system's database and needs only to be retrieved. The stock 
+exchange interface specifies the bank account of the stock owner, and the funds are 
+transferred accordingly.  
+Output  Decrease in customer account balance by the total amount, increase in stock owner's 
+account balance by the stock amount, and increase in brokerage account balance by the 
+brokerage fee amount.  
+Error 
+Handling  If there is an error in setting the account numbers, amounts, or if the stock exchange 
+interface does not specify the stock owner's account number, an appropriate error message 
+is displayed. 
+
+
+38. Managing Interactions between Customer's Bank Accounts and Brokerage 
+Account  
+Title  Managing interactions between customer's bank accounts and their brokerage 
+account  
+Description  The user can transfer funds between their brokerage account and one of their bank 
+accounts.  
+Input  Source account number, desired amount, destination account number  
+Processing  The user selects one of their bank accounts for withdrawal or deposit. The system checks 
+if the source account balance is sufficient. If the balance is sufficient, the transfer 
+continues. If the user selects one of their bank accounts as the source, the br okerage 
+account is automatically chosen as the destination. If the source is the brokerage account, 
+the user selects one of their bank accounts as the destination. The transfer is carried out by 
+the bank interface.  
+Output  Change in the customer's account balances  
+Error 
+Handling  If the transfer fails, an appropriate error message is displayed.
+39. Online Purchase of Stocks and Other Securities by Special Customers  
+Title  Online purchase of stocks and other securities by special customers  
+Description  Special customers can buy stocks and other securities online.  
+Input  Type of stock, number of shares, investment price (specified or limited), maximum price  Title  Online purchase of stocks and other securities by special customers  
+Processing  The user must log into their account in the system. The "special" access type is checked. 
+If the access type is "special," the online purchase feature is enabled. The user selects the 
+desired stock and number of shares. The user sets the investment price (specified or 
+limited). The system checks if the number o f shares is not more than the available shares. 
+The user specifies the source account for payment (Mellat Bank, Saman Bank, brokerage 
+account). The system checks the account balance. If sufficient, the amount is blocked until 
+the final confirmation. The sy stem assigns a unique order number and records the order. 
+Once the purchase is confirmed, the money is withdrawn from the user's account. The 
+purchased shares are added to the user's portfolio and the order report is added to the 
+user's order list.  
+Output  Adding purchased shares to the user's portfolio, adding the order report to the user's order 
+list 
+Error 
+Handling  If any of the following occur, an appropriate error message is displayed: - The user's 
+access type is "regular" - The number of shares exceeds the available shares - The 
+purchased shares are not added to the user's portfolio - The order report is not added  to the 
+user's order list - The order number is not assigned
+40. Online Purchase of Stocks and Other Securities by Brokers  
+Title  Online purchase of stocks and other securities by brokers  
+Description  Brokers can buy stocks and other securities online on behalf of customers.  
+Input  The first online purchase request in the request queue  
+Processing  The system presents the first online purchase request to the broker. If the customer has 
+specified the investment price, the broker sets the price. The broker checks the customer's 
+account balance. If sufficient, the amount is blocked. The system automatically records 
+the purchase requ est. The request status is updated from "in queue" to "completed" after 
+purchase. The money is withdrawn from the customer's account and the purchased shares 
+are added to the customer's portfolio. The order report is added to the list of transactions 
+by th e broker.  
+Output  Adding the order report to the list of transactions by the broker, adding purchased shares 
+to the user's portfolio  
+Error 
+Handling  If any of the following occur, an appropriate error message is displayed: - The order 
+number is not assigned - The purchased shares are not added to the user's portfolio - The 
+order is not added to the user's order list and the list of transactions by the broker
