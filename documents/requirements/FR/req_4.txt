@@ -1,9 +1,11 @@
-Checking Account Balance  Title  Checking Account Balance  
-Description  The balance of each customer's bank account can be retrieved and viewed.  
-Input  Account number, bank name  
-Processing  The user selects one of their bank accounts. The account number and bank name are sent 
-to the bank interface. The balance is retrieved and sent to the system.  
-Output  Account balance  
-Error 
-Handling  If the account balance is not retrieved within a specified time, a new balance request is 
-sent, and an appropriate error message is displayed.
+Title: Checking Account Balance
+
+Description: The balance of each customer's bank account can be securely retrieved and viewed, ensuring data confidentiality and integrity.
+
+Input: Account number, bank name
+
+Processing: The user selects one of their bank accounts. The account number and bank name are securely transmitted to the bank interface. The balance is retrieved from the bank interface and securely transmitted to the system. The result is logged for auditing purposes.
+
+Output: Account balance
+
+Error Handling: If the account balance is not retrieved within a specified time, a new balance request is sent, and an appropriate error message is displayed. The error event is logged for further review.

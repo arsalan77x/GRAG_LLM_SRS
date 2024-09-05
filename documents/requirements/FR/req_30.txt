@@ -1,4 +1,4 @@
-Logging into the System  Title  Logging into the system  
+Title  Logging into the system  
 Description  Users log into their user account.  
 Input  Username, password, and captcha  
 Processing  The user enters their username, password, and captcha. The system checks the username 

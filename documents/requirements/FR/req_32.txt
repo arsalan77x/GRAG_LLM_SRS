@@ -1,4 +1,3 @@
-Providing Links to Related Organizations  
 Title  Providing links to related organizations  
 Description  Allow users to navigate to various stock market organizations through the brokerage 
 system.  

@@ -1,17 +1,11 @@
-Online Purchase of Stocks and Other Securities by Regular and Special 
-Customers  
-Title  Online purchase of stocks and other securities by regular and special customers  
-Description  All customers, both regular and special, can request online purchases.  
-Input  Type of stock, number of shares, investment price (market price, specified, limited), 
-validity date  Title  Online purchase of stocks and other securities by regular and special customers  
-Processing  The user must log into their account in the system. The user selects the desired stock and 
-number of shares. The user sets the investment price (market, specified, limited). The 
-system checks if the number of shares does not exceed the available shares. Th e user 
-specifies the source account for payment (Mellat Bank, Saman Bank, brokerage account). 
-The system checks the account balance. If sufficient, the amount is blocked until the final 
-confirmation. The system assigns a unique order number and records the  order. Each 
-online purchase order is recorded in the user's order list with the status "in queue."  
-Output  Adding the order report to the user's order list  
-Error 
-Handling  If the number of shares exceeds the available shares, an appropriate error message is 
-displayed.
+Title: Online Purchase of Stocks and Other Securities by Regular and Special Customers
+
+Description: All customers, both regular and special, can securely request online purchases of stocks and other securities.
+
+Input: Type of stock, number of shares, investment price (market price, specified, limited), validity date
+
+Processing: The user must securely log into their account in the system. The user selects the desired stock and number of shares. The user sets the investment price (market, specified, limited). The system verifies that the number of shares does not exceed the available shares. The user specifies the source account for payment (Mellat Bank, Saman Bank, brokerage account). The system securely checks the account balance. If sufficient, the amount is blocked until final confirmation. The system assigns a unique order number, records the order, and logs the transaction for auditing purposes. Each online purchase order is recorded in the user's order list with the status "in queue."
+
+Output: Adding the order report to the user's order list.
+
+Error Handling: If the number of shares exceeds the available shares, or if there is an error in processing the order, an appropriate error message is displayed, and the error is logged for further review. The system ensures that no partial transactions occur if an error is encountered.

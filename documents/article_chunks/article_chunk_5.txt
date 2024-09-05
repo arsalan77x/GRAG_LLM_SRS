@@ -1,13 +1,7 @@
 Chunk 6:
- packagesControl
-Modifications to software packages shall be discouraged, limited to 
-necessary changes and all changes shall be strictly controlled.
-A.14.2.5Secure system engi -
-neering principlesControl
-Principles for engineering secure systems shall be established, 
-documented, maintained and applied to any information system implementation efforts. 
+ system implementation efforts. 
 Table A.1  (continued)
-18 © ISO/IEC 2013 – All rights reserved
+18  ISO/IEC 2013  All rights reserved
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -36,16 +30,16 @@ A.14.3.1 Protection of test dataControl
 Test data shall be selected carefully, protected and controlled.
 A.15  Supplier relationships
 A.15.1 Information security in supplier relationships
-Objective: To ensure protection of the organization’s assets that is accessible by suppliers.
+Objective: To ensure protection of the organizations assets that is accessible by suppliers.
 A.15.1.1Information security 
 policy for supplier relationshipsControl
 Information security requirements for mitigating the risks associ -
-ated with supplier’s access to the organization’s assets shall be 
+ated with suppliers access to the organizations assets shall be 
 agreed with the supplier and documented.
 A.15.1.2Addressing security within supplier agree -
 mentsControl
 All relevant information security requirements shall be established 
-and agreed with each supplier that may access, process, store, communicate, or provide IT infrastructure components for, the organization’s information.
+and agreed with each supplier that may access, process, store, communicate, or provide IT infrastructure components for, the organizations information.
 A.15.1.3Information and com -
 munication technology supply chainControl
 Agreements with suppliers shall include requirements to address 
@@ -61,7 +55,7 @@ A.15.2.2Managing changes to supplier servicesControl
 Changes to the provision of services by suppliers, including 
 maintaining and improving existing information security policies, procedures and controls, shall be managed, taking account of the criticality of business information, systems and processes involved and re-assessment of risks. 
 Table A.1  (continued)
-© ISO/IEC 2013 – All rights reserved 19
+ ISO/IEC 2013  All rights reserved 19
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -80,7 +74,7 @@ A.16.1.2Reporting information security eventsControl
 Information security events shall be reported through appropriate 
 management channels as quickly as possible.
 A.16.1.3Reporting information security weaknessesControl
-Employees and contractors using the organization’s information 
+Employees and contractors using the organizations information 
 systems and services shall be required to note and report any 
 observed or suspected information security weaknesses in sys -
 tems or services.
@@ -104,7 +98,7 @@ tification, collection, acquisition and preservation of information,
 which can serve as evidence.
 A.17 Information security aspects of business continuity management
 A.17.1  Information security continuity
-Objective: Information security continuity shall be embedded in the organization’s business continu -
+Objective: Information security continuity shall be embedded in the organizations business continu -
 ity management systems.
 A.17.1.1Planning information 
 security continuityControl
@@ -119,7 +113,7 @@ tain processes, procedures and controls to ensure the required
 level of continuity for information security during an adverse situa -
 tion. 
 Table A.1  (continued)
-20 © ISO/IEC 2013 – All rights reserved
+20  ISO/IEC 2013  All rights reserved
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -146,7 +140,7 @@ cable legislation and
 contractual require -
 mentsControl
 All relevant legislative statutory, regulatory, contractual require -
-ments and the organization’s approach to meet these requirements 
+ments and the organizations approach to meet these requirements 
 shall be explicitly identified, documented and kept up to date for each information system and the organization.
 A.18.1.2Intellectual property rightsControl
 Appropriate procedures shall be implemented to ensure compli -
@@ -169,11 +163,11 @@ Objective: To ensure that information security is implemented and operated in ac
 organizational policies and procedures.
 A.18.2.1Independent review of 
 information securityControl
-The organization’s approach to managing information security and 
+The organizations approach to managing information security and 
 its implementation (i.e. control objectives, controls, policies, pro -
 cesses and procedures for information security) shall be reviewed independently at planned intervals or when significant changes occur. 
 Table A.1  (continued)
-© ISO/IEC 2013 – All rights reserved 21
+ ISO/IEC 2013  All rights reserved 21
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -186,10 +180,10 @@ Managers shall regularly review the compliance of information
 processing and procedures within their area of responsibility with the appropriate security policies, standards and any other security requirements.
 A.18.2.3Technical compliance reviewControl
 Information systems shall be regularly reviewed for compliance 
-with the organization’s information security policies and stand -
+with the organizations information security policies and stand -
 ards. 
 Table A.1  (continued)
-22 © ISO/IEC 2013 – All rights reserved
+22  ISO/IEC 2013  All rights reserved
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -197,16 +191,16 @@ Not for Resale, 11/16/2013 21:40:53 MST
 No reproduction or networking permitted without license from IHS
 --`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
 Bibliography
-[1] ISO/IEC 27002:2013, Information technology — Security Techniques — Code of practice for 
+[1] ISO/IEC 27002:2013, Information technology  Security Techniques  Code of practice for 
 information security controls
-[2] ISO/IEC  27003, Information technology — Security techniques — Information security management 
+[2] ISO/IEC  27003, Information technology  Security techniques  Information security management 
 system implementation guidance
-[3] ISO/IEC 27004, Information technology — Security techniques — Information security 
-management  — Measurement
-[4] ISO/IEC  270 05, Information technology — Security techniques — Information security risk management
-[5] ISO 31000:2009, Risk management  — Principles and guidelines
-[6] ISO/IEC Directives, Part 1, Consolidated ISO Supplement – Procedures specific to ISO , 2012 
-© ISO/IEC 2013 – All rights reserved 23
+[3] ISO/IEC 27004, Information technology  Security techniques  Information security 
+management   Measurement
+[4] ISO/IEC  270 05, Information technology  Security techniques  Information security risk management
+[5] ISO 31000:2009, Risk management   Principles and guidelines
+[6] ISO/IEC Directives, Part 1, Consolidated ISO Supplement  Procedures specific to ISO , 2012 
+ ISO/IEC 2013  All rights reserved 23
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -214,7 +208,7 @@ Not for Resale, 11/16/2013 21:40:53 MST
 No reproduction or networking permitted without license from IHS
 --`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
  
-© ISO/IEC 2013 – All rights reservedICS 35.040
+ ISO/IEC 2013  All rights reservedICS35.040
 Price based on 23 pages
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
@@ -244,5 +238,10 @@ Vendor must have at least 5 Years of experience in the area of application devel
 the Financial Industry . New Vendors without prior e xperience shall be required to present credentials 
 and their application shall undergo a thorough and rigorous evaluation process by the Exchange.  
 2.1.4  Profitability  
-The Company should be profit making for at least  last
+The Company should be profit making for at least  last three years.  
+2.1.5  Skilled Resources  
+Vendor should have sufficient pool of qualified and skilled technical resources  having business and 
+IT graduates  or Certified  with at least 2-3 years of application development or system support 
+experience in the Capital Market  Industry . 
+Sufficient pool of qualif ied resource is defined as a group having two professionals as per
 

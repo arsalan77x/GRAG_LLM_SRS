@@ -1,0 +1,20 @@
+Title
+Canceling orders in the queue
+
+Description
+The user can cancel orders in their order list that are in the "in queue" status.
+
+Input
+One of the orders in the user's order list
+
+Processing
+All orders, regardless of status, are displayed to the user. The user selects the order to cancel. The selected order is removed from the online order queue and marked as "canceled."
+
+Output
+Canceling one of the orders in the queue
+
+Error Handling
+If the canceled order is not removed from the online order queue, the system automatically retries the cancellation without notifying the user.
+
+**Processing: All orders with the "in queue" status are displayed to the user.
+**Error handling: If the canceled order is not removed from the online order queue, an appropriate error message is displayed. The user is asked to resubmit the cancellation request. (obvious logic)

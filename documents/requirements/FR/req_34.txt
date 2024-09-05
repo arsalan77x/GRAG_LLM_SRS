@@ -1,4 +1,3 @@
-Real-Time Market Data
 
 Title: Real-Time Market Data
 Description: Display live stock prices, charts, and market news to keep users informed of current market conditions.

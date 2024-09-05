@@ -1,0 +1,57 @@
+SUMMARY:
+- Total related contents found: 8
+- Complete violations: 0
+- Partial violations: 0
+- Compliant aspects: 8
+
+DETAILED ANALYSIS:
+
+1. 
+   - Relationship: Compliance
+   - Content Reference: User Interaction
+   - Reason: The requirement specifies that users can edit purchase orders in the "in queue" status, which aligns with the described user interaction capabilities.
+   - Suggested Solution: No action needed as this aspect is compliant.
+
+2. 
+   - Relationship: Compliance
+   - Content Reference: System Processing
+   - Reason: The requirement states that all purchase orders with the "in queue" status are displayed to the user, which is consistent with the system processing described.
+   - Suggested Solution: No action needed as this aspect is compliant.
+
+3. 
+   - Relationship: Compliance
+   - Content Reference: Validation Checks
+   - Reason: The requirement includes a validation check to ensure the new number of shares does not exceed available shares, which is in line with the validation checks outlined.
+   - Suggested Solution: No action needed as this aspect is compliant.
+
+4. 
+   - Relationship: Compliance
+   - Content Reference: Output and Changes
+   - Reason: The requirement mentions that changes in characteristics of the purchase orders are reflected, which aligns with the output and changes described.
+   - Suggested Solution: No action needed as this aspect is compliant.
+
+5. 
+   - Relationship: Compliance
+   - Content Reference: Error Handling
+   - Reason: The requirement includes error handling for exceeding available shares and for errors in entering information, which matches the error handling mechanisms described.
+   - Suggested Solution: No action needed as this aspect is compliant.
+
+6. 
+   - Relationship: Compliance
+   - Content Reference: Error Handling
+   - Reason: The requirement specifies that if there is an error in entering information, the field is cleared and an error message is displayed, which is consistent with the error handling described.
+   - Suggested Solution: No action needed as this aspect is compliant.
+
+7. 
+   - Relationship: Compliance
+   - Content Reference: User Interaction
+   - Reason: The editable fields specified in the requirement (number of shares, investment price, maximum price, validity date) align with the user interaction capabilities outlined.
+   - Suggested Solution: No action needed as this aspect is compliant.
+
+8. 
+   - Relationship: Compliance
+   - Content Reference: System Processing
+   - Reason: The requirement's emphasis on updating the order if there are no errors aligns with the system processing described.
+   - Suggested Solution: No action needed as this aspect is compliant.
+
+Overall, the requirement for editing purchase orders in the queue is fully compliant with the standards and best practices outlined in the provided content.

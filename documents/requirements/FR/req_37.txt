@@ -1,6 +1,0 @@
-Title: Funds Transfer
-Description: Secure transfer of funds between bank accounts and brokerage accounts, ensuring seamless transactions.
-Input: User account details, bank account numbers, transfer amount, authentication credentials
-Processing: The system validates user credentials, verifies the availability of funds, and processes the transfer request securely between specified accounts.
-Output: Confirmation of successful fund transfer and updated account balances.
-Error Handling: Display an appropriate error message if the transfer fails due to insufficient funds, invalid account details, or connectivity issues.

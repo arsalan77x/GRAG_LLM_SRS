@@ -1,9 +1,5 @@
 Chunk 5:
-2013 – All rights reserved 13
-Copyright International Organization for Standardization 
-Provided by IHS under license with ISO 
-Licensee=University of Alberta/5966844001, User=john, albert
-Not for Resale, 11/16/2013 21:40:53 MST
+ 21:40:53 MST
 No reproduction or networking permitted without license from IHS
 --`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
 A.9.4.3Password manage -
@@ -31,7 +27,7 @@ A policy on the use, protection and lifetime of cryptographic keys
 shall be developed and implemented through their whole lifecycle.
 A.11  Physical and environmental security
 A.11.1 Secure areas
-Objective: To prevent unauthorized physical access, damage and interference to the organization’s information and information processing facilities.
+Objective: To prevent unauthorized physical access, damage and interference to the organizations information and information processing facilities.
 A.11.1.1Physical security 
 perimeterControl
 Security perimeters shall be defined and used to protect areas that 
@@ -53,7 +49,7 @@ A.11.1.6Delivery and loading areasControl
 Access points such as delivery and loading areas and other points 
 where unauthorized persons could enter the premises shall be controlled and, if possible, isolated from information processing facilities to avoid unauthorized access. 
 Table A.1  (continued)
-14 © ISO/IEC 2013 – All rights reserved
+14  ISO/IEC 2013  All rights reserved
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -62,7 +58,7 @@ No reproduction or networking permitted without license from IHS
 --`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
 A.11.2  Equipment
 Objective: To prevent loss, damage, theft or compromise of assets and interruption to the organiza -
-tion’s operations.
+tions operations.
 A.11.2.1Equipment siting and 
 protectionControl
 Equipment shall be sited and protected to reduce the risks from 
@@ -84,7 +80,7 @@ without prior authorization.
 A.11.2.6Security of equipment and assets off-prem -
 isesControl
 Security shall be applied to off-site assets taking into account the 
-different risks of working outside the organization’s premises.
+different risks of working outside the organizations premises.
 A.11.2.7Secure disposal or re-use of equipmentControl
 All items of equipment containing storage media shall be verified 
 to ensure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.
@@ -107,7 +103,7 @@ Changes to the organization, business processes, information pro -
 cessing facilities and systems that affect information security shall 
 be controlled. 
 Table A.1  (continued)
-© ISO/IEC 2013 – All rights reserved 15
+ ISO/IEC 2013  All rights reserved 15
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -164,7 +160,7 @@ ware on operational systems.
 A.12.6  Technical vulnerability management
 Objective: To prevent exploitation of technical vulnerabilities. 
 Table A.1  (continued)
-16 © ISO/IEC 2013 – All rights reserved
+16  ISO/IEC 2013  All rights reserved
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -174,7 +170,7 @@ No reproduction or networking permitted without license from IHS
 A.12.6.1Management of techni -
 cal vulnerabilitiesControl
 Information about technical vulnerabilities of information systems 
-being used shall be obtained in a timely fashion, the organization’s exposure to such vulnerabilities evaluated and appropriate meas -
+being used shall be obtained in a timely fashion, the organizations exposure to such vulnerabilities evaluated and appropriate meas -
 ures taken to address the associated risk.
 A.12.6.2Restrictions on soft -
 ware installationControl
@@ -216,7 +212,7 @@ tion between the organization and external parties.
 A.13.2.3 Electronic messagingControlInformation involved in electronic messaging shall be appropri -
 ately protected. 
 Table A.1  (continued)
-© ISO/IEC 2013 – All rights reserved 17
+ ISO/IEC 2013  All rights reserved 17
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -226,7 +222,7 @@ No reproduction or networking permitted without license from IHS
 A.13.2.4Confidentiality or non-
 disclosure agreementsControl
 Requirements for confidentiality or non-disclosure agreements 
-reflecting the organization’s needs for the protection of informa -
+reflecting the organizations needs for the protection of informa -
 tion shall be identified, regularly reviewed and documented.
 A.14   System acquisition, development and maintenance
 A.14.1 Security requirements of information systems
@@ -262,5 +258,11 @@ changesControl
 When operating platforms are changed, business critical applica -
 tions shall be reviewed and tested to ensure there is no adverse 
 impact on organizational operations or security.
-A.14.2.4Restrictions on changes to software
+A.14.2.4Restrictions on changes to software packagesControl
+Modifications to software packages shall be discouraged, limited to 
+necessary changes and all changes shall be strictly controlled.
+A.14.2.5Secure system engi -
+neering principlesControl
+Principles for engineering secure systems shall be established, 
+documented, maintained and applied to any information
 

@@ -1,0 +1,86 @@
+# Entities Related to Registering a New Member in the System
+
+The process of registering a new member in the system involves several critical entities that ensure the successful creation of a user account. Below, we outline these entities based on the provided description and input requirements.
+
+## 1. **Personal Details**
+The registration process requires comprehensive personal information from the new member, which includes:
+- **Name**
+- **Surname**
+- **Father's Name**
+- **ID Number**
+- **ID Serial Number**
+- **Birth Date**
+- **Birth Place**
+- **National Code**
+- **Education**
+- **Gender**
+- **Marital Status**
+
+This information is essential for accurately identifying the member and creating their user account [Data: Reports (73, 74, +more)].
+
+## 2. **Contact Information**
+To facilitate communication and account management, the following contact details must be provided:
+- **Phone Number**
+- **Address**
+- **Email**
+
+These details are crucial for maintaining contact with the new member and providing necessary updates [Data: Reports (73, 74, +more)].
+
+## 3. **Bank Details**
+Verification of financial identity is a key component of the registration process. The required bank details include:
+- **Account Number**
+- **Account Type** (e.g., brokerage-Mellat, Saman)
+
+The system checks the validity of these details through the bank, which is vital for ensuring secure financial transactions and compliance with regulations [Data: Reports (73, 74, +more)].
+
+## 4. **User Details**
+For account access and security, the following user details are necessary:
+- **Username**
+- **Password**
+- **Repeat Password**
+- **Security Question and Answer**
+
+These elements are critical for account security and access management, ensuring that only authorized users can access their accounts [Data: Reports (73, 74, +more)].
+
+## 5. **Processing and Verification**
+The system plays a crucial role in verifying the entered information for correctness. This includes:
+- Checking the validity of bank account details to prevent fraud and ensure accurate registration.
+- Confirming that the security question is answered correctly.
+
+If all information is verified without errors, the registration date is recorded, and customer registration is confirmed [Data: Reports (72, 75, +more)].
+
+## 6. **Error Handling**
+The registration process includes error handling procedures to manage incorrect information entries. If errors occur, such as incorrect formats or incorrect answers to security questions, the system allows brokers to clear the incorrect information and re-enter the data. This ensures data integrity and successful completion of the registration process [Data: Reports (29, 72, +more)].
+
+## Conclusion
+The registration of a new member in the system is a multifaceted process that requires careful attention to various entities, including personal details, contact information, bank details, user credentials, and robust error handling mechanisms. Each of these components plays a vital role in ensuring a secure and efficient registration experience for new members.
+
+The registration process involves collecting personal details such as name, surname, ID number, and birth date, which are essential for creating a user account [Data: Reports (73, 74, +more)].
+Contact information including phone number, address, and email is required for communication and account management purposes [Data: Reports (73, 74, +more)].
+Bank details, including account number and account type, are verified for validity through the bank, which is crucial for ensuring secure financial transactions [Data: Reports (73, 74, +more)].
+User details such as username and password are necessary for account access and security, highlighting the importance of secure account management [Data: Reports (73, 74, +more)].
+The system checks the correctness of the entered information and validates the bank account details, which is vital for confirming customer registration [Data: Reports (73, 74, +more)].
+Error handling procedures are in place to manage incorrect information entries, allowing brokers to correct errors and re-enter data as needed [Data: Reports (73, 74, +more)].
+Contact information such as phone number, address, and email is required for communication purposes and to facilitate account management. This data is essential for maintaining contact with the new member and providing necessary updates [Data: Reports (33)]
+User details, including username, password, and security question, are vital for account security and access control. The correct setup of these details ensures that the member can securely access their account [Data: Reports (33)]
+The system verifies the entered information for correctness, including checking bank account details for validity. This verification process is essential to prevent errors and ensure that only valid registrations are confirmed [Data: Reports (33)]
+Error handling procedures are in place to manage incorrect entries, allowing brokers to clear and re-enter information if errors occur. This ensures that the registration process can be completed successfully despite initial mistakes [Data: Reports (33)]
+Contact information including phone number, address, and email must be provided by the broker to facilitate communication and account management [Data: Reports (75)]
+Bank details, including account number and account type, are required to verify the financial identity of the new member and ensure compliance with banking regulations [Data: Reports (75)]
+User details such as username, password, and security question are critical for account security and user authentication in the system [Data: Reports (75)]
+The system verifies the entered information for correctness, including checking bank account details for validity, which is crucial for preventing fraud and ensuring accurate registration [Data: Reports (75)]
+Error handling procedures are in place to manage incorrect information entry, allowing brokers to correct errors and re-enter information, which is vital for maintaining data integrity [Data: Reports (75)]
+Contact information such as phone number, address, and email must be provided by the broker during the registration process. This information is essential for communication and account management purposes [Data: Reports (40, 39, 44)]
+Bank details, including account number and account type, are required to verify the financial identity of the new member. The validity of these details is checked through the bank, which is a critical step in the registration process [Data: Reports (40, 39, 44)]
+User details, including username, password, and security question, are necessary for account access and security. The correct answer to the security question is required to confirm the registration, highlighting the importance of security in the registration process [Data: Reports (40, 39, 44)]
+The system records the registration date and confirms successful customer registration if all information is verified correctly. This step is vital for maintaining accurate records and ensuring compliance with regulatory requirements [Data: Reports (40, 39, 44)]
+Contact information including phone number, address, and email is required for the registration process, ensuring that the broker can communicate effectively with the new member [Data: Reports (72)]
+Bank details such as account number and account type are necessary for verifying the financial identity of the new member, which is crucial for compliance and security [Data: Reports (72)]
+User details including username, password, and security question are critical for account security and access management, ensuring that only authorized users can access their accounts [Data: Reports (72)]
+The system verifies the entered information for correctness and checks the validity of bank account details through the bank, which is vital for preventing fraud and ensuring accurate registration [Data: Reports (72)]
+Error handling procedures are in place to manage incorrect information entry, allowing brokers to correct errors and re-enter information, which is essential for maintaining data integrity [Data: Reports (72)]
+Contact information including phone number, address, and email is required for communication and account management purposes during the registration process [Data: Reports (29)]
+Bank details such as account number and account type are necessary for verifying the financial identity of the new member and ensuring compliance with banking regulations [Data: Reports (29)]
+User details including username, password, and security question are critical for account security and user authentication in the system [Data: Reports (29)]
+The system verifies the entered information for correctness, including checking bank account details for validity, which is crucial for preventing fraud and ensuring accurate registration [Data: Reports (29)]
+Error handling procedures are in place to manage incorrect information entry, allowing brokers to correct errors and re-enter data, which is vital for maintaining data integrity [Data: Reports (29)]

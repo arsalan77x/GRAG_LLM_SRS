@@ -1,5 +1,4 @@
 
-import os
 
 
 def prompt_cross_reference_check(reference_text, is_prompt_strict = True):
@@ -15,8 +14,8 @@ def prompt_cross_reference_check(reference_text, is_prompt_strict = True):
     Given a user input which is a software requirement, follow these steps:
 
     1. CONTENT IDENTIFICATION:
-    - Identify all content in the trained document that is {is_directly}related to the user input.
-    - If no related content is found, state this clearly.
+    - Identify all content in the trained document that is {is_directly} related to the user input.
+    - If no {is_directly} related content is found, state this clearly.
 
     2. ANALYSIS:
     - For each piece of related content, analyze its relationship to the user input.
@@ -40,7 +39,7 @@ def prompt_cross_reference_check(reference_text, is_prompt_strict = True):
     Suggested Solution: [If applicable, provide a brief suggestion for resolving the violation]
 
     4. NO RELATED CONTENT:
-    If no related content is found, output:
+    If no {is_directly} related content is found, output:
     "No directly related content found in the trained document for this requirement."
 
     Always strive for accuracy and clarity in your analysis.

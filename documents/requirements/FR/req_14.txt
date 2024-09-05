@@ -14,4 +14,4 @@ from the user's portfolio
 Error 
 Handling  If any of the following occur, an appropriate error message is displayed: - The order 
 number is not assigned - The sold shares are not removed from the user's portfolio - The 
-order is not added to the user's order list and the list of transactions by the b roker
+order is not added to the user's order list and the list of transactions by the broker.

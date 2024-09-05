@@ -1,0 +1,43 @@
+SUMMARY:
+- Total related contents found: 6
+- Complete violations: 0
+- Partial violations: 1
+- Compliant aspects: 5
+
+DETAILED ANALYSIS:
+
+1. 
+   - Relationship: Compliance
+   - Content Reference: Overview of Checking Account Balance Functionality
+   - Reason: The description aligns with the functionality of retrieving and viewing the balance of bank accounts, which is essential for effective account management.
+   - Suggested Solution: None needed as it is compliant.
+
+2. 
+   - Relationship: Compliance
+   - Content Reference: Key Entities Related to Checking Account Balance
+   - Reason: The input requirements (account number and bank name) are correctly identified as necessary for retrieving the account balance.
+   - Suggested Solution: None needed as it is compliant.
+
+3. 
+   - Relationship: Compliance
+   - Content Reference: Processing Steps
+   - Reason: The processing steps accurately describe the user interaction of selecting a bank account and sending the required data to the bank interface.
+   - Suggested Solution: None needed as it is compliant.
+
+4. 
+   - Relationship: Compliance
+   - Content Reference: Output
+   - Reason: The output of the account balance is clearly stated, which is a key aspect of the functionality.
+   - Suggested Solution: None needed as it is compliant.
+
+5. 
+   - Relationship: Partial Violation
+   - Content Reference: Error Handling Mechanism
+   - Reason: While the error handling mechanism is described, it could benefit from more detail regarding the specific time frame for balance retrieval and the nature of the error messages displayed.
+   - Suggested Solution: Enhance the error handling section by specifying the time frame for balance retrieval and providing examples of error messages to improve clarity and user experience.
+
+6. 
+   - Relationship: Compliance
+   - Content Reference: Implications for Users
+   - Reason: The importance of seamless interaction and robust error handling is highlighted, which aligns with user experience best practices.
+   - Suggested Solution: None needed as it is compliant.

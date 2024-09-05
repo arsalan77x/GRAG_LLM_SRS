@@ -1,5 +1,4 @@
 Chunk 3:
-6.1 Actions to address risks and opportunities
 6.1.1 General
 When planning for the information security management system, the organization shall consider the 
 issues referred to in 4.1  and t he requirement s refer red to in 4.2  and determine the risks and opportunities 
@@ -19,7 +18,7 @@ a) establishes and maintains information security risk criteria that include:
 2) criteria for performing information security risk assessments;
 b) ensures that repeated information security risk assessments produce consistent, valid and 
 comparable results; 
-© ISO/IEC 2013 – All rights reserved 3
+ ISO/IEC 2013  All rights reserved 3
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -54,11 +53,11 @@ controls listed in Annex A  are not exhaustive and additional control objectives
 d) produce a Statement of Applicability that contains the necessary controls (see 6.1.3  b) and c)) and 
 justification for inclusions, whether they are implemented or not, and the justification for exclusions of controls from Annex A ;
 e) formulate an information security risk treatment plan; and
-f) obtain risk owners’ approval of the information security risk treatment plan and acceptance of the residual information security risks.
+f) obtain risk owners approval of the information security risk treatment plan and acceptance of the residual information security risks.
 The organization shall retain documented information about the information security risk treatment process.
 NOTE The information security risk assessment and treatment process in this International Standard aligns 
 with the principles and generic guidelines provided in ISO 31000 [5]. 
-4 © ISO/IEC 2013 – All rights reserved
+4  ISO/IEC 2013  All rights reserved
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -94,9 +93,9 @@ d) retain appropriate documented information as evidence of competence.
 NOTE Applicable actions may include, for example: the provision of training to, the mentoring of, or the re-
 assignment of current employees; or the hiring or contracting of competent persons.
 7.3 Awareness
-Persons doing work under the organization’s control shall be aware of:
+Persons doing work under the organizations control shall be aware of:
 a) the information security policy; 
-© ISO/IEC 2013 – All rights reserved 5
+ ISO/IEC 2013  All rights reserved 5
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -115,7 +114,7 @@ d) who shall communicate; and
 e) the processes by which communication shall be effected.
 7.5 Documented information
 7.5.1 General
-The organization’s information security management system shall include:a) documented information required by this International Standard; and
+The organizations information security management system shall include:a) documented information required by this International Standard; and
 b) documented information determined by the organization as being necessary for the effectiveness of 
 the information security management system.
 NOTE The extent of documented information for an information security management system can differ 
@@ -133,13 +132,13 @@ Documented information required by the information security management system an
 International Standard shall be controlled to ensure:
 a) it is available and suitable for use, where and when it is needed; and
 b) it is adequately protected (e.g. from loss of confidentiality, improper use, or loss of integrity). 
-6 © ISO/IEC 2013 – All rights reserved
+6  ISO/IEC 2013  All rights reserved
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
 Not for Resale, 11/16/2013 21:40:53 MST
 No reproduction or networking permitted without license from IHS
---`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
+ISO/IEC 27001:2013(E)
 For the control of documented information, the organization shall address the following activities, 
 as applicable:
 c) distribution, access, retrieval and use;
@@ -173,7 +172,7 @@ risk treatment.
 9.1 Monitoring, measurement, analysis and evaluation
 The organization shall evaluate the information security performance and the effectiveness of the information security management system.
 The organization shall determine:a) what needs to be monitored and measured, including information security processes and controls; 
-© ISO/IEC 2013 – All rights reserved 7
+ ISO/IEC 2013  All rights reserved 7
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -193,7 +192,7 @@ measurement results.
 The organization shall conduct internal audits at planned intervals to provide information on whether 
 the information security management system:
 a) conforms to
-1) the organization’s own requirements for its information security management system; and
+1) the organizations own requirements for its information security management system; and
 2) the requirements of this International Standard;
 b) is effectively implemented and maintained.
 The organization shall:c) plan, establish, implement and maintain an audit programme(s), including the frequency, methods, 
@@ -203,10 +202,16 @@ e) select auditors and conduct audits that ensure objectivity and the impartiali
 f) ensure that the results of the audits are reported to relevant management; and
 g) retain documented information as evidence of the audit programme(s) and the audit results.
 9.3 Management review
-Top management shall review the organization’s information security management system at planned intervals to ensure its continuing suitability, adequacy and effectiveness.
+Top management shall review the organizations information security management system at planned intervals to ensure its continuing suitability, adequacy and effectiveness.
 The management review shall include consideration of:a) the status of actions from previous management reviews;
 b) changes in external and internal issues that are relevant to the information security management 
 system;
 c) feedback on the information security performance, including trends in:
-1) nonconformities and
+1) nonconformities and corrective actions;
+2) monitoring and measurement results;
+3) audit results; and 
+8  ISO/IEC 2013  All rights reserved
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee
 

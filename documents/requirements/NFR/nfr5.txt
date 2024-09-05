@@ -1,8 +1,17 @@
 Authorization
-Authorization determines what actions a user is permitted to perform and which resources they can
-access. System resources include files, databases, registry keys, configuration settings, etc. Key
-considerations for authorization include:
-• Access Control: Users must not be able to access resources without proper authentication.
-• Post-Logout Access Control: Users must not be able to access resources after logging out.
-• Access Level Management: Access to resources must be managed according to user access
-levels.
+Authorization determines what actions a user is permitted to perform and which resources they can access. System resources include files, databases, registry keys, configuration settings, APIs, and other sensitive data. Proper authorization ensures that users only have access to the resources and functionality appropriate for their role and that unauthorized users are prevented from accessing sensitive information. Key considerations for authorization include:
+
+Access Control:
+Users must not be able to access resources without proper authentication. The system must enforce strict role-based access control (RBAC), ensuring that only users with appropriate roles or privileges can perform specific actions or access certain resources. Authorization checks should occur for every request, not just at login, to ensure that users do not gain unauthorized access by manipulating URLs, tokens, or session states.
+
+Post-Logout Access Control:
+Users must not be able to access resources after logging out. Once a user logs out, all session tokens or credentials should be invalidated, and any cached session data should be cleared. The system should ensure that subsequent attempts to access protected resources without re-authentication are denied.
+
+Access Level Management:
+Access to resources must be managed according to user access levels. Different roles (e.g., administrator, regular user, guest, broker) should have clearly defined and distinct permissions. These roles must be easily configurable by administrators to grant or revoke access rights without affecting other users. Access levels should be reviewed periodically to ensure proper alignment with organizational requirements.
+
+Least Privilege Principle:
+The system should adhere to the least privilege principle, meaning users should only have the minimum permissions necessary to perform their assigned tasks. No user should have access to more resources than they require to prevent abuse or accidental misuse of system functionalities.
+
+Separation of Duties:
+Sensitive actions, such as approving large financial transactions or modifying system configurations, should require the approval of more than one user with appropriate roles (e.g., an initiator and an approver). This separation of duties prevents unauthorized actions by a single user and ensures oversight in critical operations.

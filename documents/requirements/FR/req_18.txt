@@ -1,4 +1,3 @@
-Canceling Orders in the Queue  
 Title  Canceling orders in the queue  
 Description  The user can cancel orders in their order list that are in the "in queue" status.  
 Input  One of the orders in the user's order list  

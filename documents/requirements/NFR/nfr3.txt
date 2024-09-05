@@ -1,13 +1,29 @@
-Data Validation
-Data validation involves reviewing, filtering, and removing malicious input to ensure data security. The
-following are common attacks mitigated by input validation:
-• SQL Injection: This attack exploits vulnerabilities in the application's data validation process,
-allowing attackers to execute database commands. It occurs when user input is used in SQL
-queries without proper validation, enabling attackers to perform actions like impersonation,
-altering or deleting data, and denial of service.
-• Buffer Overflow: A buffer is a temporary storage area in memory. If an attacker inputs data
-exceeding the buffer's capacity, it may cause unpredictable behavior, including denial of service
-or code injection attacks.
-• Code Injection: This attack aims to exploit web applications by injecting malicious code. The
-attacker uses the application to steal user information, such as login credentials and banking
-information.
+Data validation
+Data validation involves reviewing, filtering, and removing malicious input to ensure data security and maintain system integrity. Proper input validation protects the system from a wide range of common attacks and vulnerabilities by ensuring that user input is properly sanitized and conforms to expected formats. The following are common attacks mitigated by input validation:
+
+SQL Injection:
+This attack exploits vulnerabilities in the application's data validation process, allowing attackers to execute unauthorized SQL commands. It occurs when user input is embedded in SQL queries without proper validation or sanitization, enabling attackers to impersonate users, alter or delete data, or perform denial-of-service attacks. Input validation should ensure that all SQL queries are parameterized, and user inputs are sanitized to prevent SQL injection attacks.
+
+Buffer Overflow:
+A buffer overflow occurs when input data exceeds the allocated buffer size in memory, leading to unpredictable behavior such as denial of service, crashes, or code execution. Proper input validation must include size checks for user inputs, ensuring that all inputs are within expected bounds to prevent buffer overflows and other memory-based attacks.
+
+Code Injection:
+Code injection attacks involve injecting malicious code into an application to exploit vulnerabilities in its input validation process. These attacks can lead to data theft, unauthorized access, or system compromise. To mitigate code injection, input should be strictly validated against predefined patterns (e.g., escaping special characters) and ensure only allowed data types are processed.
+
+Cross-Site Scripting (XSS):
+Cross-site scripting allows attackers to inject malicious scripts into web pages viewed by other users. This can lead to session hijacking, defacement, or theft of sensitive information. Input validation must ensure that any user-supplied data that is rendered on a webpage is properly sanitized and encoded to prevent XSS attacks.
+
+Cross-Site Request Forgery (CSRF):
+In CSRF attacks, an attacker tricks a user into executing unwanted actions on a web application in which they are authenticated. Input validation must ensure that each sensitive transaction is accompanied by proper anti-CSRF tokens to verify the legitimacy of the request.
+
+File Upload Vulnerabilities:
+When users are allowed to upload files, attackers may attempt to upload malicious files to exploit the system. Input validation for file uploads must enforce strict controls on file types, sizes, and content. Files should be scanned for malware, and uploads should be stored outside of web-accessible directories to prevent unauthorized access.
+
+XML External Entity (XXE) Attacks:
+XXE attacks exploit vulnerabilities in XML parsers that process untrusted user input. By injecting malicious XML data, attackers can retrieve sensitive information or perform server-side request forgery (SSRF). Proper validation and disabling of external entity processing should be implemented for XML data to prevent XXE attacks.
+
+Email and URL Validation:
+When accepting inputs like email addresses or URLs, attackers may provide malformed or malicious entries to exploit vulnerabilities in downstream systems. Input validation must ensure that emails and URLs conform to a safe and valid format before being processed.
+
+Input Format and Length Validation:
+For all inputs, including text, numbers, dates, and more, the system must enforce strict validation on format, length, and character type. This prevents inputs like overlong data, special characters, or unsupported formats that could exploit weaknesses in the application logic.

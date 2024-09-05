@@ -1,12 +1,12 @@
-Online Sale of Stocks and Other Securities by Special Customers  
-Title  Online sale of stocks and other securities by special customers  
-Description  Special customers can sell their stocks and other securities online.  
-Input  Type of stock, number of shares, investment price, minimum price  
-Processing  The user must log into their account in the system. The "special" access type is checked. If 
-the access type is "special," the online sale feature is enabled. The user selects the desired 
-stock and number of shares. The user sets the investment price (specified or limited), and 
-the minimum price. The system checks if the number of shares does not exceed the user's 
-available shares. The user s pecifies the destination account for payment (Mellat Bank, 
-Saman Bank, brokerage account). The system automatically records the sale request. The 
-system assigns a unique order number and records the order. The order is recorded in the 
-user's order list.
+Title: Online Sale of Stocks and Other Securities by Special Customers
+
+Description: Special customers can securely sell their stocks and other securities online.
+
+Input: Type of stock, number of shares, investment price (specified or limited), minimum price
+
+Processing: The user must securely log into their account in the system. The "special" access type is checked. If the access type is "special," the online sale feature is enabled. The user selects the desired stock and number of shares. The user sets the investment price (specified or limited) and the minimum price. The system verifies that the number of shares does not exceed the user's available shares. The user specifies the destination account for payment (Mellat Bank, Saman Bank, brokerage account). The system securely records the sale request, assigns a unique order number, and logs the transaction for auditing purposes. The order is recorded in the user's order list.
+
+Output: The order report is added to the user's order list.
+
+Error Handling: If the number of shares exceeds the user's available shares or if there is an issue with processing the sale request, an appropriate error message is displayed, and the error is logged for further review.
+

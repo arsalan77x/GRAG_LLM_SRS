@@ -1,18 +1,13 @@
 Chunk 7:
- three years.  
-2.1.5  Skilled Resources  
-Vendor should have sufficient pool of qualified and skilled technical resources  having business and 
-IT graduates  or Certified  with at least 2-3 years of application development or system support 
-experience in the Capital Market  Industry . 
-Sufficient pool of qualif ied resource is defined as a group having two professionals as per above  
+ above  
 stated stature for each group of 20 brokers so as to ensure that adequate services are provided in a 
 timely manner by the Broker Back Office Vendor to the Brokers.   
  
-Broker Back -Office Application —Standards, Practice and Conventions                                   
+Broker Back -Office Application Standards, Practice and Conventions                                   
 2.2 Application and Ven dor Evaluation Process   
-Software Service Vendors intending to apply and become Exchange approved “Back -Office -System -
-Vendors” shall apply to Exchange in writing along with their credentials, relevant documents, list of 
-their “Skilled -worked -force” .  
+Software Service Vendors intending to apply and become Exchange approved Back -Office -System -
+Vendors shall apply to Exchange in writing along with their credentials, relevant documents, list of 
+their Skilled -worked -force .  
 2.2.1  Term a nd Duration of Vendor E ligibility  
 The Exchange shall authorize the vendor for a period of three years and Vendors shall be required to 
 attain renewal after successful completion of term . Vendors once approved by the Exchange shall 
@@ -28,15 +23,15 @@ In order to ensure standardiz ation and consistency of IT and reporting infrastr
 regulatory requirements relating to selection of eligible vendors shall also be applicable to 
 such brokers  who have developed their own back office systems . 
 2.2.4  List of Eligible Vendor(s)  
-Please ref er to t he latest captioned list on PSX website under section “Product and 
-Services” > “Broker Back Office System” > “List of Eligible Broker Back Office System 
-Vendor(s) ”*. 
+Please ref er to t he latest captioned list on PSX website under section Product and 
+Services > Broker Back Office System > List of Eligible Broker Back Office System 
+Vendor(s) *. 
  
 *This is neither approved nor a final list of eligible back -office -vendors.  
  
  
  
-Broker Back -Office Application —Standards, Practice and Conventions                                   4 SECTION 3  
+Broker Back -Office Application Standards, Practice and Conventions                                   4 SECTION 3  
 THE BARE MINIMAL STANDARDS  
 The Exchange Regulations require that the Software or application which TREC Holders use for 
 trade -facilitation of their client and the Software that they use for risk-management and record -
@@ -64,14 +59,14 @@ shall comply with Information and Application Security Standards specified by th
 with the standards and specification s prescribed in this document.  
   
  
-Broker Back -Office Application —Standards, Practice and Conventions                                   5 3.1 Account Opening  
+Broker Back -Office Application Standards, Practice and Conventions                                   5 3.1 Account Opening  
 3.1.1  Client Account Management  
 Client information stored in the system at the time of opening of the account shall not be allowed to 
 be deleted once a client account is operational. However, modification with regard to client details 
 shall be controlled and the system should be capable of storing the original information that has been 
 modified . This may be noted that there no provisions in law which could allow the change of title of 
 account of Client name . The system shall also have the provision to upload the client information 
-from CD S – client setup report.  
+from CD S  client setup report.  
 3.1.1.1  KYC Principles  
 The system should comply with KYC principles and standards and should have provision to 
 electronically store the  scanned documents leading to the identity of the Client.  
@@ -83,11 +78,11 @@ high, low and medium risk clients.
 Further, the system shall ensure that client codes once assigned to any client shall not be reassigned 
 to another client of the brokers even after the closure of account  so as to ensure the compliance of 
 PSX rule book clause 8.6.1 as reproduced hereunder:   
-“Every B roker while inserting a bid and offer through KATS for each of his clients, shall insert 
+Every B roker while inserting a bid and offer through KATS for each of his clients, shall insert 
 unique Client Codes for those clients which are maintained by them in their back office 
 system and registered with NCCPL. These Client Codes are linked/mapped to UIN t hrough 
 the interface of NCCPL. These Client Codes should not be re -assigned to another 
-client of the Brokers even after the closure of the account ” 
+client of the Brokers even after the closure of the account  
 3.1.1.4  Web access for Clients   
 The system should be provided a secure access through a URL for enquiring and viewing account 
 statement s on real -time basis  or EOD basis . 
@@ -96,7 +91,7 @@ Apart from complying with relevant regulations and storing information relating 
 the system should have provisions to have trade -time and trade -confirmation -SMS sent time stored 
 in the system.    
  
-Broker Back -Office Application —Standards, Practice and Conventions                                   6 3.3 Maker and Checker functionality  
+Broker Back -Office Application Standards, Practice and Conventions                                   6 3.3 Maker and Checker functionality  
 In order to facilitate role based permissions and auditing , the system should have provisions of 
 maker and checker functionality  for each and every transactions/account entry which is substantial 
 and material.  
@@ -110,10 +105,10 @@ respect of login, data entry, and trail of modification /deletion  with date and
 exception al reporting  at user and system level.  
 The Broker Back Office System should e stablish and maintain operational and systems in -built audit 
 control to facilitate automatic reconciliations  and perform exceptional reporting:  
- Number of Order, their quantities and values entered  
- Number of Client’s, their quantities, volumes and executed values  
- Number of Stocks, Markets and types of order and values processed  
- Gross Settlement values versus  totals at Client, Market and Stocks level    
+ Number of Order, their quantities and values entered  
+ Number of Clients, their quantities, volumes and executed values  
+ Number of Stocks, Markets and types of order and values processed  
+ Gross Settlement values versus  totals at Client, Market and Stocks level    
 3.5 Reports to comply with regulatory requirements  
 The system should be capable of generating and processing reports in the manner to enable TREC 
 holders to comply with the requirements of regulatory framework . At minimum, the system shall be 
@@ -128,7 +123,7 @@ Securities Brokers (Licensing And Operations) Regulations 2016
 7- Order register in the manner prescribed under section 19(4) of Securities Brokers 
 (Licensing And Operations) Regulations 2016   
  
-Broker Back -Office Application —Standards, Practice and Conventions                                   
+Broker Back -Office Application Standards, Practice and Conventions                                   
 8- Monthly IBTS reports as in the manner prescribed under Section 9.11(a) and 9.11(b) of 
 PSX Rule Book.  
 9- Securitie s Balance Movement Report  
@@ -148,8 +143,8 @@ maintenance of the following details/records;
 7- Bank reconciliation report  
 3.7 Reconciliations  and Back Office Accounting System   
 The System should contain provisions for day-end-reconciliation s of back -office sys tems custody 
-with CDC and NCCPL. The system must  also ensure the segregations of customer money and ‘own 
-funds’ by the way of maintenance of proper  books and account, recording of liabilities , ledgers 
+with CDC and NCCPL. The system must  also ensure the segregations of customer money and own 
+funds by the way of maintenance of proper  books and account, recording of liabilities , ledgers 
 reflecting cash and custody movement  and day -end-reconc iliations of clients funds with client bank 
 accounts.  
  
@@ -161,43 +156,43 @@ accounts.
 2.1 BUSINESS OBJECTIVES
 The following is a list of business objectives:
 Objective 1: System will require registration and will be password protected.
-Objective 2: “Account Setup” functionality must be supported that includes the following
+Objective 2: Account Setup functionality must be supported that includes the following
 customer data:
- First Name, Middle Name {Optional}, Last Name
- Home and Mailing Addresses
- E-mail Address
- Social Security Number
- Two Phone Numbers
- Marital Status
- Beneficiary Name, Beneficiary SSN, and Beneficiary Relationship
-Objective 3: “Account Maintenance” functionality must be supported that allows user to close
+ First Name, Middle Name {Optional}, Last Name
+ Home and Mailing Addresses
+ E-mail Address
+ Social Security Number
+ Two Phone Numbers
+ Marital Status
+ Beneficiary Name, Beneficiary SSN, and Beneficiary Relationship
+Objective 3: Account Maintenance functionality must be supported that allows user to close
 account and edit personal information and includes the following customer data:
- First Name, Middle Name {Optional}, Last Name
- Home and Mailing Addresses
- E-mail Address
- Social Security Number
- Two Phone Numbers
- Marital Status
- Beneficiary Name, Beneficiary SSN, and Beneficiary Relationship
-Objective 4: “Cash Management” functionality must be supported that allows user to
+ First Name, Middle Name {Optional}, Last Name
+ Home and Mailing Addresses
+ E-mail Address
+ Social Security Number
+ Two Phone Numbers
+ Marital Status
+ Beneficiary Name, Beneficiary SSN, and Beneficiary Relationship
+Objective 4: Cash Management functionality must be supported that allows user to
 withdraw and deposit money and includes the following customer data:
- Transaction type
- Amount
- Account Number
-Objective 5: “Quotes” functionality must be supported that displays the following quotes:
- Current
- Past
- Watched
+ Transaction type
+ Amount
+ Account Number
+Objective 5: Quotes functionality must be supported that displays the following quotes:
+ Current
+ Past
+ Watched
 
 7
-Objective 6: “Transaction” functionality must be supported that includes the following types:
- Buying stock
-o Market Price
-o Good-till-Cancel
- Selling Stock
-o Market Price
-o Stop Loss
-o Good-till-Cancel
+Objective 6: Transaction functionality must be supported that includes the following types:
+ Buying stock
+ Market Price
+ Good-till-Cancel
+ Selling Stock
+ Market Price
+ Stop Loss
+ Good-till-Cancel
 2.2 SYSTEM OBJECTIVES
 The following is a list of system objectives:
 Objective 1: System will be Web-based.
@@ -217,7 +212,7 @@ The context diagram displays all high-level components.
 4. Systems Requirements
 4.1 REQUIREMENTS OVERVIEW
 The following are the requirements for each component of our system.
-4.2 “QUOTES” REQUIREMENTS
+4.2 QUOTES REQUIREMENTS
 Requirement Title: Quotes
 Sequence No: 001
 Short description: Display currently owned stock quotes, previously owned stock quotes,
@@ -239,5 +234,21 @@ The system will automatically move a stock to the current list when it is
 bought from the watch list.
 The system will automatically move a stock to the previous list when it is
 sold from the current list.
-The system will automatically move
+The system will automatically move a stock to the current list when it is
+bought from the history list.
+The system will automatically move a stock to the current list when it is
+bought initially.
+Pre-Conditions: - The user must logon before performing this function
+- The database must be loaded at user login
+Post Conditions: - The quotes database will be saved when the user logs off
+Other attributes: - Make sure multiple click does not yield multiple adds
+- A link to symbol look up will be provided in case the user does
+not know the stock symbol.
+
+10
+4.3 LOGIN AND SECURITY REQUIREMENTS
+Requirement Title: Log on
+Sequence No: 001
+Short description: Log on to the system
+Description:
 

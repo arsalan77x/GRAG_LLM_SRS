@@ -1,0 +1,174 @@
+Index,Text
+0,"Transferring Funds for Selling Stocks or Bonds  
+Title  Transferring Funds for Selling Stocks or Bonds  
+Description  The amount corresponding to the sold stocks is deposited into the customer's account, and 
+the amount is withdrawn from the buyer's account. The brokerage fee is also withdrawn 
+from the buyer's account and deposited into the brokerage account.  
+Input  Customer account number, stock or bond amount, brokerage fee, buyer's account number, 
+brokerage account number  
+Processing  During the sale process, the user selects one of their accounts. The account balance is 
+checked, and the system sets the amount for the sold stocks and the brokerage fee. The 
+brokerage account is recorded in the system's database and needs only to be retrieved. The 
+stock exchange interface specifies the bank account of the buyer, and the funds are 
+transferred accordingly.  
+Output  Increase in customer account balance by the stock amount, decrease in customer account 
+balance by the brokerage fee amount, decrease in buyer's account balance by the stock 
+amount.  
+Error Handling  If there is an error in setting the account numbers, amounts, or if the stock exchange 
+interface does not specify the buyer's account number, an appropriate error message is 
+displayed.
+
+
+**processing: The account balance must be checked.
+**output: increase in brokerage account balance by the brokerage fee amount"
+1,"Title
+Deleting completed and canceled orders from customer order list
+
+Description
+The user can delete orders from their order list that have the status ""completed"" or ""canceled.""
+
+Input
+Each row in the customer's order list that the user selects for deletion
+
+Processing
+The entire order list is displayed to the user, including orders in the queue. The user can select any row for deletion. The selected row is removed from the order list. The user can also select all completed and canceled orders for deletion.
+
+Output
+Deleting selected completed and canceled orders from the customer's order list
+
+Error Handling
+If the deletion of a selected transaction does not occur, the system automatically retries without notifying the user.
+
+ 
+**processing: excluding orders in the queue
+**Error handling:  If the user selects inactive rows for deletion, an appropriate error message is displayed. (very subtle)
+**Error handling:   If the deletion of a selected transaction does not occur, an error message is displayed, and the user is asked to retry.
+"
+2,"Title
+Canceling orders in the queue
+
+Description
+The user can cancel orders in their order list that are in the ""in queue"" status.
+
+Input
+One of the orders in the user's order list
+
+Processing
+All orders, regardless of status, are displayed to the user. The user selects the order to cancel. The selected order is removed from the online order queue and marked as ""canceled.""
+
+Output
+Canceling one of the orders in the queue
+
+Error Handling
+If the canceled order is not removed from the online order queue, the system automatically retries the cancellation without notifying the user.
+
+**Processing: All orders with the ""in queue"" status are displayed to the user.
+**Error handling: If the canceled order is not removed from the online order queue, an appropriate error message is displayed. The user is asked to resubmit the cancellation request. (obvious logic)"
+3,"## Title
+Registering phone orders in the internet system
+
+## Description
+Orders registered in the phone system are registered in the internet system for processing by the broker.
+
+## Input
+Orders registered in the phone system
+
+## Processing
+All orders from the phone system are processed in a separate database from the internet orders. Based on the order type (phone or internet), orders are sorted and processed separately.
+
+## Output
+Adding phone system orders to a separate phone order database
+
+## Error Handling
+In case of disruption in phone orders, the system continues processing without notifying the user.
+
+**proccesing: All orders from the phone system are processed in the brokerage system database.
+**processing: Based on the order registration date, all orders are sorted, whether internet or phone orders.  (stakeholders opinion)
+**Error handling: In case of disruption in phone orders, the system continues processing without notifying the user.
+"
+4,"Title
+Bank Account Validation
+Description
+Validate the bank account entered by the customer.
+Input
+Account number, bank name
+Processing
+The bank account information is checked against an internal database. If the account matches a record in the internal database, it is considered valid.
+Output
+Confirmation of account validity or invalidity.
+Error Handling
+ if there is a communication issue with the bank interface, the system proceeds without notifying the customer.
+
+**processing: The bank account information is securely transmitted to the corresponding bank interface to check if the account is valid. The validation is performed by the bank interface. If the account is valid, a confirmation message is securely received from the bank interface by the system, and the result is logged for auditing purposes.
+**Error handling: If the customer's bank account is invalid or if there is a communication issue with the bank interface, an appropriate error message is displayed. The error event is logged for further review.
+"
+5,"Title: Online Purchase of Stocks and Other Securities by Special Customers
+
+Description: Special customers can buy stocks and other securities online.
+
+Input: Type of stock, number of shares, investment price (specified or limited), maximum price
+
+Processing: The user must log into their account in the system. The ""special"" access type is checked. If the access type is ""special,"" the online purchase feature is enabled.  The user sets the investment price (specified or limited). The system checks if the number of shares is not more than the available shares. The user specifies the source account for payment (Mellat Bank, Saman Bank, brokerage account). The system securely checks the account balance. If sufficient, the amount is blocked until the final confirmation. The system assigns a unique order number, records the order, and logs the transaction for auditing purposes. Once the purchase is confirmed, the money is securely withdrawn from the user's account. The purchased shares are added to the user's portfolio, and the order report is securely added to the user's order list.
+
+Output: Adding purchased shares to the user's portfolio, adding the order report to the user's order list.
+
+Error Handling: If any of the following occur, an appropriate error message is displayed: - The user's access type is ""regular"" - The purchased shares are not added to the user's portfolio - The order report is not added to the user's order list - The order number is not assigned. The error is logged for further review, and no partial transactions occur in case of failure.
+
+**processing: The user selects the desired stock and number of shares.
+**Error handling:  The number of shares exceeds the available shares."
+6,"Title: Managing Interactions between Customer's Bank Accounts and Brokerage Account
+
+Description: The user can securely transfer funds between their brokerage account and one of their bank accounts.
+
+Input: Source account number, desired amount, destination account number
+
+Processing: The user selects one of their bank accounts for withdrawal or deposit. 
+If the user selects one of their bank accounts as the source, the brokerage account is automatically chosen as the destination. If the source is the brokerage account, the user selects one of their bank accounts as the destination. The transfer is securely carried out by the bank interface, and all transfer actions, including unsuccessful attempts, are logged for auditing purposes.
+Output: Change in the customer's account balances.
+
+Error Handling: None.
+
+
+**processing: The system securely checks if the source account balance is sufficient. 
+**Error handling:  If the transfer fails, an appropriate error message is displayed. The error is logged for further review, and no partial transactions occur in case of failure.
+"
+7,"
+Title: Blocking Funds in Bank Account
+
+Description: A specified amount of money is securely blocked in the customer's bank account, ensuring the customer cannot access those funds.
+
+Input: Amount to be blocked
+
+Processing: The bank account is predetermined, and during the purchase process. A secure block request is sent to the bank interface, and the request is logged for auditing purposes. The bank confirms the operation, and the system securely records the confirmation.
+
+Output: The specified amount is blocked in the customer's bank account, and the transaction is logged.
+
+Error Handling: or if the blocking operation fails, an appropriate error message is displayed. The error event is logged for further review.
+
+**processing:  the account balance is securely checked to ensure it is greater than the amount to be blocked. 
+**Error handling: If the amount to be blocked exceeds the total account balance an appropriate error message is displayed. The error event is logged for further review.
+"
+8,"Title  Editing purchase orders in the queue  
+Description  The user can edit purchase orders in their order list that are in the ""in queue"" status.  Title  Editing purchase orders in the queue  
+Input  Type of stock, number of shares, investment price, maximum price, validity date  
+Processing  All purchase orders with the ""in queue"" status are displayed to the user. The fields, except 
+for the type of stock, are editable. If the user edits the number of shares, the system 
+checks if the new number does not exceed the available shares. If there is no error, the 
+order is updated.  
+Output  Change in some characteristics of the purchase orders in the queue  
+Error 
+Handling  If the number of shares exceeds the available shares, an appropriate error message is 
+displayed. If there is an error in entering the information, the field is cleared and an error 
+message is displayed. The user can re -enter the information."
+9,"Title  Editing sale orders in the queue  
+Description  The user can edit sale orders in their order list that are in the ""in queue"" status.  
+Input  Type of stock, number of shares, investment price, minimum price, validity date  
+Processing  All sale orders with the ""in queue"" status are displayed to the user. The fields, except for 
+the type of stock, are editable. If the user edits the number of shares, the system checks if 
+the new number does not exceed the user's available shares. If there is no error, the order 
+is upd ated.  
+Output  Change in some characteristics of the sale orders in the queue  
+Error 
+Handling  If the number of shares exceeds the available shares, an appropriate error message is 
+displayed. If there is an error in entering the information, the field is cleared and an error 
+message is displayed. The user can re-enter the information."

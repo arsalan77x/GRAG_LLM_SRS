@@ -1,10 +1,9 @@
-Online Sale of Stocks and Other Securities by Special Customers  
 Title  Online sale of stocks and other securities by special customers  
 Description  Special customers can sell their stocks and other securities online.  
 Input  Type of stock, number of shares, investment price, minimum price  
 Processing  The user must log into their account in the system. The "special" access type is checked. 
 If the access type is "special," the online sale feature is enabled. The user selects the 
-desired stock and number of shares. The user sets the investment price (spec ified or 
+desired stock and number of shares. The user sets the investment price (specified or 
 limited), and the minimum price. The system checks if the number of shares does not 
 exceed the user's available shares. The user specifies the destination account for payment 
 (Mellat Bank, Saman Bank, brokerage account). The system automatically r ecords the 

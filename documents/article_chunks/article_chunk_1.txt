@@ -67,15 +67,15 @@ Board of Directors of the Tehran Stock Exchange on 14/04/1383, will be repealed.
 0 Introduction
 0.1 General
 This International Standard has been prepared to provide requirements for establishing, implementing, 
-maintaining and continually improving an information security management system. The adoption of an information security management system is a strategic decision for an organization. The establishment and implementation of an organization’s information security management system is influenced by the organization’s needs and objectives, security requirements, the organizational processes used and the size and structure of the organization. All of these influencing factors are expected to change over time.
+maintaining and continually improving an information security management system. The adoption of an information security management system is a strategic decision for an organization. The establishment and implementation of an organizations information security management system is influenced by the organizations needs and objectives, security requirements, the organizational processes used and the size and structure of the organization. All of these influencing factors are expected to change over time.
 The information security management system preserves the confidentiality, integrity and availability 
 of information by applying a risk management process and gives confidence to interested parties that risks are adequately managed.
 It is important that the information security management system is part of and integrated with the 
-organization’s processes and overall management structure and that information security is considered 
+organizations processes and overall management structure and that information security is considered 
 in the design of processes, information systems, and controls. It is expected that an information security 
 management system implementation will be scaled in accordance with the needs of the organization.
-This International Standard can be used by internal and external parties to assess the organization’s 
-ability to meet the organization’s own information security requirements.
+This International Standard can be used by internal and external parties to assess the organizations 
+ability to meet the organizations own information security requirements.
 The order in which requirements are presented in this International Standard does not reflect their 
 importance or imply the order in which they are to be implemented. The list items are enumerated for reference purpose only.
 ISO/IEC 27000 describes the overview and the vocabulary of information security management 
@@ -89,7 +89,7 @@ common terms, and core definitions defined in Annex SL of ISO/IEC Directives, Pa
 Supplement, and therefore maintains compatibility with other management system standards that have adopted the Annex SL.
 This common approach defined in the Annex  SL will be useful for those organizations that choose to operate 
 a single management system that meets the requirements of two or more management system standards. 
-© ISO/IEC 2013 – All rights reserved v
+ ISO/IEC 2013  All rights reserved v
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -100,8 +100,8 @@ Provided by IHS under license with ISO
 Licensee=University of Alberta/5966844001, User=john, albert
 Not for Resale, 11/16/2013 21:40:53 MST
 No reproduction or networking permitted without license from IHS
---`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- Information technology  — Security techniques — 
-Information security management systems — Requirements
+--`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- Information technology   Security techniques  
+Information security management systems  Requirements
 1 Scope
 This International Standard specifies the requirements for establishing, implementing, maintaining 
 and continually improving an information security management system within the context of the organization. This International Standard also includes requirements for the assessment and treatment of information security risks tailored to the needs of the organization. The requirements set out in this International Standard are generic and are intended to be applicable to all organizations, regardless 
@@ -110,8 +110,8 @@ when an organization claims conformity to this International Standard.
 2 Normative references
 The following documents, in whole or in part, are normatively referenced in this document and are 
 indispensable for its application. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.
-ISO/IEC 27000, Information technology — Security techniques — Information security management 
-systems — Overview and vocabulary
+ISO/IEC 27000, Information technology  Security techniques  Information security management 
+systems  Overview and vocabulary
 3	 Terms	and	definitions
 For the purposes of this document, the terms and definitions given in ISO/IEC 27000 apply.
 4 Context of the organization
@@ -129,7 +129,7 @@ contractual obligations.
 4.3 Determining the scope of the information security management system
 The organization shall determine the boundaries and applicability of the information security 
 management system to establish its scope.INTERNATIONAL ST ANDARD  ISO/IEC 27001:2013(E)
-© ISO/IEC 2013 – All rights reserved 1
+ ISO/IEC 2013  All rights reserved 1
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -149,7 +149,7 @@ The organization shall establish, implement, maintain and continually improve an
 Top management shall demonstrate leadership and commitment with respect to the information security management system by:
 a) ensuring the information security policy and the information security objectives are established 
 and are compatible with the strategic direction of the organization;
-b) ensuring the integration of the information security management system requirements into the organization’s processes;
+b) ensuring the integration of the information security management system requirements into the organizations processes;
 c) ensuring that the resources needed for the information security management system are available;
 d) communicating the importance of effective information security management and of conforming to the information security management system requirements;
 e) ensuring that the information security management system achieves its intended outcome(s);
@@ -166,7 +166,7 @@ security objectives;
 c) includes a commitment to satisfy applicable requirements related to information security; and
 d) includes a commitment to continual improvement of the information security management system.
 The information security policy shall:e) be available as documented information; 
-2 © ISO/IEC 2013 – All rights reserved
+2  ISO/IEC 2013  All rights reserved
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -185,5 +185,6 @@ b) reporting on the performance of the information security management system to
 NOTE Top management may also assign responsibilities and authorities for reporting performance of the 
 information security management system within the organization.
 6 Planning
+6.1 Actions to address risks and opportunities
 
 

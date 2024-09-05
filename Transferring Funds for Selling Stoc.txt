@@ -1,0 +1,11 @@
+Transferring Funds for Selling Stocks or Bonds (40)
+Deleting completed and canceled orders from customer order list (22)
+Canceling orders in the queue (18)
+Registering phone orders in the internet system (25)
+Bank Account Validation (3)
+
+Online Purchase of Stocks and Other Securities by Special Customers (8)
+Managing Interactions between Customer's Bank Accounts and Brokerage Account (7)
+Blocking Funds in Bank Account (5)
+Editing purchase orders in the queue   (16)
+Editing Sale Orders in the Queue   (17)

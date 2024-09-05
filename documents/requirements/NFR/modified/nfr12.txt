@@ -1,0 +1,27 @@
+Authentication
+Authentication is the process of verifying the identity of clients (users, processes, or systems) interacting with the application. A robust authentication system is essential for protecting sensitive data and ensuring only authorized users gain access to system resources. Key features to be considered in the authentication process include:
+
+Secure Mechanism for Authentication:
+The system must implement a reliable and secure authentication mechanism, such as multi-factor authentication (MFA), that requires users to verify their identity using multiple forms of validation (e.g., password, one-time passcode, biometric data). However, for low-risk transactions, single-factor authentication (SFA) can be used to reduce operational complexity.
+
+Protection of Sensitive Functions:
+All sensitive functions and resources, including those that modify financial data, user profiles, or system configurations, must be protected by authentication mechanisms. These operations should require re-authentication or additional security measures (e.g., MFA) to ensure that only the legitimate user can perform these actions.
+
+Storage of Credentials:
+User credentials must be securely stored using strong hashing algorithms, such as bcrypt or Argon2, to prevent unauthorized access to passwords. Additionally, salted hashing should be used to add an extra layer of protection against precomputed attacks like rainbow table attacks.
+
+Encrypted Communication:
+User credentials must be transmitted over encrypted connections using secure protocols, such as TLS 1.2 or higher, to prevent interception during transmission (e.g., man-in-the-middle attacks). All authentication-related communications between the client and server must be encrypted to ensure data confidentiality and integrity.
+
+Account Lockout Mechanism:
+The system should implement an account lockout mechanism after a defined number of failed login attempts to protect against brute-force attacks. After multiple failed authentication attempts, the account should be temporarily locked or additional verification steps (such as CAPTCHA or MFA) should be required.
+
+
+
+
+**Secure Mechanism for Authentication (SFA for Low-Risk Transactions):
+Regulatory standards, require the use of secure multi-factor authentication (MFA) across all levels of authentication, especially in financial systems, to protect against fraud and unauthorized access​(articles). By allowing single-factor authentication even for low-risk transactions, the system would be vulnerable to a variety of attacks, such as phishing or brute-force attacks, which are more easily thwarted by MFA.
+
+**Logging and Auditing of Authentication Events:
+The NFR does not mention logging or auditing of authentication events. This is crucial, particularly in financial systems, for monitoring and responding to suspicious activities. As stated in the regulatory articles​(articles), systems should have audit logging for all authentication attempts (both successful and failed) to detect and respond to potential threats. This would ensure compliance with regulatory requirements and offer enhanced security monitoring. Missing Information Example:
+"The system must log all authentication attempts, including successful logins, failed attempts, and suspicious activity, and store these logs securely for auditing and compliance purposes."

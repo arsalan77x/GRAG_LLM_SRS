@@ -1,4 +1,3 @@
-Creating a List of Customer Shares (Creating a Portfolio)  
 Title  Creating a list of customer shares (creating a portfolio)  
 Description  Whenever a purchase or sale is completed, the purchased or sold shares are added to a list 
 called the portfolio.  

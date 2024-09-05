@@ -1233,8 +1233,7 @@ The organization shall verify the established and implemented
 information security continuity controls at regular intervals in order to ensure that they are valid and effective during adverse situations.
 A.17.2  Redundancies
 Objective: To ensure availability of information processing facilities.
-A.17.2.1Availability of infor -
-mation processing 
+A.17.2.1Availability of information processing 
 facilitiesControl
 Information processing facilities shall be implemented with redun -
 dancy sufficient to meet availability requirements.
@@ -1244,8 +1243,7 @@ Objective: To avoid breaches of legal, statutory, regulatory or contractual obli
 mation security and of any security requirements.
 A.18.1.1Identification of appli -
 cable legislation and 
-contractual require -
-mentsControl
+contractual requirements Control
 All relevant legislative statutory, regulatory, contractual require -
 ments and the organizations approach to meet these requirements 
 shall be explicitly identified, documented and kept up to date for each information system and the organization.

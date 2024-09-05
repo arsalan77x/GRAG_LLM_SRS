@@ -1,11 +1,5 @@
 Chunk 4:
- corrective actions;
-2) monitoring and measurement results;
-3) audit results; and 
-8 © ISO/IEC 2013 – All rights reserved
-Copyright International Organization for Standardization 
-Provided by IHS under license with ISO 
-Licensee=University of Alberta/5966844001, User=john, albert
+=University of Alberta/5966844001, User=john, albert
 Not for Resale, 11/16/2013 21:40:53 MST
 No reproduction or networking permitted without license from IHS
 --`,,```,`,```,,,`,`,``,`,,``,,`-`-`,,`,,`,`,,`--- ISO/IEC 27001:2013(E)
@@ -37,7 +31,7 @@ g) the results of any corrective action.
 10.2 Continual improvement
 The organization shall continually improve the suitability, adequacy and effectiveness of the information 
 security management system. 
-© ISO/IEC 2013 – All rights reserved 9
+ ISO/IEC 2013  All rights reserved 9
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -50,7 +44,7 @@ Annex A
 Reference control objectives and controls
 The control objectives and controls listed in Table A.1  are directly derived from and aligned with those 
 listed in ISO/IEC 27002:2013 [1], Clauses 5 to 18 and are to be used in context with Clause 6.1.3 .
-Table A.1 — Control objectives and controls
+Table A.1  Control objectives and controls
 A.5  Information security policies
 A.5.1 Management direction for information security
 Objective: To provide management direction and support for information security in accordance with 
@@ -73,7 +67,7 @@ All information security responsibilities shall be defined and allo -
 cated.
 A.6.1.2 Segregation of dutiesControlConflicting duties and areas of responsibility shall be segregated to 
 reduce opportunities for unauthorized or unintentional modifica -
-tion or misuse of the organization’s assets.
+tion or misuse of the organizations assets.
 A.6.1.3Contact with authori -
 tiesControl
 Appropriate contacts with relevant authorities shall be maintained.
@@ -88,7 +82,7 @@ Information security shall be addressed in project management,
 regardless of the type of the project.
 A.6.2 Mobile devices and teleworking
 Objective: To ensure the security of teleworking and use of mobile devices. 
-10 © ISO/IEC 2013 – All rights reserved
+10  ISO/IEC 2013  All rights reserved
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -112,7 +106,7 @@ shall be carried out in accordance with relevant laws, regulations and ethics an
 ceived risks.
 A .7.1.2Terms and conditions of employmentControl
 The contractual agreements with employees and contractors shall 
-state their and the organization’s responsibilities for information security.
+state their and the organizations responsibilities for information security.
 A.7.2  During employment
 Objective: To ensure that employees and contractors are aware of and fulfil their information security responsibilities.
 A .7.2.1Management responsi -
@@ -127,7 +121,7 @@ A .7.2.3 Disciplinary processControl
 There shall be a formal and communicated disciplinary process 
 in place to take action against employees who have committed an information security breach.
 A.7.3 Termination and change of employment
-Objective: To protect the organization’s interests as part of the process of changing or terminating employment.
+Objective: To protect the organizations interests as part of the process of changing or terminating employment.
 A .7.3.1Termination or change 
 of employment respon -
 sibilitiesControl
@@ -137,7 +131,7 @@ municated to the employee or contractor and enforced.
 A.8  Asset management
 A.8.1 Responsibility for assets 
 Table A.1  (continued)
-© ISO/IEC 2013 – All rights reserved 11
+ ISO/IEC 2013  All rights reserved 11
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -190,7 +184,7 @@ ized access, misuse or corruption during transportation.
 A.9  Access control
 A.9.1 Business requirements of access control 
 Table A.1  (continued)
-12 © ISO/IEC 2013 – All rights reserved
+12  ISO/IEC 2013  All rights reserved
 Copyright International Organization for Standardization 
 Provided by IHS under license with ISO 
 Licensee=University of Alberta/5966844001, User=john, albert
@@ -227,7 +221,7 @@ The allocation of secret authentication information shall be con -
 trolled through a formal management process.
 A.9.2.5Review of user access 
 rightsControl
-Asset owners shall review users’ access rights at regular intervals.
+Asset owners shall review users access rights at regular intervals.
 A.9.2.6Removal or adjustment 
 of access rightsControl
 The access rights of all employees and external party users to 
@@ -236,7 +230,7 @@ A.9.3  User responsibilities
 Objective: To make users accountable for safeguarding their authentication information.
 A.9.3.1Use of secret authenti -
 cation informationControl
-Users shall be required to follow the organization’s practices in the 
+Users shall be required to follow the organizations practices in the 
 use of secret authentication information.
 A.9.4 System and application access control
 Objective: To prevent unauthorized access to systems and applications.
@@ -249,5 +243,9 @@ duresControl
 Where required by the access control policy, access to systems and 
 applications shall be controlled by a secure log-on procedure. 
 Table A.1  (continued)
-© ISO/IEC 
+ ISO/IEC 2013  All rights reserved 13
+Copyright International Organization for Standardization 
+Provided by IHS under license with ISO 
+Licensee=University of Alberta/5966844001, User=john, albert
+Not for Resale, 11/16/2013
 
