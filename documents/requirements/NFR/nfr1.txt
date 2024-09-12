@@ -1,4 +1,4 @@
-Performance and Availability
+	Performance and Availability
 The system has several objectives related to performance, including speed, fault tolerance, throughput,
 and processing time. The performance criteria for the brokerage system are as follows:
 Response Time (for online trading): The maximum response time from when a customer starts a purchase or sale until the final result is returned should be within 500 milliseconds, assuming simultaneous usage by 4 million users in a 3-hour window (9 AM to 12 PM). This time can vary depending on the stock exchange's rate changes and availability.

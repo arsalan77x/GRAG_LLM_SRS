@@ -1,0 +1,11 @@
+Title: Transferring Funds for Buying Stocks or Bonds
+
+Description: The amount corresponding to the purchased stocks is securely withdrawn from the customer's account and deposited into the account of the stock owner. The brokerage fee is also securely withdrawn from the customer's account and deposited into the brokerage account.
+
+Input: Customer account number, stock or bond amount, brokerage fee, stock owner's account number, brokerage account number
+
+Processing: During the purchase process, the user selects one of their accounts, and the balance is securely checked. If sufficient, the amount for the stocks and the brokerage fee is blocked. The system securely sets the amount for the purchased stocks and the brokerage fee. The brokerage account is recorded in the system's database and only needs to be retrieved. The stock exchange interface specifies the bank account of the stock owner, and the funds are securely transferred accordingly. All transactions, including the blocking of funds and the transfer, are logged for auditing purposes.
+
+Output: Decrease in the customer account balance by the total amount, increase in the stock owner's account balance by the stock amount, and increase in the brokerage account balance by the brokerage fee amount.
+
+Error Handling: If there is an error in setting the account numbers, amounts, or if the stock exchange interface does not specify the stock owner's account number, an appropriate error message is displayed, and the error is logged for further review.

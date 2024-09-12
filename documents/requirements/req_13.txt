@@ -1,0 +1,19 @@
+Title  Online sale of stocks and other securities by special customers  
+Description  Special customers can sell their stocks and other securities online.  
+Input  Type of stock, number of shares, investment price, minimum price  
+Processing  The user must log into their account in the system. The "special" access type is checked. 
+If the access type is "special," the online sale feature is enabled. The user selects the 
+desired stock and number of shares. The user sets the investment price (specified or 
+limited), and the minimum price. The system checks if the number of shares does not 
+exceed the user's available shares. The user specifies the destination account for payment 
+(Mellat Bank, Saman Bank, brokerage account). The system automatically r ecords the 
+sale request. The system assigns a unique order number and records the order. The order 
+is recorded in the user's order list with the status "completed." Once the sale is confirmed, 
+the money is deposited into the user's bank account.  
+Output  Decrease in sold shares from the user's portfolio, addition of the sale report to the user's 
+order list  
+Error 
+Handling  If any of the following occur, an appropriate error message is displayed: - The user's 
+access type is "regular" - The number of shares exceeds the available shares - The sold Title  Online sale of stocks and other securities by special customers  
+shares are not removed from the user's portfolio - The sale report is not added to the user's 
+order list - The order number is not assigned

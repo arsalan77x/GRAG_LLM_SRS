@@ -1,0 +1,13 @@
+Title
+Bank Account Validation
+Description
+Validate the bank account entered by the customer.
+Input
+Account number, bank name
+Processing
+The bank account information is checked against an internal database. If the account matches a record in the internal database, it is considered valid.
+Output
+Confirmation of account validity or invalidity.
+Error Handling
+ if there is a communication issue with the bank interface, the system proceeds without notifying the customer.
+

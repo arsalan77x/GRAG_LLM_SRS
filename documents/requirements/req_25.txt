@@ -1,0 +1,18 @@
+## Title
+Registering phone orders in the internet system
+
+## Description
+Orders registered in the phone system are registered in the internet system for processing by the broker.
+
+## Input
+Orders registered in the phone system
+
+## Processing
+All orders from the phone system are processed in a separate database from the internet orders. Based on the order type (phone or internet), orders are sorted and processed separately.
+
+## Output
+Adding phone system orders to a separate phone order database
+
+## Error Handling
+In case of disruption in phone orders, the system continues processing without notifying the user.
+

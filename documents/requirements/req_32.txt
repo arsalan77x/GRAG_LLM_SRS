@@ -1,0 +1,11 @@
+Title  Providing links to related organizations  
+Description  Allow users to navigate to various stock market organizations through the brokerage 
+system.  
+Input  None  
+Processing  On the main page of the system, links to each organization (Tehran Stock Exchange, Iran 
+Mercantile Exchange, Iran Energy Exchange, Iran Fara Bourse, and the Securities and 
+Exchange Organization) are provided. When a user clicks a link, they are redirected to the 
+corre sponding organization's system.  
+Output  User navigation to various stock market organizations.  
+Error 
+Handling  Display an appropriate error message if there is an error in establishing a connection.

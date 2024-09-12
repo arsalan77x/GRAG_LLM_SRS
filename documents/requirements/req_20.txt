@@ -1,0 +1,22 @@
+Title  Creating a list of customer shares (creating a portfolio)  
+Description  Whenever a purchase or sale is completed, the purchased or sold shares are added to a list 
+called the portfolio.  
+Input  Order number, transaction type, stock type, number of shares, investment price  
+Processing  From the existing transactions in the order list, those with the status field set to 
+"completed" are added to another list called the portfolio. The required fields for the 
+portfolio list are fewer and only include some fields from the order list transactions: order 
+number, transaction type, stock type, number of shares, investment price. The order list 
+and the po rtfolio list should be synchronized. Whenever an order status in the order list 
+changes from "in queue" to "completed," the following scenarios are checked:  
+• If the completed order is for the purchase of a new stock type, a new report is added to the 
+portfolio.  
+• If the completed order is for the purchase of more shares of an existing stock type, the number of 
+shares field is updated.  
+• If the completed order is for the sale of all shares of a stock type, the report is removed from the 
+portfolio.  
+• If the completed order is for the sale of some shares, the number of shares field is updated. | | 
+Output | Increasing or decreasing shares in the portfolio | | Error Handling | If the status change 
+of an order in the order list to "completed" does not upda te the portfolio, it indicates an error. 
+This can occur if the addition of a new report, removal of an existing report, or updating the 
+number of shares field does not happen. An appropriate error message is displayed, and the 
+system attempts to update aga in. |

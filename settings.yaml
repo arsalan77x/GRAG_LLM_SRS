@@ -5,7 +5,7 @@ llm:
   api_key: ${GRAPHRAG_API_KEY}
   type: openai_chat # or azure_openai_chat
   model: gpt-4o-2024-08-06
-  model_supports_json: false # recommended if this is available for your model.
+  model_supports_json: true # recommended if this is available for your model.
   # max_tokens: 4000
   # request_timeout: 180.0
   # api_base: https://<instance>.openai.azure.com
@@ -18,9 +18,6 @@ llm:
   # max_retry_wait: 10.0
   # sleep_on_rate_limit_recommendation: true # whether to sleep when azure suggests wait-times
   # concurrent_requests: 25 # the number of parallel inflight requests that may be made
-  # temperature: 0 # temperature for sampling
-  # top_p: 1 # top-p sampling
-  # n: 1 # Number of completions to generate
 
 parallelization:
   stagger: 0.3
@@ -31,11 +28,10 @@ async_mode: threaded # or asyncio
 embeddings:
   ## parallelization: override the global parallelization settings for embeddings
   async_mode: threaded # or asyncio
-  # target: required # or all
   llm:
     api_key: ${GRAPHRAG_API_KEY}
     type: openai_embedding # or azure_openai_embedding
-    model: text-embedding-3-large
+    model: text-embedding-3-small
     # api_base: https://<instance>.openai.azure.com
     # api_version: 2024-02-15-preview
     # organization: <organization_id>
@@ -48,13 +44,13 @@ embeddings:
     # concurrent_requests: 25 # the number of parallel inflight requests that may be made
     # batch_size: 16 # the number of documents to send in a single request
     # batch_max_tokens: 8191 # the maximum number of tokens to send in a single request
-    
+    # target: required # or optional
   
 
 
 chunks:
-  size: 400
-  overlap: 100
+  size: 300
+  overlap: 150
   group_by_columns: [id] # by default, we don't allow chunks to cross documents
     
 input:
@@ -87,8 +83,8 @@ entity_extraction:
   ## parallelization: override the global parallelization settings for this task
   ## async_mode: override the global async_mode settings for this task
   prompt: "prompts/entity_extraction.txt"
-  entity_types: [organization,person,geo,event]
-  max_gleanings: 2
+  entity_types: [article,standard,requirement]
+  max_gleanings: 0
 
 summarize_descriptions:
   ## llm: override the global llm settings for this task
@@ -101,26 +97,26 @@ claim_extraction:
   ## llm: override the global llm settings for this task
   ## parallelization: override the global parallelization settings for this task
   ## async_mode: override the global async_mode settings for this task
-  enabled: true
+  # enabled: true
   prompt: "prompts/claim_extraction.txt"
   description: "Any claims or facts that could be relevant to information discovery."
-  max_gleanings: 2
+  max_gleanings: 0
 
-community_reports:
+community_report:
   ## llm: override the global llm settings for this task
   ## parallelization: override the global parallelization settings for this task
   ## async_mode: override the global async_mode settings for this task
   prompt: "prompts/community_report.txt"
-  max_length: 2500
-  max_input_length: 10000
+  max_length: 3000
+  max_input_length: 15000
 
 cluster_graph:
-  max_cluster_size: 15
+  max_cluster_size: 50
 
 embed_graph:
   enabled: true # if true, will generate node2vec embeddings for nodes
-  num_walks: 20
-  walk_length: 0
+  # num_walks: 10
+  # walk_length: 40
   # window_size: 2
   # iterations: 3
   # random_seed: 597832
@@ -139,15 +135,9 @@ local_search:
   # conversation_history_max_turns: 5
   # top_k_mapped_entities: 10
   # top_k_relationships: 10
-  # llm_temperature: 0 # temperature for sampling
-  # llm_top_p: 1 # top-p sampling
-  # llm_n: 1 # Number of completions to generate
   # max_tokens: 12000
 
 global_search:
-  # llm_temperature: 0 # temperature for sampling
-  # llm_top_p: 1 # top-p sampling
-  # llm_n: 1 # Number of completions to generate
   # max_tokens: 12000
   # data_max_tokens: 12000
   # map_max_tokens: 1000

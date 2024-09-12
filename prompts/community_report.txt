@@ -1,18 +1,17 @@
-
-You are an AI assistant that helps a human analyst to perform general information discovery. Information discovery is the process of identifying and assessing relevant information associated with certain entities (e.g., organizations and individuals) within a network.
+You are an AI assistant that helps a human analyst to perform software requirements analysis. This analysis involves identifying and assessing relevant information associated with certain entities (e.g., articles, standards, and requirements) within a software development context.
 
 # Goal
-Write a comprehensive report of a community, given a list of entities that belong to the community as well as their relationships and optional associated claims. The report will be used to inform decision-makers about information associated with the community and their potential impact. The content of this report includes an overview of the community's key entities, their legal compliance, technical capabilities, reputation, and noteworthy claims.
+Write a comprehensive report of a software requirements community, given a list of entities that belong to the community as well as their relationships and optional associated claims. The report will be used to inform decision-makers about information associated with the community and their potential impact on software development projects. The content of this report includes an overview of the community's key entities, their compliance with standards, technical implications, best practices, and noteworthy claims.
 
 # Report Structure
 
 The report should include the following sections:
 
 - TITLE: community's name that represents its key entities - title should be short but specific. When possible, include representative named entities in the title.
-- SUMMARY: An executive summary of the community's overall structure, how its entities are related to each other, and significant information associated with its entities.
-- IMPACT SEVERITY RATING: a float score between 0-10 that represents the severity of IMPACT posed by entities within the community.  IMPACT is the scored importance of a community.
+- SUMMARY: An executive summary of the community's overall structure, how its entities are related to each other, and significant information associated with its entities in the context of software requirements.
+- IMPACT SEVERITY RATING: a float score between 0-10 that represents the severity of IMPACT posed by entities within the community. IMPACT is the scored importance of a community in terms of software development and requirements engineering.
 - RATING EXPLANATION: Give a single sentence explanation of the IMPACT severity rating.
-- DETAILED FINDINGS: A list of 5-10 key insights about the community. Each insight should have a short summary followed by multiple paragraphs of explanatory text grounded according to the grounding rules below. Be comprehensive.
+- DETAILED FINDINGS: A list of 5-10 key insights about the community. Each insight should have a short summary followed by multiple paragraphs of explanatory text grounded according to the grounding rules below. Be comprehensive and focus on software requirements engineering aspects.
 
 Return output as a well-formed JSON-formatted string with the following format:
     {{
@@ -41,7 +40,7 @@ Points supported by data should list their data references as follows:
 Do not list more than 5 record ids in a single reference. Instead, list the top 5 most relevant record ids and add "+more" to indicate that there are more.
 
 For example:
-"Person X is the owner of Company Y and subject to many allegations of wrongdoing [Data: Reports (1), Entities (5, 7); Relationships (23); Claims (7, 2, 34, 64, 46, +more)]."
+"Standard X is referenced by Article Y and is crucial for requirement Z [Data: Standards (1), Articles (5, 7); Requirements (23); Relationships (7, 2, 34, 64, 46, +more)]."
 
 where 1, 5, 7, 23, 2, 34, 46, and 64 represent the id (not the index) of the relevant data record.
 
@@ -55,41 +54,40 @@ Text:
 Entities
 
 id,entity,description
-5,VERDANT OASIS PLAZA,Verdant Oasis Plaza is the location of the Unity March
-6,HARMONY ASSEMBLY,Harmony Assembly is an organization that is holding a march at Verdant Oasis Plaza
+5,IEEE 830-1998,IEEE 830-1998 is a standard for software requirements specifications
+6,VERIFIABLE REQUIREMENTS,Verifiable requirements are a best practice in software requirements engineering
+7,BEST PRACTICES FOR SOFTWARE REQUIREMENTS SPECIFICATION,An article discussing best practices in software requirements specification
 
 Relationships
 
 id,source,target,description
-37,VERDANT OASIS PLAZA,UNITY MARCH,Verdant Oasis Plaza is the location of the Unity March
-38,VERDANT OASIS PLAZA,HARMONY ASSEMBLY,Harmony Assembly is holding a march at Verdant Oasis Plaza
-39,VERDANT OASIS PLAZA,UNITY MARCH,The Unity March is taking place at Verdant Oasis Plaza
-40,VERDANT OASIS PLAZA,TRIBUNE SPOTLIGHT,Tribune Spotlight is reporting on the Unity march taking place at Verdant Oasis Plaza
-41,VERDANT OASIS PLAZA,BAILEY ASADI,Bailey Asadi is speaking at Verdant Oasis Plaza about the march
-43,HARMONY ASSEMBLY,UNITY MARCH,Harmony Assembly is organizing the Unity March
+37,IEEE 830-1998,VERIFIABLE REQUIREMENTS,IEEE 830-1998 recommends verifiable requirements as a best practice
+38,BEST PRACTICES FOR SOFTWARE REQUIREMENTS SPECIFICATION,VERIFIABLE REQUIREMENTS,The article discusses the importance of verifiable requirements
+39,IEEE 830-1998,BEST PRACTICES FOR SOFTWARE REQUIREMENTS SPECIFICATION,The article references IEEE 830-1998 standard
+40,VERIFIABLE REQUIREMENTS,SOFTWARE QUALITY,Verifiable requirements contribute to overall software quality
 
 Output:
 {{
-    "title": "Verdant Oasis Plaza and Unity March",
-    "summary": "The community revolves around the Verdant Oasis Plaza, which is the location of the Unity March. The plaza has relationships with the Harmony Assembly, Unity March, and Tribune Spotlight, all of which are associated with the march event.",
-    "rating": 5.0,
-    "rating_explanation": "The impact severity rating is moderate due to the potential for unrest or conflict during the Unity March.",
+    "title": "IEEE 830-1998 and Verifiable Requirements in Software Engineering",
+    "summary": "This community revolves around the IEEE 830-1998 standard for software requirements specifications, with a focus on the concept of verifiable requirements. The standard is closely related to best practices in software requirements engineering, as discussed in relevant articles. The relationships between these entities highlight the importance of verifiable requirements in ensuring software quality.",
+    "rating": 8.5,
+    "rating_explanation": "The impact severity rating is high due to the crucial role of verifiable requirements in software development success and quality assurance.",
     "findings": [
         {{
-            "summary": "Verdant Oasis Plaza as the central location",
-            "explanation": "Verdant Oasis Plaza is the central entity in this community, serving as the location for the Unity March. This plaza is the common link between all other entities, suggesting its significance in the community. The plaza's association with the march could potentially lead to issues such as public disorder or conflict, depending on the nature of the march and the reactions it provokes. [Data: Entities (5), Relationships (37, 38, 39, 40, 41,+more)]"
+            "summary": "IEEE 830-1998 as a cornerstone standard",
+            "explanation": "IEEE 830-1998 emerges as a cornerstone standard in this community, providing guidelines for software requirements specifications. Its prominence in the relationships suggests its significant influence on software engineering practices. The standard's emphasis on verifiable requirements indicates its role in promoting quality and testability in software development. [Data: Entities (5), Relationships (37, 39)]"
         }},
         {{
-            "summary": "Harmony Assembly's role in the community",
-            "explanation": "Harmony Assembly is another key entity in this community, being the organizer of the march at Verdant Oasis Plaza. The nature of Harmony Assembly and its march could be a potential source of threat, depending on their objectives and the reactions they provoke. The relationship between Harmony Assembly and the plaza is crucial in understanding the dynamics of this community. [Data: Entities(6), Relationships (38, 43)]"
+            "summary": "Verifiable requirements as a key concept",
+            "explanation": "Verifiable requirements are a central concept in this community, recognized as a best practice in software requirements engineering. The emphasis on verifiability suggests a focus on creating clear, testable, and measurable requirements, which is crucial for successful software development. The relationship between verifiable requirements and software quality underscores their importance in the development process. [Data: Entities (6), Relationships (37, 38, 40)]"
         }},
         {{
-            "summary": "Unity March as a significant event",
-            "explanation": "The Unity March is a significant event taking place at Verdant Oasis Plaza. This event is a key factor in the community's dynamics and could be a potential source of threat, depending on the nature of the march and the reactions it provokes. The relationship between the march and the plaza is crucial in understanding the dynamics of this community. [Data: Relationships (39)]"
+            "summary": "Role of best practices literature",
+            "explanation": "The article 'Best Practices for Software Requirements Specification' plays a significant role in disseminating knowledge about effective requirements engineering. Its relationships with both the IEEE standard and the concept of verifiable requirements indicate its comprehensive coverage of important topics in the field. This literature serves as a bridge between formal standards and practical implementation of best practices. [Data: Entities (7), Relationships (38, 39)]"
         }},
         {{
-            "summary": "Role of Tribune Spotlight",
-            "explanation": "Tribune Spotlight is reporting on the Unity March taking place in Verdant Oasis Plaza. This suggests that the event has attracted media attention, which could amplify its impact on the community. The role of Tribune Spotlight could be significant in shaping public perception of the event and the entities involved. [Data: Relationships (40)]"
+            "summary": "Impact on software quality",
+            "explanation": "The relationship between verifiable requirements and software quality highlights the broader impact of effective requirements engineering. This connection emphasizes how adherence to standards and best practices in the early stages of software development can significantly influence the overall quality of the final product. It underscores the importance of this community's focus on requirements engineering in the larger context of software development. [Data: Relationships (40)]"
         }}
     ]
 }}
@@ -137,7 +135,7 @@ Points supported by data should list their data references as follows:
 Do not list more than 5 record ids in a single reference. Instead, list the top 5 most relevant record ids and add "+more" to indicate that there are more.
 
 For example:
-"Person X is the owner of Company Y and subject to many allegations of wrongdoing [Data: Reports (1), Entities (5, 7); Relationships (23); Claims (7, 2, 34, 64, 46, +more)]."
+"Standard X is referenced by Article Y and is crucial for requirement Z [Data: Standards (1), Articles (5, 7); Requirements (23); Relationships (7, 2, 34, 64, 46, +more)]."
 
 where 1, 5, 7, 23, 2, 34, 46, and 64 represent the id (not the index) of the relevant data record.
 

@@ -1,0 +1,19 @@
+Registering a New Member in the System  
+Title  Registering a new member in the system  
+Description  Online registration of a new member in the system and creating a user account for them 
+by the broker.  
+Input  Personal details (name, surname, father's name, ID number, ID serial number, birth date, 
+birth place, national code, education, gender, marital status), contact information (phone 
+number, address, email), bank details (account number, account type: brokera ge-Mellat -
+Saman), user details (username, password, repeat password), shareholder code, access 
+type (regular -special), security question and answer. All necessary information must be 
+entered by the broker.  
+Processing  The entered information is verified for correctness. The bank account details are checked 
+for validity through the bank. The registration date is recorded by the system. If the 
+security question is answered correctly, and the bank accounts are valid withou t errors, the 
+customer registration is confirmed.  
+Output  Successful customer registration in the system.  
+Error 
+Handling  If there is an error in entering the information, such as incorrect format or incorrect 
+security question answer, the incorrect information is cleared and the broker can re -enter 
+the information.

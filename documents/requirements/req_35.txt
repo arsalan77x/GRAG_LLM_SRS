@@ -1,0 +1,6 @@
+Title: Account Management
+Description: User registration, authentication, and secure login to ensure only authorized users can access their trading accounts.
+Input: User registration details (name, email, password), login credentials (username, password), security questions
+Processing: The system registers new users by validating their details and storing them securely. During login, it authenticates users by verifying credentials and security questions. The system uses encryption to secure data transmission and storage.
+Output: Successful registration, secure login, and access to user account dashboard.
+Error Handling: Display an appropriate error message if registration details are invalid or if login credentials do not match the records. Implement account lockout after multiple failed login attempts.

@@ -1,0 +1,18 @@
+Title  Transferring Funds for Selling Stocks or Bonds  
+Description  The amount corresponding to the sold stocks is deposited into the customer's account, and 
+the amount is withdrawn from the buyer's account. The brokerage fee is also withdrawn 
+from the buyer's account and deposited into the brokerage account.  
+Input  Customer account number, stock or bond amount, brokerage fee, buyer's account number, 
+brokerage account number  
+Processing  During the sale process, the user selects one of their accounts. The account balance is 
+checked, and the system sets the amount for the sold stocks and the brokerage fee. The 
+brokerage account is recorded in the system's database and needs only to be retrieved. The 
+stock exchange interface specifies the bank account of the buyer, and the funds are 
+transferred accordingly.  
+Output  Increase in customer account balance by the stock amount, decrease in customer account 
+balance by the brokerage fee amount, decrease in buyer's account balance by the stock 
+amount.  
+Error Handling  If there is an error in setting the account numbers, amounts, or if the stock exchange 
+interface does not specify the buyer's account number, an appropriate error message is 
+displayed.
+

@@ -1,0 +1,12 @@
+Title  Editing purchase orders in the queue  
+Description  The user can edit purchase orders in their order list that are in the "in queue" status.  Title  Editing purchase orders in the queue  
+Input  Type of stock, number of shares, investment price, maximum price, validity date  
+Processing  All purchase orders with the "in queue" status are displayed to the user. The fields, except 
+for the type of stock, are editable. If the user edits the number of shares, the system 
+checks for errors. If there is no error, the 
+order is updated.  
+Output  Change in some characteristics of the purchase orders in the queue  
+Error Handling   If there is an error in entering the information, the field is cleared and an error 
+message is displayed. The user can re -enter the information.
+
+

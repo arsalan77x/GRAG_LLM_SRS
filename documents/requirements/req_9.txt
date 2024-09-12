@@ -1,0 +1,11 @@
+Title: Online Purchase of Stocks and Other Securities by Brokers
+
+Description: Brokers can securely buy stocks and other securities online on behalf of customers.
+
+Input: The first online purchase request in the request queue.
+
+Processing: The system presents the first online purchase request to the broker. If the customer has specified the investment price, the broker sets the price. The broker securely checks the customer's account balance. If sufficient, the amount is blocked, and this action is logged for auditing purposes. The system automatically records the purchase request, and the transaction is logged. The request status is updated from "in queue" to "completed" after purchase. The money is securely withdrawn from the customer's account, and the purchased shares are added to the customer's portfolio. The order report is added to the list of transactions by the broker.
+
+Output: Adding the order report to the list of transactions by the broker, adding purchased shares to the user's portfolio.
+
+Error Handling: If any of the following occur, an appropriate error message is displayed, and the error is logged for review: - The order number is not assigned - The purchased shares are not added to the user's portfolio - The order is not added to the user's order list and the list of transactions by the broker. No partial transactions occur if an error is encountered.

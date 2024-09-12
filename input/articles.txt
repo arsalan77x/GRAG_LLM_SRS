@@ -102,7 +102,7 @@ the framework approved by the association and in clude the organization's announ
 Article 15:  
 To manage the services provided through the infrastructures mentioned in clauses 4, 5, and 6 of article 
 1, the broker or broker/dealer must establish at least one separate unit within their administrative 
-structure to continuously monitor the risks associa ted with online trading and the grouped online order 
+structure to continuously monitor the risks associated with online trading and the grouped online order 
 infrastructure, and take necessary control and supervisory measures according to the organization's 
 requirements. The minimum conditions for occupying this unit will be announced by the organization.  
 Article 16:  
@@ -1233,7 +1233,8 @@ The organization shall verify the established and implemented
 information security continuity controls at regular intervals in order to ensure that they are valid and effective during adverse situations.
 A.17.2  Redundancies
 Objective: To ensure availability of information processing facilities.
-A.17.2.1Availability of information processing 
+A.17.2.1Availability of infor -
+mation processing 
 facilitiesControl
 Information processing facilities shall be implemented with redun -
 dancy sufficient to meet availability requirements.
@@ -1243,7 +1244,8 @@ Objective: To avoid breaches of legal, statutory, regulatory or contractual obli
 mation security and of any security requirements.
 A.18.1.1Identification of appli -
 cable legislation and 
-contractual requirements Control
+contractual require -
+mentsControl
 All relevant legislative statutory, regulatory, contractual require -
 ments and the organizations approach to meet these requirements 
 shall be explicitly identified, documented and kept up to date for each information system and the organization.
@@ -1841,7 +1843,615 @@ transactions
 - A print and email function will be provided for
 confirmation
 
+Document_5
+Non Functional Requirements:
+Performance and Availability
+The system has several objectives related to performance, including speed, fault tolerance, throughput,
+and processing time. The performance criteria for the brokerage system are as follows:
+Response Time (for online trading): The maximum response time from when a customer starts a purchase or sale until the final result is returned should be within 500 milliseconds, assuming simultaneous usage by 4 million users in a 3-hour window (9 AM to 12 PM). This time can vary depending on the stock exchange's rate changes and availability.
 
+Minimum Response Time (for online trading): The minimum acceptable response time from a customer's perspective should be within 100 milliseconds, assuming simultaneous usage by 4 million users in a 3-hour window (9 AM to 12 PM).
+
+Availability: The system must be available from 9 AM to 12 PM daily for trading and requests, ensuring a 99% uptime. Transactions must be processed within 500 milliseconds.
+
+Minimum Number of Requests: The system must handle a minimum of 4 million requests during the 3-hour availability window, assuming each user makes at least one request.
+
+Simultaneous Users: The system must support a minimum of 4 million simultaneous users during the 3-hour window.
+
+Scalability: The system should be designed to scale beyond 4 million users, handling up to 6 million simultaneous users and 6 million requests within the 3-hour window, with no degradation in performance. The system must also handle sudden surges in traffic (up to 50% more than the expected number of users) without failure.
+
+Graceful Degradation: In the case of system overload or partial failure, the system must maintain core functionality (e.g., basic order submission) and provide feedback to users about degraded service (e.g., longer response times), without crashing or becoming unavailable. Non-essential features should degrade first, allowing critical trading operations to continue.
+
+Recovery Time Objective (RTO): In the event of a system failure, the system must be restored to full operational status within 15 minutes to minimize disruption during the trading window.
+
+Recovery Point Objective (RPO): In the event of a system failure, no more than 5 minutes of data should be lost, ensuring minimal disruption to user transactions and data integrity.
+
+Users accessing the system via the internet or through brokers can fill out forms and submit them to brokers outside of the 9 AM to 12 PM window.
+
+It's important to define a common criterion for system performance, accepted by all related entities. For example, a test transaction with minimal data on a web page is different from a transaction on a page with many fields and images. Therefore, both systems must be comparable based on the agreed criteria.
+Security
+Information security in the brokerage system refers to preventing unauthorized access, ensuring data integrity, and protecting against data breaches or destruction. The following are the security requirements for the system, which must be supported by appropriate mechanisms:
+
+Data Validation:
+All user input, including form data, transaction requests, and queries, must be properly validated to ensure no malicious data (e.g., SQL injection, cross-site scripting) can be entered into the system. Input sanitization should be applied on both client-side and server-side to avoid unauthorized manipulation of data.
+
+Authentication:
+The system must use strong, multi-factor authentication (MFA) mechanisms to verify user identities. This includes using secure passwords, biometrics, or one-time passwords (OTPs) for users, ensuring only legitimate users can access their accounts. All authentication data must be encrypted both in transit and at rest to prevent interception or misuse.
+
+Authorization:
+The system must implement role-based access control (RBAC) to ensure that users can only access the data and system features they are permitted to use based on their role (e.g., customer, broker, admin). Any attempt to access unauthorized resources should be logged and flagged for review.
+
+Exception Management:
+All exceptions or errors must be handled securely, ensuring no sensitive system information (such as stack traces or error codes) is exposed to end users. Instead, generic error messages should be shown. Additionally, exceptions must be logged for auditing purposes, ensuring proper diagnosis and remediation of security-related issues.
+
+Session Management:
+Sessions should be managed securely with unique session tokens for each authenticated user. Sessions must time out after a period of inactivity (e.g., 15 minutes) and be automatically terminated if suspicious activity is detected. Session tokens should be stored securely and not exposed in URLs or local storage. For sensitive operations, session re-authentication should be required.
+
+Encryption:
+All sensitive data, including user credentials, personal information, transaction details, and communication between the user and the system, must be encrypted using strong encryption algorithms (e.g., AES-256 for data at rest and TLS 1.2/1.3 for data in transit). This ensures that even if data is intercepted, it cannot be read or tampered with.
+
+Audit Logs:
+The system must maintain secure audit logs of all significant actions (e.g., login attempts, transactions, data modifications). Logs should be immutable and stored in a secure location to protect against tampering. Audit logs must include user ID, action performed, timestamp, and IP address, ensuring accountability and traceability.
+
+Intrusion Detection and prevention:
+The system must have intrusion detection and prevention systems (IDPS) in place to monitor and block potential attacks, such as distributed denial-of-service (DDoS), brute-force attacks, or other unauthorized access attempts. Alerts should be generated for any suspicious activity, and the system should respond to threats automatically where possible (e.g., locking user accounts after multiple failed login attempts).
+
+Security Patching and Updates:
+The system must have a process in place to ensure that all software components, including third-party libraries, are regularly updated and patched for known vulnerabilities. Security patches should be applied promptly to prevent exploitation of any vulnerabilities.
+
+
+Data validation
+Data validation involves reviewing, filtering, and removing malicious input to ensure data security and maintain system integrity. Proper input validation protects the system from a wide range of common attacks and vulnerabilities by ensuring that user input is properly sanitized and conforms to expected formats. The following are common attacks mitigated by input validation:
+
+SQL Injection:
+This attack exploits vulnerabilities in the application's data validation process, allowing attackers to execute unauthorized SQL commands. It occurs when user input is embedded in SQL queries without proper validation or sanitization, enabling attackers to impersonate users, alter or delete data, or perform denial-of-service attacks. Input validation should ensure that all SQL queries are parameterized, and user inputs are sanitized to prevent SQL injection attacks.
+
+Buffer Overflow:
+A buffer overflow occurs when input data exceeds the allocated buffer size in memory, leading to unpredictable behavior such as denial of service, crashes, or code execution. Proper input validation must include size checks for user inputs, ensuring that all inputs are within expected bounds to prevent buffer overflows and other memory-based attacks.
+
+Code Injection:
+Code injection attacks involve injecting malicious code into an application to exploit vulnerabilities in its input validation process. These attacks can lead to data theft, unauthorized access, or system compromise. To mitigate code injection, input should be strictly validated against predefined patterns (e.g., escaping special characters) and ensure only allowed data types are processed.
+
+Cross-Site Scripting (XSS):
+Cross-site scripting allows attackers to inject malicious scripts into web pages viewed by other users. This can lead to session hijacking, defacement, or theft of sensitive information. Input validation must ensure that any user-supplied data that is rendered on a webpage is properly sanitized and encoded to prevent XSS attacks.
+
+Cross-Site Request Forgery (CSRF):
+In CSRF attacks, an attacker tricks a user into executing unwanted actions on a web application in which they are authenticated. Input validation must ensure that each sensitive transaction is accompanied by proper anti-CSRF tokens to verify the legitimacy of the request.
+
+File Upload Vulnerabilities:
+When users are allowed to upload files, attackers may attempt to upload malicious files to exploit the system. Input validation for file uploads must enforce strict controls on file types, sizes, and content. Files should be scanned for malware, and uploads should be stored outside of web-accessible directories to prevent unauthorized access.
+
+XML External Entity (XXE) Attacks:
+XXE attacks exploit vulnerabilities in XML parsers that process untrusted user input. By injecting malicious XML data, attackers can retrieve sensitive information or perform server-side request forgery (SSRF). Proper validation and disabling of external entity processing should be implemented for XML data to prevent XXE attacks.
+
+Email and URL Validation:
+When accepting inputs like email addresses or URLs, attackers may provide malformed or malicious entries to exploit vulnerabilities in downstream systems. Input validation must ensure that emails and URLs conform to a safe and valid format before being processed.
+
+Input Format and Length Validation:
+For all inputs, including text, numbers, dates, and more, the system must enforce strict validation on format, length, and character type. This prevents inputs like overlong data, special characters, or unsupported formats that could exploit weaknesses in the application logic.
+Authentication
+Authentication is the process of verifying the identity of clients (users, processes, or systems) interacting with the application. A robust authentication system is essential for protecting sensitive data and ensuring only authorized users gain access to system resources. Key features to be considered in the authentication process include:
+
+Secure Mechanism for Authentication:
+The system must implement a reliable and secure authentication mechanism, such as multi-factor authentication (MFA), that requires users to verify their identity using multiple forms of validation (e.g., password, one-time passcode, biometric data). This reduces the risk of unauthorized access even if one authentication factor is compromised.
+
+Protection of Sensitive Functions:
+All sensitive functions and resources, including those that modify financial data, user profiles, or system configurations, must be protected by authentication mechanisms. These operations should require re-authentication or additional security measures (e.g., MFA) to ensure that only the legitimate user can perform these actions.
+
+Storage of Credentials:
+User credentials must be securely stored using strong hashing algorithms, such as bcrypt or Argon2, to prevent unauthorized access to passwords. Additionally, salted hashing should be used to add an extra layer of protection against precomputed attacks like rainbow table attacks.
+
+Encrypted Communication:
+User credentials must be transmitted over encrypted connections using secure protocols, such as TLS 1.2 or higher, to prevent interception during transmission (e.g., man-in-the-middle attacks). All authentication-related communications between the client and server must be encrypted to ensure data confidentiality and integrity.
+
+Account Lockout Mechanism:
+The system should implement an account lockout mechanism after a defined number of failed login attempts to protect against brute-force attacks. After multiple failed authentication attempts, the account should be temporarily locked or additional verification steps (such as CAPTCHA or MFA) should be required.
+Authorization
+Authorization determines what actions a user is permitted to perform and which resources they can access. System resources include files, databases, registry keys, configuration settings, APIs, and other sensitive data. Proper authorization ensures that users only have access to the resources and functionality appropriate for their role and that unauthorized users are prevented from accessing sensitive information. Key considerations for authorization include:
+
+Access Control:
+Users must not be able to access resources without proper authentication. The system must enforce strict role-based access control (RBAC), ensuring that only users with appropriate roles or privileges can perform specific actions or access certain resources. Authorization checks should occur for every request, not just at login, to ensure that users do not gain unauthorized access by manipulating URLs, tokens, or session states.
+
+Post-Logout Access Control:
+Users must not be able to access resources after logging out. Once a user logs out, all session tokens or credentials should be invalidated, and any cached session data should be cleared. The system should ensure that subsequent attempts to access protected resources without re-authentication are denied.
+
+Access Level Management:
+Access to resources must be managed according to user access levels. Different roles (e.g., administrator, regular user, guest, broker) should have clearly defined and distinct permissions. These roles must be easily configurable by administrators to grant or revoke access rights without affecting other users. Access levels should be reviewed periodically to ensure proper alignment with organizational requirements.
+
+Least Privilege Principle:
+The system should adhere to the least privilege principle, meaning users should only have the minimum permissions necessary to perform their assigned tasks. No user should have access to more resources than they require to prevent abuse or accidental misuse of system functionalities.
+
+Separation of Duties:
+Sensitive actions, such as approving large financial transactions or modifying system configurations, should require the approval of more than one user with appropriate roles (e.g., an initiator and an approver). This separation of duties prevents unauthorized actions by a single user and ensures oversight in critical operations.
+Session Management
+Session management involves maintaining user state after the initial connection. Key considerations for
+session management include:
+• Session ID Security: Session IDs must be secure and randomly generated.
+• Session Expiration: Sessions must expire after a defined period.
+• Session Termination: Users must be able to log out and terminate their sessions.
+• Secure Transmission: Session IDs and cookies must be transmitted over encrypted connections
+Volume Management
+The quality requirement for volume management aims to define the maximum amount of data that can
+be stored in the database. Due to the possibility of up to 4 million users accessing the brokerage system
+simultaneously within a 3-hour window (9 AM to 12 PM), with each user submitting at least one request
+(usually more), a large volume of data must be processed and stored in the database. The system must
+have appropriate mechanisms for managing this vast amount of data and consider the following points:
+• Processing Speed: The system's processing speed should not slow down due to the large
+volume of data exchanged.
+• Data Integrity: In case of exchanging a large volume of data, the data should not reach its
+threshold and cause database corruption. Appropriate warnings should be displayed when
+nearing thresholds.
+• Data Loss Prevention: Exchanging a large volume of data should not lead to data loss or failure
+to store new data.
+• Maximum Disk Volume: The maximum number of requests during the 3-hour window must be
+considered for setting the maximum file size and buffer size in the file system.
+
+Compatibility
+The brokerage system must be compatible with other applications and services without causing
+interference. The system should continue to operate smoothly alongside other installed applications. The
+following compatibility requirements must be considered:
+• No Adverse Effects: The system should not adversely affect the performance of other
+applications installed in the same environment. This includes both direct effects (like stopping
+other programs) and indirect effects (like consuming all resources).
+• Updates and Compatibility: Updating applications should not damage the system's
+compatibility.
+• Shared Resources: Resources shared among programs should not cause compatibility issues in
+the system.
+
+Document_6
+Functional Requirements:
+Title: Logging Out of the System
+
+Description: The user logs out of their account, securely terminates the session, and is redirected to the main page.
+
+Input: None
+
+Processing: When the user selects the "Logout" option, the system securely terminates the user's session on both the client and server sides, ensuring that no session data remains active. All session tokens, cookies, and any authentication-related data (including MFA tokens, if applicable) are invalidated. The logout action is logged for monitoring and auditing purposes. The user is redirected to the main page upon successful logout.
+
+Output: The user is logged out of their account and redirected to the main page. Logout activity is recorded in system logs for security auditing and monitoring.
+
+Error Handling: If an error occurs during the logout process, an appropriate error message is displayed, and the system ensures that the session is safely terminated to prevent unauthorized access. Error logs are generated for review, and any security incidents related to the logout process are escalated as per incident management procedures.
+Title: Providing a Tabular Report of the Stock Market Status
+
+Description: Displaying the current market status in a tabular format with real-time updates.
+
+Input: None
+
+Processing: The system securely updates the market status in real-time with every change provided through the stock market web service. All data fetched and displayed are logged for auditing purposes to ensure traceability. The system must validate the integrity of data received from the web service to ensure accuracy before updating the display.
+
+Output: A table with columns for symbol, company name, highest price, lowest price, last price, previous price, change, percentage change, best bid, and best ask. Each row shows the status of a stock symbol.
+
+Error Handling: If the market status is not displayed due to a web service failure or data integrity issue, an appropriate error message is displayed, and the event is logged for further review.
+
+
+Title: Online Purchase of Stocks and Other Securities by Regular and Special Customers
+
+Description: All customers, both regular and special, can securely request online purchases of stocks and other securities.
+
+Input: Type of stock, number of shares, investment price (market price, specified, limited), validity date
+
+Processing: The user must securely log into their account in the system. The user selects the desired stock and number of shares. The user sets the investment price (market, specified, limited). The system verifies that the number of shares does not exceed the available shares. The user specifies the source account for payment (Mellat Bank, Saman Bank, brokerage account). The system securely checks the account balance. If sufficient, the amount is blocked until final confirmation. The system assigns a unique order number, records the order, and logs the transaction for auditing purposes. Each online purchase order is recorded in the user's order list with the status "in queue."
+
+Output: Adding the order report to the user's order list.
+
+Error Handling: If the number of shares exceeds the available shares, or if there is an error in processing the order, an appropriate error message is displayed, and the error is logged for further review. The system ensures that no partial transactions occur if an error is encountered.
+Title: Online Sale of Stocks and Other Securities by Special Customers
+
+Description: Special customers can securely sell their stocks and other securities online.
+
+Input: Type of stock, number of shares, investment price (specified or limited), minimum price
+
+Processing: The user must securely log into their account in the system. The "special" access type is checked. If the access type is "special," the online sale feature is enabled. The user selects the desired stock and number of shares. The user sets the investment price (specified or limited) and the minimum price. The system verifies that the number of shares does not exceed the user's available shares. The user specifies the destination account for payment (Mellat Bank, Saman Bank, brokerage account). The system securely records the sale request, assigns a unique order number, and logs the transaction for auditing purposes. The order is recorded in the user's order list.
+
+Output: The order report is added to the user's order list.
+
+Error Handling: If the number of shares exceeds the user's available shares or if there is an issue with processing the sale request, an appropriate error message is displayed, and the error is logged for further review.
+
+
+Title  Online sale of stocks and other securities by special customers  
+Description  Special customers can sell their stocks and other securities online.  
+Input  Type of stock, number of shares, investment price, minimum price  
+Processing  The user must log into their account in the system. The "special" access type is checked. 
+If the access type is "special," the online sale feature is enabled. The user selects the 
+desired stock and number of shares. The user sets the investment price (specified or 
+limited), and the minimum price. The system checks if the number of shares does not 
+exceed the user's available shares. The user specifies the destination account for payment 
+(Mellat Bank, Saman Bank, brokerage account). The system automatically r ecords the 
+sale request. The system assigns a unique order number and records the order. The order 
+is recorded in the user's order list with the status "completed." Once the sale is confirmed, 
+the money is deposited into the user's bank account.  
+Output  Decrease in sold shares from the user's portfolio, addition of the sale report to the user's 
+order list  
+Error 
+Handling  If any of the following occur, an appropriate error message is displayed: - The user's 
+access type is "regular" - The number of shares exceeds the available shares - The sold Title  Online sale of stocks and other securities by special customers  
+shares are not removed from the user's portfolio - The sale report is not added to the user's 
+order list - The order number is not assigned
+Online Sale of Stocks and Other Securities by Brokers  
+Title  Online sale of stocks and other securities by brokers  
+Description  Brokers can sell stocks and other securities online on behalf of customers.  
+Input  The first online sale request in the request queue  
+Processing  The system presents the first online sale request to the broker. If the customer has 
+specified the investment price, the broker sets the price. The broker checks the customer's 
+account balance. If sufficient, the amount is blocked. The system automatically  records 
+the sale request. The request status is updated from "in queue" to "completed" after the 
+sale. The money is deposited into the customer's bank account and the sold shares are 
+removed from the user's portfolio. The sale report is added to the list of transactions by 
+the broker.  
+Output  Addition of the sale report to the list of transactions by the broker, decrease in sold shares 
+from the user's portfolio  
+Error 
+Handling  If any of the following occur, an appropriate error message is displayed: - The order 
+number is not assigned - The sold shares are not removed from the user's portfolio - The 
+order is not added to the user's order list and the list of transactions by the broker.
+Online Sale of Stocks and Other Securities by Regular and Special Customers  
+Title  Online sale of stocks and other securities by regular and special customers  
+Description  All customers, both regular and special, can request online sales.  
+Input  Type of stock, number of shares, sale price (market price, specified, limited), validity 
+date, minimum price  
+Processing  The user must log into their account in the system. The user selects the desired stock and 
+number of shares. The user sets the sale price (market, specified, limited), and the 
+minimum price. The system checks if the number of shares does not exceed the ava ilable 
+shares. The user specifies the destination account for payment (Mellat Bank, Saman Bank, 
+brokerage account). The system automatically records the sale request. The system 
+assigns a unique order number and records the order. Each online sale order is  recorded in 
+the user's order list with the status "in queue."  
+Output  Addition of the sale report to the user's order list  
+Error 
+Handling  If the number of shares exceeds the available shares, an appropriate error message is 
+displayed.
+Title  Editing purchase orders in the queue  
+Description  The user can edit purchase orders in their order list that are in the "in queue" status.  Title  Editing purchase orders in the queue  
+Input  Type of stock, number of shares, investment price, maximum price, validity date  
+Processing  All purchase orders with the "in queue" status are displayed to the user. The fields, except 
+for the type of stock, are editable. If the user edits the number of shares, the system 
+checks if the new number does not exceed the available shares. If there is no error, the 
+order is updated.  
+Output  Change in some characteristics of the purchase orders in the queue  
+Error 
+Handling  If the number of shares exceeds the available shares, an appropriate error message is 
+displayed. If there is an error in entering the information, the field is cleared and an error 
+message is displayed. The user can re -enter the information.
+Title  Editing sale orders in the queue  
+Description  The user can edit sale orders in their order list that are in the "in queue" status.  
+Input  Type of stock, number of shares, investment price, minimum price, validity date  
+Processing  All sale orders with the "in queue" status are displayed to the user. The fields, except for 
+the type of stock, are editable. If the user edits the number of shares, the system checks if 
+the new number does not exceed the user's available shares. If there is no error, the order 
+is upd ated.  
+Output  Change in some characteristics of the sale orders in the queue  
+Error 
+Handling  If the number of shares exceeds the available shares, an appropriate error message is 
+displayed. If there is an error in entering the information, the field is cleared and an error 
+message is displayed. The user can re-enter the information.
+Title  Canceling orders in the queue  
+Description  The user can cancel orders in their order list that are in the "in queue" status.  
+Input  One of the orders in the user's order list  
+Processing  All orders with the "in queue" status are displayed to the user. The user selects the order 
+to cancel. The selected order is removed from the online order queue and marked as 
+"canceled."  
+Output  Canceling one of the orders in the queue  
+Error 
+Handling  If the canceled order is not removed from the online order queue, an appropriate error 
+message is displayed. The user is asked to resubmit the cancellation request.
+Generating Reports of All Customer Transactions  
+Title  Generating reports of all customer transactions (creating order lists)  
+Description  Each purchase and sale order of the customer, whether online or internet -based, should be 
+stored in a report.  Title  Generating reports of all customer transactions (creating order lists)  
+Input  Order number, transaction type, stock type, number of shares, investment price, 
+minimum/maximum price, order status, validity date  
+Processing  After each purchase or sale transaction, a report of that transaction is generated. As report 
+generation occurs during the transaction process, all transaction details are predefined and 
+automatically recorded during the purchase or sale.  
+Output  Adding each transaction to the complete order list  
+Error 
+Handling  If the report is not added to the list after each transaction, an appropriate error message is 
+displayed.
+Title: User Account Management
+
+Description: The user can edit their account information securely, with validation and logging of critical changes.
+
+Input: The user can enter information related to personal details, contact details, bank details (associated with the account at the brokerage), and username for changes.
+
+Processing: All fields related to the customer account are displayed as editable. The user can modify any information and enter new details. If the user changes their bank account, the validity of the new bank account must be checked. The request for bank account validation is securely sent to the bank. If there is no error in entering the new information and the bank confirms the new account, the new information is securely recorded in the database, and the changes are logged for auditing purposes.
+
+Output: The new information related to the user account is recorded in the database.
+
+Error Handling: If there is an error in entering any of the information, an appropriate error message is displayed, and the user is allowed to re-enter the information. If the bank account validation fails, the user is notified of the issue, and the previous account details remain unchanged.
+Title  Creating a list of customer shares (creating a portfolio)  
+Description  Whenever a purchase or sale is completed, the purchased or sold shares are added to a list 
+called the portfolio.  
+Input  Order number, transaction type, stock type, number of shares, investment price  
+Processing  From the existing transactions in the order list, those with the status field set to 
+"completed" are added to another list called the portfolio. The required fields for the 
+portfolio list are fewer and only include some fields from the order list transactions: order 
+number, transaction type, stock type, number of shares, investment price. The order list 
+and the po rtfolio list should be synchronized. Whenever an order status in the order list 
+changes from "in queue" to "completed," the following scenarios are checked:  
+• If the completed order is for the purchase of a new stock type, a new report is added to the 
+portfolio.  
+• If the completed order is for the purchase of more shares of an existing stock type, the number of 
+shares field is updated.  
+• If the completed order is for the sale of all shares of a stock type, the report is removed from the 
+portfolio.  
+• If the completed order is for the sale of some shares, the number of shares field is updated. | | 
+Output | Increasing or decreasing shares in the portfolio | | Error Handling | If the status change 
+of an order in the order list to "completed" does not upda te the portfolio, it indicates an error. 
+This can occur if the addition of a new report, removal of an existing report, or updating the 
+number of shares field does not happen. An appropriate error message is displayed, and the 
+system attempts to update aga in. |
+Searching for a Symbol  
+Title  Searching for a stock symbol  
+Description  Users can search for a specific stock symbol within the market status table.  
+Input  Stock symbol name  
+Processing  The user enters the desired symbol, and the system searches for this symbol in the 
+market status table provided by the stock exchange organization.  
+Output  All stocks matching the searched symbol are displayed in a table with their information.  
+Error 
+Handling  Display an appropriate error message if the entered symbol name is invalid.
+Title  Deleting completed and canceled orders from customer order list  
+Description  The user can delete orders from their order list that have the status "completed" or 
+"canceled."  
+Input  Each row in the customer's order list that the user selects for deletion    
+Processing  The entire order list is displayed to the user, excluding orders in the queue. The user can 
+select any row for deletion. The selected row is removed from the order list. The user can 
+also select all completed and canceled orders for deletion.  
+Output  Deleting selected completed and canceled orders from the customer's order list  
+Error Handling  If the user selects inactive rows for deletion, an appropriate error message is displayed. If 
+the deletion of a selected transaction does not occur, an error message is displayed, and 
+the user is asked to retry.
+Generating a Transfer Certificate after Each Transaction  
+Title  Generating a transfer certificate after each transaction  
+Description  After each purchase or sale transaction, a transfer certificate is generated for that 
+transaction.  
+Input  Name, surname, national ID, shareholder ID, order number, transaction type, stock type, 
+number of shares, share amount, deducted fee amount  
+Processing  A certificate is generated for each transaction in the order list with the status "completed." 
+The certificate, in a specific and printable format (e.g., PDF or Word), includes the details 
+of the transaction requester (shareholder) and the order details. T he creation date is 
+automatically recorded. A summary of each transfer certificate is recorded in a separate 
+table with columns equivalent to the input fields. Clicking on any row in this table allows 
+the corresponding transfer certificate file to be loade d. 
+Output  Generating a transfer certificate for each completed order  
+Error 
+Handling  If there is an error in retrieving data from the database or the order list, an appropriate 
+error message is displayed.
+Viewing and Printing Transfer Certificates  
+Title  Viewing and printing transfer certificates  
+Description  The user can view and print any of their transfer certificates.  
+Input  None  
+Processing  The system displays a table of all the user's transfer certificates. Clicking on any row 
+loads the corresponding transfer certificate file. The user can then print the certificate.  
+Output  Opening and printing the transfer certificate file  
+Error 
+Handling  If the transfer certificate file fails to load, an appropriate error message is displayed, and 
+the user can retry. If there is an error in printing, the user can request another print 
+attempt.
+Registering Phone Orders in the Internet System  
+Title  Registering phone orders in the internet system  
+Description  Orders registered in the phone system are registered in the internet system for processing 
+by the broker.  Title  Registering phone orders in the internet system  
+Input  Orders registered in the phone system  
+Processing  All orders from the phone system are processed in the brokerage system database. Based 
+on the order registration date, all orders are sorted, whether internet or phone orders.  
+Output  Adding phone system orders to the internet order database  
+Error 
+Handling  In case of disruption in phone orders, an appropriate message is displayed to the user.
+Providing Stock Market News  
+Title  Providing stock market news  
+Description  Display stock market news from the newest to the oldest.  
+Input  None  
+Processing  When the user clicks on the "Stock Market News" option, the news should be displayed 
+in a table format. The news is obtained directly from the stock exchange organization's 
+web service. Any new news published will appear at the top of the table.  
+Output  A table with columns for news date and news title. Each row represents a news item, with 
+the newest news at the top.  
+Error 
+Handling  Display an appropriate error message if there is an error in loading the news.
+Providing Company Announcements  
+Title  Providing company announcements  
+Description  Display company announcements from the newest to the oldest.  
+Input  None  
+Processing  When the user clicks on the "Company Announcements" option, a table containing the 
+announcements is displayed. The table is sorted by the time of announcement publication Title  Providing company announcements  
+and the announcements are received from the stock exchange organization's web service. 
+Any new announcements will appear at the top of the table.  
+Output  A table with columns for symbol, company name, announcement title, submission time, 
+publication time, and attachment. Each row shows information about an announcement.  
+Error 
+Handling  Display an appropriate error message if there is an error in displaying the announcements 
+or in loading the attachment file.
+Providing Market Supervisor Messages  
+Title  Providing market supervisor messages  
+Description  Display market supervisor messages in chronological order.  
+Input  None  
+Processing  When the user clicks on the "Market Supervisor Messages" option, a table containing the 
+messages is displayed. The messages are sorted by date and time and are received from 
+the stock exchange organization's web service. Any new messages will appear at the  top 
+of the table.  
+Output  A table with columns for date, time, and message title. Each row corresponds to a market 
+supervisor message.  
+Error 
+Handling  Display an appropriate error message if the market supervisor messages are not displayed.
+Registering a New Member in the System  
+Title  Registering a new member in the system  
+Description  Online registration of a new member in the system and creating a user account for them 
+by the broker.  
+Input  Personal details (name, surname, father's name, ID number, ID serial number, birth date, 
+birth place, national code, education, gender, marital status), contact information (phone 
+number, address, email), bank details (account number, account type: brokera ge-Mellat -
+Saman), user details (username, password, repeat password), shareholder code, access 
+type (regular -special), security question and answer. All necessary information must be 
+entered by the broker.  
+Processing  The entered information is verified for correctness. The bank account details are checked 
+for validity through the bank. The registration date is recorded by the system. If the 
+security question is answered correctly, and the bank accounts are valid withou t errors, the 
+customer registration is confirmed.  
+Output  Successful customer registration in the system.  
+Error 
+Handling  If there is an error in entering the information, such as incorrect format or incorrect 
+security question answer, the incorrect information is cleared and the broker can re -enter 
+the information.
+Title: Bank Account Validation
+Description: Validate the bank account entered by the customer securely, ensuring data integrity and confidentiality.
+Input: Account number, bank name
+Processing: The bank account information is securely transmitted to the corresponding bank interface to check if the account is valid. The validation is performed by the bank interface. If the account is valid, a confirmation message is securely received from the bank interface by the system, and the result is logged for auditing purposes.
+Output: Confirmation of account validity or invalidity.
+Error Handling: If the customer's bank account is invalid or if there is a communication issue with the bank interface, an appropriate error message is displayed. The error event is logged for further review.
+Title  Logging into the system  
+Description  Users log into their user account.  
+Input  Username, password, and captcha  
+Processing  The user enters their username, password, and captcha. The system checks the username 
+and password against the database and verifies the captcha. If the information is correct, 
+the user's account page is displayed.  
+Output  The user logs into their account.  
+Error 
+Handling  Display an appropriate error message if any of the input data is incorrect. If the user 
+enters incorrect information three times consecutively, they must wait 20 seconds before 
+trying again.
+Recovering Password  
+Title  Recovering password  
+Description  Allow users to recover their password if they forget it.  
+Input  Username or email, new password, repeat new password, captcha  
+Processing  The user enters their username or email. The entered information is matched against the 
+database. If correct, a password reset page is opened for the user to enter the new 
+password and captcha. If the information is correct, the password is changed.  
+Output  Password successfully changed.  
+Error 
+Handling  Display an appropriate error message if there is an error in any of the input information.
+Title  Providing links to related organizations  
+Description  Allow users to navigate to various stock market organizations through the brokerage 
+system.  
+Input  None  
+Processing  On the main page of the system, links to each organization (Tehran Stock Exchange, Iran 
+Mercantile Exchange, Iran Energy Exchange, Iran Fara Bourse, and the Securities and 
+Exchange Organization) are provided. When a user clicks a link, they are redirected to the 
+corre sponding organization's system.  
+Output  User navigation to various stock market organizations.  
+Error 
+Handling  Display an appropriate error message if there is an error in establishing a connection.
+Title: Order Execution
+Description: Efficiently handle buy/sell orders, including market, limit, and stop orders.
+Input: User account details, order type, stock symbol, number of shares, order price
+Processing: The system validates the user account, processes the order based on the specified type (market, limit, stop), and executes the trade on the stock exchange. The system then updates the user's portfolio and order history.
+Output: Confirmation of order execution, updated portfolio, and order history.
+Error Handling: Display an appropriate error message if the order cannot be processed due to validation issues, insufficient funds, or market conditions.
+
+Title: Real-Time Market Data
+Description: Display live stock prices, charts, and market news to keep users informed of current market conditions.
+Input: Stock symbols, market data feeds, news sources
+Processing: The system fetches real-time data from market feeds and news sources, updates stock prices and charts continuously, and displays the latest market news.
+Output: Up-to-date stock prices, interactive charts, and real-time news updates displayed on the user interface.
+Error Handling: If data retrieval fails, display an appropriate error message and retry fetching the data.
+Title: Account Management
+Description: User registration, authentication, and secure login to ensure only authorized users can access their trading accounts.
+Input: User registration details (name, email, password), login credentials (username, password), security questions
+Processing: The system registers new users by validating their details and storing them securely. During login, it authenticates users by verifying credentials and security questions. The system uses encryption to secure data transmission and storage.
+Output: Successful registration, secure login, and access to user account dashboard.
+Error Handling: Display an appropriate error message if registration details are invalid or if login credentials do not match the records. Implement account lockout after multiple failed login attempts.
+Title: Portfolio Management
+Description: Track and display current holdings, performance, and history of transactions to provide users with an overview of their investments.
+Input: User account details, transaction data, stock symbols, performance metrics
+Processing: The system fetches and calculates the current value of holdings, tracks performance metrics, and compiles historical transaction data. It displays this information in an easy-to-understand format.
+Output: Comprehensive portfolio view, including current holdings, performance graphs, and transaction history.
+Error Handling: If data retrieval fails, display an appropriate error message and attempt to reload the data.
+Title: Transaction History
+Description: Provide detailed records of all past transactions for user reference and analysis.
+Input: User account details, transaction data
+Processing: The system compiles and stores transaction records in a secure database, allowing users to retrieve and view their past transactions at any time.
+Output: Display a detailed list of all transactions, including dates, types, amounts, and statuses.
+Error Handling: If there is an error in retrieving transaction data, display an appropriate error message and retry fetching the data.
+Title: Notifications and Alerts
+Description:
+Real-time updates on order status, market changes, and account activities to keep users informed and responsive.
+Input: User preferences, market data, order status updates
+Processing: The system monitors order statuses, market conditions, and account activities, sending real-time notifications and alerts based on user-defined preferences.
+Output: Timely notifications and alerts delivered via email, SMS, or in-app messages.
+Error Handling: If notifications fail to send, an appropriate error message is displayed, and the system attempts to resend the notifications.
+Title: Checking Account Balance
+
+Description: The balance of each customer's bank account can be securely retrieved and viewed, ensuring data confidentiality and integrity.
+
+Input: Account number, bank name
+
+Processing: The user selects one of their bank accounts. The account number and bank name are securely transmitted to the bank interface. The balance is retrieved from the bank interface and securely transmitted to the system. The result is logged for auditing purposes.
+
+Output: Account balance
+
+Error Handling: If the account balance is not retrieved within a specified time, a new balance request is sent, and an appropriate error message is displayed. The error event is logged for further review.
+Title  Transferring Funds for Selling Stocks or Bonds  
+Description  The amount corresponding to the sold stocks is deposited into the customer's account, and 
+the amount is withdrawn from the buyer's account. The brokerage fee is also withdrawn 
+from the buyer's account and deposited into the brokerage account.  
+Input  Customer account number, stock or bond amount, brokerage fee, buyer's account number, 
+brokerage account number  
+Processing  During the sale process, the user selects one of their accounts. The account balance is 
+checked, and the system sets the amount for the sold stocks and the brokerage fee. The 
+brokerage account is recorded in the system's database and needs only to be retrieved. The 
+stock exchange interface specifies the bank account of the buyer, and the funds are 
+transferred accordingly.  
+Output  Increase in customer account balance by the stock amount, decrease in customer account 
+balance by the brokerage fee amount, decrease in buyer's account balance by the stock 
+amount, increase in brokerage account balance by the brokerage fee amount.  
+Error Handling  If there is an error in setting the account numbers, amounts, or if the stock exchange 
+interface does not specify the buyer's account number, an appropriate error message is 
+displayed.
+
+Title: Blocking Funds in Bank Account
+
+Description: A specified amount of money is securely blocked in the customer's bank account, ensuring the customer cannot access those funds.
+
+Input: Amount to be blocked
+
+Processing: The bank account is predetermined, and during the purchase process, the account balance is securely checked to ensure it is greater than the amount to be blocked. If sufficient, a secure block request is sent to the bank interface, and the request is logged for auditing purposes. The bank confirms the operation, and the system securely records the confirmation.
+
+Output: The specified amount is blocked in the customer's bank account, and the transaction is logged.
+
+Error Handling: If the amount to be blocked exceeds the total account balance, or if the blocking operation fails, an appropriate error message is displayed. The error event is logged for further review.
+Title: Transferring Funds for Buying Stocks or Bonds
+
+Description: The amount corresponding to the purchased stocks is securely withdrawn from the customer's account and deposited into the account of the stock owner. The brokerage fee is also securely withdrawn from the customer's account and deposited into the brokerage account.
+
+Input: Customer account number, stock or bond amount, brokerage fee, stock owner's account number, brokerage account number
+
+Processing: During the purchase process, the user selects one of their accounts, and the balance is securely checked. If sufficient, the amount for the stocks and the brokerage fee is blocked. The system securely sets the amount for the purchased stocks and the brokerage fee. The brokerage account is recorded in the system's database and only needs to be retrieved. The stock exchange interface specifies the bank account of the stock owner, and the funds are securely transferred accordingly. All transactions, including the blocking of funds and the transfer, are logged for auditing purposes.
+
+Output: Decrease in the customer account balance by the total amount, increase in the stock owner's account balance by the stock amount, and increase in the brokerage account balance by the brokerage fee amount.
+
+Error Handling: If there is an error in setting the account numbers, amounts, or if the stock exchange interface does not specify the stock owner's account number, an appropriate error message is displayed, and the error is logged for further review.
+Title: Managing Interactions between Customer's Bank Accounts and Brokerage Account
+
+Description: The user can securely transfer funds between their brokerage account and one of their bank accounts.
+
+Input: Source account number, desired amount, destination account number
+
+Processing: The user selects one of their bank accounts for withdrawal or deposit. The system securely checks if the source account balance is sufficient. If the balance is sufficient, the transfer continues. If the user selects one of their bank accounts as the source, the brokerage account is automatically chosen as the destination. If the source is the brokerage account, the user selects one of their bank accounts as the destination. The transfer is securely carried out by the bank interface, and all transfer actions, including unsuccessful attempts, are logged for auditing purposes.
+
+Output: Change in the customer's account balances.
+
+Error Handling: If the transfer fails, an appropriate error message is displayed. The error is logged for further review, and no partial transactions occur in case of failure.
+Title: Online Purchase of Stocks and Other Securities by Special Customers
+
+Description: Special customers can buy stocks and other securities online.
+
+Input: Type of stock, number of shares, investment price (specified or limited), maximum price
+
+Processing: The user must log into their account in the system. The "special" access type is checked. If the access type is "special," the online purchase feature is enabled. The user selects the desired stock and number of shares. The user sets the investment price (specified or limited). The system checks if the number of shares is not more than the available shares. The user specifies the source account for payment (Mellat Bank, Saman Bank, brokerage account). The system securely checks the account balance. If sufficient, the amount is blocked until the final confirmation. The system assigns a unique order number, records the order, and logs the transaction for auditing purposes. Once the purchase is confirmed, the money is securely withdrawn from the user's account. The purchased shares are added to the user's portfolio, and the order report is securely added to the user's order list.
+
+Output: Adding purchased shares to the user's portfolio, adding the order report to the user's order list.
+
+Error Handling: If any of the following occur, an appropriate error message is displayed: - The user's access type is "regular" - The number of shares exceeds the available shares - The purchased shares are not added to the user's portfolio - The order report is not added to the user's order list - The order number is not assigned. The error is logged for further review, and no partial transactions occur in case of failure.
+Title: Online Purchase of Stocks and Other Securities by Brokers
+
+Description: Brokers can securely buy stocks and other securities online on behalf of customers.
+
+Input: The first online purchase request in the request queue.
+
+Processing: The system presents the first online purchase request to the broker. If the customer has specified the investment price, the broker sets the price. The broker securely checks the customer's account balance. If sufficient, the amount is blocked, and this action is logged for auditing purposes. The system automatically records the purchase request, and the transaction is logged. The request status is updated from "in queue" to "completed" after purchase. The money is securely withdrawn from the customer's account, and the purchased shares are added to the customer's portfolio. The order report is added to the list of transactions by the broker.
+
+Output: Adding the order report to the list of transactions by the broker, adding purchased shares to the user's portfolio.
+
+Error Handling: If any of the following occur, an appropriate error message is displayed, and the error is logged for review: - The order number is not assigned - The purchased shares are not added to the user's portfolio - The order is not added to the user's order list and the list of transactions by the broker. No partial transactions occur if an error is encountered.
  
  
  

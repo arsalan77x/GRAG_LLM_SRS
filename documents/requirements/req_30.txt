@@ -1,0 +1,11 @@
+Title  Logging into the system  
+Description  Users log into their user account.  
+Input  Username, password, and captcha  
+Processing  The user enters their username, password, and captcha. The system checks the username 
+and password against the database and verifies the captcha. If the information is correct, 
+the user's account page is displayed.  
+Output  The user logs into their account.  
+Error 
+Handling  Display an appropriate error message if any of the input data is incorrect. If the user 
+enters incorrect information three times consecutively, they must wait 20 seconds before 
+trying again.
