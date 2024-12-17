@@ -1,193 +1,225 @@
 # Simple Input/Output prompt
-def prompt_query_graph_I (requirement, req_type):
+def prompt_IO (requirement, reference_text):
     PROMPT = f"""
-    Given this {req_type} requirement: {requirement}
+    Requirement: {requirement}
 
-    Your task is to analyze the requirement for incompleteness and violations based on the reference material. Follow these steps:
+    Reference Text: {reference_text}
 
-    1. Incompleteness: Identify any highly crucial components or processes that are present in the reference but missing from the requirement.
-    2. Violations: Identify any aspects of the requirement that contradict or deviate from the standards or best practices outlined in the reference.
+    Assess whether the requirement aligns with the reference text. Follow these steps:
+    1. Identify if the requirement is fully addressed in the reference text.
+    2. Determine if there are any inconsistencies or violations in the requirement with respect to the reference text.
+    3. If the requirement conforms, state "Conforms."
+    4. If the requirement violates or contradicts the reference text, state "Violates" and briefly explain why.
 
-    Output your analysis in the following format:
-
-    SUMMARY:
-    - Total incompleteness issues found: [number]
-    - Total violations found: [number]
-
-    DETAILED ANALYSIS:
-    [For each issue found, provide the following information]
-
-    Issue Type: [Incompleteness | Violation]
-    Issue Title: [Title]
-    Explanation: [Explain why this is an incompleteness or violation and based on what reference]
-    Suggested Solution: [Provide a specific recommendation to address the issue, based on the reference material]
-
-    If no issues are found, output:
-    No incompleteness or violations detected. The requirement aligns with the standards and best practices in the reference material.
+    Output your assessment in the following format:
+    - Assessment: [Conforms | Violates]
+    - Explanation: [Provide a concise explanation of your assessment.]
     """
+
     return PROMPT
 
 # Chain-of-Thoughts 
-def prompt_query_analysis(requirement, req_type):
+def prompt_CoT_1(requirement, reference_text):
     PROMPT = f"""
-    Given this {req_type} requirement: {requirement}
+        Requirement: {requirement}
 
-    Your task is to analyze the requirement by breaking it down into its key components and processes.
+        Reference Text: {reference_text}
 
-    # Steps:
-    1. Break down the given requirement into key components and processes.
-    2. List these components and processes, briefly explaining their purpose.
+        Break down the components of the requirement and the reference text into the following formal logical structure:
+        1. **Purpose**: What is the objective or goal of the requirement or reference text?
+        2. **Action**: What specific actions or processes are described?
+        3. **Conditions/Constraints**: What conditions or constraints must be satisfied for the actions to occur?
 
-    # Output Format:
-    - Component: [Description]
-    - Process: [Description]
+        Output the results in this format:
+        - **Requirement Components**:
+        - Purpose: [Requirement's purpose]
+        - Action: [Requirement's action]
+        - Conditions/Constraints: [Requirement's conditions/constraints]
+
+        - **Reference Text Components**:
+        - Purpose: [Reference text's purpose]
+        - Action: [Reference text's action]
+        - Conditions/Constraints: [Reference text's conditions/constraints]
+        """
+    return PROMPT
+
+def prompt_CoT_2(
+    Requirement_Purpose, 
+    Requirement_Action, 
+    Requirement_Conditions_Constraints, 
+    Reference_Text_Purpose, 
+    Reference_Text_Action, 
+    Reference_Text_Conditions_Constraints
+):
+    PROMPT = f"""
+    The following are the extracted components of the requirement and the reference text:
+
+    - **Requirement Components**:
+    - Purpose: {Requirement_Purpose}
+    - Action: {Requirement_Action}
+    - Conditions/Constraints: {Requirement_Conditions_Constraints}
+
+    - **Reference Text Components**:
+    - Purpose: {Reference_Text_Purpose}
+    - Action: {Reference_Text_Action}
+    - Conditions/Constraints: {Reference_Text_Conditions_Constraints}
+
+    Compare the corresponding components (Purpose vs. Purpose, Action vs. Action, Conditions/Constraints vs. Conditions/Constraints) and provide an analysis for each:
+
+    1. **Purpose Comparison**: Describe whether the purposes align, partially align, or conflict. Highlight any key differences or overlaps.
+    2. **Action Comparison**: Identify whether the actions align, partially align, or conflict. Explain any inconsistencies or missing elements.
+    3. **Conditions/Constraints Comparison**: Assess whether the conditions or constraints are consistent. Note any contradictions, gaps, or additional requirements.
+
+    Output your analysis in the following format:
+    - **Purpose Analysis**: [Analysis of alignment or conflict]
+    - **Action Analysis**: [Analysis of alignment or conflict]
+    - **Conditions/Constraints Analysis**: [Analysis of alignment or conflict]
     """
     return PROMPT
 
-def prompt_query_review_and_comparison(requirement, components):
+
+def prompt_CoT_3(Purpose_Analysis, Action_Analysis, Alignment_Analysis):
     PROMPT = f"""
-    Given this requirement: {requirement}
+    The following is the analysis of the components from the requirement and the reference text:
 
-    Components and Processes Identified:
-    {components}
+    - **Purpose Analysis**: {Purpose_Analysis}
+    - **Action Analysis**: {Action_Analysis}
+    - **Conditions/Constraints Analysis**: {Alignment_Analysis}
 
-    Your task is to review the reference material and compare the identified components and processes.
+    Based on the component analyses, determine whether the requirement conforms to or violates the reference text by considering the following:
+    1. Does the Purpose align overall with the reference text?
+    2. Are the Actions described in the requirement consistent with the reference text?
+    3. Do the Conditions/Constraints fully align, partially align, or conflict with the reference text?
 
-    # Steps:
-    1. Identify relevant sections in the reference material related to the requirement.
-    2. Compare the components and processes against the essential elements found in the reference material.
-    3. Focus only on major incompleteness or severe deviations that would compromise the requirement.
-
-    # Output Format:
-    - Component: [Description]
-    - Relevant Reference Section: [Reference]
-    - Major Deviations or incompleteness: [Description]
+    Provide your overall assessment and rationale in this format:
+    - **Overall Assessment**: [Conforms | Violates]
+    - **Rationale**: [Explain why the requirement conforms or violates based on the component analyses. Highlight key areas of alignment or conflict.]
     """
     return PROMPT
 
-def prompt_query_critical_deficiencies_and_assessment(deviations):
-    PROMPT = f"""
-    Based on the following major deviations or incompleteness identified:
-    {deviations}
-
-    Your task is to explain the critical deficiencies and assess their impact on the project.
-
-    # Steps:
-    1. Clearly explain the severe impact of any critical deficiencies on the project's success.
-    2. Cite specific parts of the reference material that emphasize the necessity of the missing or violated elements.
-    3. Provide a final assessment determining if any critical deficiencies pose a significant risk to the project.
-
-    # Output Format:
-    - Deficiency Type: [Incompleteness | Violation]
-    - Deficiency: [Description]
-    - Suggested Solution: [Explanation and reference citation]
-    - Final Assessment: [Whether this poses a significant risk]
-    """
-    return PROMPT
 
 
 
 
 # Total-of-Thoughts  Classification-based
-def prompt_query_initial_breakdown(requirement, req_type):
+def prompt_ToT_1(requirement, reference_text):
     PROMPT = f"""
-    Given this {req_type} requirement: {requirement}
+    You are a set of three reasoning agents (Agent A, Agent B, Agent C), followed by a final Arbiter. Your goal is to break down the given requirement and the reference text into logical components.
 
-    Task 1: Break the requirement into 3-4 key components and provide multiple interpretations for each.
+    **Instructions for Agents:**
+    - Each agent should work independently and not share or alter their reasoning based on the others.
+    - Each agent should provide a breakdown for both the requirement and the reference text into:
+    - Purpose
+    - Action
+    - Conditions/Constraints
 
-    # Steps:
-    1. Break the requirement into 3-4 key components.
-    2. For each component, generate 3 possible interpretations or angles of analysis.
-    
-    # Output your analysis in this format:
-    - Component: [Description]
-    - Interpretations: [Interpretation 1, Interpretation 2, Interpretation 3]
+    **Given Input:**
+    - Requirement: {requirement}
+    - Reference Text: {reference_text}
+
+    **Format for Each Agent's Response:**
+    - **Agent [Name] Analysis**:
+    - **Requirement Components**:
+        - Purpose: ...
+        - Action: ...
+        - Conditions/Constraints: ...
+    - **Reference Text Components**:
+        - Purpose: ...
+        - Action: ...
+        - Conditions/Constraints: ...
+
+    **Steps:**
+    1. Agent A, provide your breakdown.
+    2. Agent B, provide your breakdown.
+    3. Agent C, provide your breakdown.
+
+    After all agents have provided their breakdowns:
+
+    **Arbiter Instructions:**
+    - Review all three agents' analyses.
+    - Compare and identify the most accurate or comprehensive elements.
+    - Produce a final, consolidated breakdown that selects the best Purpose, Action, and Conditions/Constraints for both the requirement and the reference text.
+
+    **Final Output Format (Arbiter's Consolidated Answer):**
+    - **Final Consolidated Components**:
+    - **Requirement Components**:
+        - Purpose: [Consolidated Purpose]
+        - Action: [Consolidated Action]
+        - Conditions/Constraints: [Consolidated Conditions/Constraints]
+
+    - **Reference Text Components**:
+        - Purpose: [Consolidated Purpose]
+        - Action: [Consolidated Action]
+        - Conditions/Constraints: [Consolidated Conditions/Constraints]
     """
     return PROMPT
 
-def prompt_query_exploration_voting(requirement, component, interpretations):
+def prompt_ToT_2(final_consolidated_breakdown):
     PROMPT = f"""
-    Component: {component}
-    Requirement: {requirement}
-    interpretations: {interpretations}
-    Task 2: Analyze each interpretation for alignment, violation, and incompleteness with reference material, and assign an initial vote.
+    You are a set of three reasoning agents (Agent A, Agent B, Agent C), followed by a final Arbiter. You have received a final consolidated breakdown of the requirement and reference text from the previous step.
 
-    # Steps:
-    1. For each interpretation, explore:
-        a) Alignment with the reference material
-        b) Violations of the reference material
-        c) Incompleteness compared to the reference material
-        d) Potential ambiguities or edge cases
+    **Consolidated Breakdown**:
+    {final_consolidated_breakdown}
 
-    2. Assign a preliminary vote (1-5) for each interpretation based on likelihood of deficiencies.
+    **Instructions for Agents:**
+    - Each agent should independently analyze how the Purpose, Action, and Conditions/Constraints of the requirement compare to those of the reference text.
+    - Identify if each component aligns, partially aligns, or conflicts.
+    - Provide reasoning for each comparison.
 
-    # Output your analysis in this format:
-    - Interpretation: [Description]
-    - Alignment: [Analysis]
-    - Violation: [Analysis]
-    - Incompleteness: [Analysis]
-    - Ambiguities: [Analysis]
-    - Preliminary Vote: [1-5]
+    **Format for Each Agent's Response**:
+    - **Agent [Name] Analysis**:
+    - **Purpose Analysis**: [Describe alignment/conflict and reasons]
+    - **Action Analysis**: [Describe alignment/conflict and reasons]
+    - **Conditions/Constraints Analysis**: [Describe alignment/conflict and reasons]
+
+    **Steps**:
+    1. Agent A, provide your analysis.
+    2. Agent B, provide your analysis.
+    3. Agent C, provide your analysis.
+
+    **Arbiter Instructions:**
+    - Review all three agents' analyses.
+    - Identify the strongest reasoning for each component comparison.
+    - Produce a final, synthesized analysis that captures the most accurate and insightful points raised by the agents.
+
+    **Final Output Format (Arbiter's Consolidated Analysis)**:
+    - **Purpose Analysis**: [Consolidated Analysis]
+    - **Action Analysis**: [Consolidated Analysis]
+    - **Conditions/Constraints Analysis**: [Consolidated Analysis]
     """
     return PROMPT
 
-def prompt_query_evaluation_selection(requirement, component, interpretations):
+def prompt_ToT_3(consolidated_analysis):
     PROMPT = f"""
-    Component: {component}
-    Requirement: {requirement}
-    interpretations: {interpretations}
-    Task 3: Select the top 2 interpretations based on the initial votes for further analysis.
+    You are a set of three reasoning agents (Agent A, Agent B, Agent C), followed by a final Arbiter. You have received a consolidated comparison analysis from the previous step.
 
-    # Steps:
-    1. Review the interpretations and their votes.
-    2. Select the top 2 interpretations for a detailed deep dive.
+    **Consolidated Analysis**:
+    {consolidated_analysis}
 
-    # Output your analysis in this format:
-    - Selected Interpretation 1: [Description]
-    - Selected Interpretation 2: [Description]
-    """
-    return PROMPT
+    **Instructions for Agents:**
+    - Each agent independently determines whether the requirement overall "Conforms" or "Violates" the reference text.
+    - Consider:
+    1. Purpose Alignment
+    2. Action Consistency
+    3. Conditions/Constraints Alignment
 
-def prompt_query_deep_dive_voting(requirement, component, selected_interpretations):
-    PROMPT = f"""
-    Component: {component}
-    Requirement: {requirement}
-    interpretations: {selected_interpretations}
-    Task 4: Conduct a detailed comparison with reference material and provide refined voting based on analyses from three different perspectives (lenient, moderate, and strict).
+    **Format for Each Agent's Response**:
+    - **Agent [Name] Final Assessment**:
+    - Overall Assessment: [Conforms | Violates]
+    - Rationale: [Explain reasoning based on previous consolidated analysis]
 
-    # Steps:
-    1. Generate 3 independent analyses for each selected interpretation.
-    2. Provide a refined vote (1-10) for each analysis:
-        - Lenient Analyst: Lower scores unless glaring issues
-        - Moderate Analyst: Weigh both evidence and risks
-        - Strict Analyst: Detail-oriented, often spots minor deviations
+    **Steps**:
+    1. Agent A, provide your final assessment.
+    2. Agent B, provide your final assessment.
+    3. Agent C, provide your final assessment.
 
-    # Output your analysis in this format:
-    - Interpretation: [Description]
-    - Analyst 1 Vote: [1-10]
-    - Analyst 2 Vote: [1-10]
-    - Analyst 3 Vote: [1-10]
-    - Final Vote: [1-10]
-    - Explanation: [Summarize key points and justify the final vote]
-    """
-    return PROMPT
+    **Arbiter Instructions:**
+    - Review the three agents' assessments.
+    - Consider which assessment is best supported by the prior analyses.
+    - Produce a final determination and rationale that either adopts one agent’s perspective entirely or synthesizes them if needed.
 
-def prompt_query_synthesis_final_voting(requirement, component, deep_dive_results):
-    PROMPT = f"""
-    Component: {component}
-    Requirement: {requirement}
-    results: {deep_dive_results}
-    Task 5: Synthesize insights from various analyses and provide a final vote on whether the component violates or is incomplete according to standards.
-
-    # Steps:
-    1. Combine insights from different branches of thought.
-    2. Conduct a final vote (1-10) considering all analyses.
-
-    # Output your analysis in this format:
-    - Component: [Description]
-    - Final Vote: [1-10]
-    - Explanation: [Summarize key points from the analyses and justify the final vote]
-    - Suggested Solution: [Why this is crucial or a violation, cite relevant reference]
-    - Deficiencies Type: [Incompleteness | Violation]
+    **Final Output Format (Arbiter's Conclusion)**:
+    - **Overall Assessment**: [Conforms | Violates]
+    - **Rationale**: [Detailed explanation incorporating the best reasoning points from the agents]
     """
     return PROMPT

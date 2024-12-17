@@ -1,0 +1,110 @@
+Statement,Manipulated,comply
+1. The scheduler shall [SRS017] provide an API call to install a task into a rate group. The API call is invoked during system initialization.,,1
+2. The scheduler shall [SRS196] support up to 20 tasks per rate group.,2. The scheduler shall [SRS196] support up to 35 tasks per rate group.,0
+3. The scheduler shall [SRS018] provide an API call to install a rate group into a vehicle mode at system initialization.,,1
+4. The scheduler shall [SRS197] support up to 3 rate groups per vehicle mode.,4. The scheduler shall [SRS197] support up to 4 rate groups per vehicle mode.,0
+5. The scheduler shall [SRS195] support up to 5 vehicle modes.,5. The scheduler shall [SRS195] support up to 6 vehicle modes.,0
+6. The FTSS software shall [SRS002] provide the identical services in all vehicle modes.,,1
+7. The scheduler shall [SRS019] provide an API call for an FCP application task to alert the scheduler of a vehicle mode change.,,1
+8. The scheduler shall [SRS020] complete the change from one vehicle mode to the next within 1.02 seconds. There is up to a full major frame from notification of an impending mode change to acting on it in minor frame 0 of the next major frame plus the time it takes during the next minor frame 0 to switch tasking.,8. The scheduler shall [SRS020] complete the change from one vehicle mode to the next within 2.04 seconds. There is up to a full major frame from notification of an impending mode change to acting on it in minor frame 0 of the next major frame plus the time it takes during the next minor frame 0 to switch tasking.,0
+9. The scheduler shall [SRS021] process vehicle mode changes during minor frame 49.,9. The scheduler shall [SRS021] process vehicle mode changes during minor frame 51.,0
+"10. The scheduler shall [SRS022] execute cyclic tasks, providing an API call to allow the application to block until its next iteration.",,1
+11. The scheduler shall [SRS024] execute as the highest priority FTSS or application task in the system.,,1
+12. The scheduler shall [SRS025] keep a minor frame count from 0 to 49.,12. The scheduler shall [SRS025] keep a minor frame count from 0 to 51.,0
+"13. The scheduler shall [SRS027] give tasks priority values according to their rate - the higher the rate, the higher the priority.",,1
+"14. The scheduler shall [SRS028] detect 50 Hz, 10 Hz and 1 Hz rate group over-runs.","14. The scheduler shall [SRS028] detect 50 Hz, 10 Hz and rate group over-runs.",0
+15. The scheduler shall [SRS029] report rate group over-runs to the application via an API service for incorporation in the telemetry data stream.,,1
+16. The scheduler shall [SRS216] provide an API call to specify which task was running within the rate group which over-ran.,,1
+17. The scheduler shall [SRS030] provide a mechanism to inform a task when it did not complete during the previous frame and restart it at the beginning of the task.,,1
+18. The scheduler shall [SRS181] set the 50 Hz interval timer to a count down value so as to cause the next minor frame interrupt at 20 msec from the previous interrupt congruently in all operational FCPs.,18. The scheduler shall [SRS181] set the 50 Hz interval timer to a count down value so as to cause the next minor frame interrupt at 30 msec from the previous interrupt congruently in all operational FCPs.,0
+19. The scheduler shall [SRS032] issue a 50 Hz interrupt to the ICPs by means of a VMEbus IRQ5 interrupt.,,1
+20. The scheduler shall [SRS191] issue the 50 Hz interrupt to all the ICPs with a skew no greater than 330 microseconds.,20. The scheduler shall [SRS191] issue the 50 Hz interrupt to all the ICPs with a skew no greater than 270 microseconds.,0
+"21. The scheduler shall [SRS033] send the minor frame number, vehicle mode, mission elapsed time (MET), and separation elapsed time (SEP) to the ICP prior to the 50 Hz interrupt. Note: The NE unique identifier (NE ID) is available to the ICPs via the ftss_my_icp() API call.",,1
+"22. The scheduler shall [SRS034] take no longer than 1 millisecond to execute scheduler and Time Services FTSS overhead tasks in each rate group. This means that the time from the 50 Hz timer interrupt to the start of the first task in the 50 Hz rate group will be less than or equal to 1 millisecond, assuming 27 packets of data need to be delivered.","22. The scheduler shall [SRS034] take no longer than 1 millisecond to execute scheduler and Time Services FTSS overhead tasks in each rate group. This means that the time from the 50 Hz timer interrupt to the start of the first task in the 50 Hz rate group will be less than or equal to 1 millisecond, assuming 37 packets of data need to be delivered.",0
+23. The FTSS software shall [SRS278] provide an API call that provides the application program the minor frame number.,,1
+"1. The scheduler shall [SRS035] provide rate groups that execute at 50 Hz, 10 Hz and 1 Hz., with a drift rate no greater than 50 microseconds per second, and with a jitter no greater than 330 microseconds.","1. The scheduler shall [SRS035] provide rate groups that execute at 50 Hz, 10 Hz and 1 Hz., with a drift rate no greater than 50 microseconds per second, and with a jitter no greater than 270 microseconds.",0
+2. The scheduler shall [SRS037] provide a method to schedule tasks at a set rate and in a set order within the rate group.,,1
+3. The scheduler shall [SRS198] execute all the tasks in each of the rate groups that have been installed in the current mode.,,1
+4. The scheduler shall [SRS039] rely on the order used in adding tasks to a rate group to determine the task priorities.,,1
+"5. The scheduler shall [SRS042] provide a method for a task to be scheduled as a 50 Hz ""helper"" task for source congruency input exchanges and voted output exchanges that starts in a particular minor frame but runs only during every 5th or 50th minor frame, effectively running at a lower, sub-rate, 10 Hz or 1 Hz, respectively.","5. The scheduler shall [SRS042] provide a method for a task to be scheduled as a 50 Hz ""helper"" task for source congruency input exchanges and voted output exchanges that starts in a particular minor frame but runs only during every 5th or 53th minor frame, effectively running at a lower, sub-rate, 10 Hz or 1 Hz, respectively.",0
+6. The scheduler shall [SRS270] provide a task deadline capability that allows the application to specify which minor frame a task should start in and finish in.,,1
+"1. Upon the occurrence of an exception of either kind (hardware or software), the FCP shall [SRS172] make the error type available to the application, via an API service, for incorporation in the telemetry stream and include all context data relevant to the exception, namely the contents of the Machine State Register (MSR), and the machine status Save/Restore Registers (SRR0 & SRR1).",,1
+2. The scheduler shall [SRS031] provide a mechanism for a task optionally to define a user written software-exception-handling routine that runs in the context of the task.,,1
+"3. For hardware exceptions and reserved exceptions, the FTSS shall [SRS276] make the error type and its context data available to the application, then return from the exception handler to the task that was running when the exception occurred.",,1
+"4. For software exceptions occurring within the FTSS, the FTSS shall [SRS277] make the error type and its context data available to the application, then restart the offending task at its beginning.",,1
+"5. For other software exceptions, regardless of whether or not a user written exception handling routine is invoked, if an exception occurs, the scheduler shall [SRS173], after making available the error type and context data to the application, resume processing (after the exception-handling routine runs, if provided) at the initialization point of the offending task.",,1
+"6. For software exceptions occurring during Startup, FTSS shall [SRS301] issue a VME reset to the FCR in which the exception occurred.",,1
+"1. Communication services shall [SRS047] provide ""synchronous"" message passing services in the form of ""message queues"".",,1
+"2. Communication services shall [SRS048] provide ""immediate"" message passing services in the form of ""pipes"". ""Pipes"" provide fast data throughput between virtual groups or within a virtual group when minimal data latency is necessary.",,1
+"3. Communication services shall [SRS049] provide the capability to ""broadcast"" messages to all virtual groups.","3. Communication services shall [SRS049] provide the capability to ""send"" messages to all virtual groups.",0
+"4. Communication services shall [SRS050] restrict the use of ""immediate"" message passing services between virtual groups (from FCP to ICP) to tasks running in the highest rate group on the FCP. This restriction does NOT apply to the ICPs since they are running as simplex VGs.",,1
+5. Communication services shall [SRS051] detect message passing between application tasks living on the same virtual group and bypass the usage of the network element.,,1
+6. Communication services shall [SRS052] route messages to the proper virtual group(s) and socket.,,1
+7. Communication services shall [SRS053] deliver messages in the same order at each member of a virtual group.,,1
+8. Communication services shall [SRS054] perform synchronous message passing at rate group frame boundaries. This ensures that all redundant instantiations of a given rate group task have consistent messages throughout the rate group frame.,,1
+9. Communication services shall [SRS235] detect a babbling NE or ICP within 20 milliseconds of the receipt of the first erroneous packet.,9. Communication services shall [SRS235] detect a babbling NE or ICP within 35 milliseconds of the receipt of the first erroneous packet.,0
+10. FTSS shall [SRS255] mask out a babbling NE or ICP within 40 milliseconds after it is detected.,10. FTSS shall [SRS255] mask out a babbling NE or ICP within 37 milliseconds after it is detected.,0
+"1. Synchronous message passing sockets shall [SRS055] queue outgoing messages until they are transmitted at frame boundaries. The ""create"" and ""open"" API calls for synchronous sockets allow the application to specify the maximum message size and how many incoming messages the socket may buffer.",,1
+"2. If there is insufficient space to enqueue a message for transmission, Communication services shall [SRS059] return an error to the corresponding task. Sockets are nonblocking and place the burden of polling on the application task.",,1
+"1. Communication services shall [SRS067] provide a ""pipe"" communication mechanism allowing immediate message passing through the network and allowing a 50hz FCP transfer task to poll until it can read an immediate message from the ICP.",,1
+"2. Communication services shall [SRS068] provide an API for ""pipe"" communication.",2. Communication services shall [SRS068] provide an API for  communication.,0
+"3. Communication services shall [SRS069] provide the capability to create ""pipe""s which ""broadcast"" their messages to all virtual groups.",,1
+"5. If the broadcast option is used, each virtual group should open the pipe and read from it to avoid flow control problems.",,1
+"6. The ""pipe"" ""create"" API requires the application to specify the sending and receiving virtual group identifiers. Communication services shall [SRS073] only allow a single task living on each specified virtual group to ""open"" the respective end of the pipe. In the case of a broadcast ""pipe"", communication services allows one task in each virtual group of the system to open the receiving end of the ""pipe""",,1
+"1. The FTSS software shall [SRS237] configure the FCP to act as the Radstone IBIT master, with the exception that the ICP on the NEFU is the master.",,1
+"3. The FTSS shall [SRS260] configure each FCP to perform IBIT Minimum Processing Environment (MPE) Tests, Power-up Tests, and Initial BIT on each FCP, as shown inTable 3.2-2. .",,1
+"1. Continuous BIT, in conjunction with Redundancy Management and Scheduler operations running in the 50 Hz rategroup after the application tasks, shall [SRS091] take less than 2 milliseconds under nominal no-fault conditions.",,1
+"2. Continuous BIT, in conjunction with Redundancy Management and Scheduler operations running in the 50 Hz rategroup after the application tasks, shall [SRS183] take less than 3 milliseconds while processing faults.",,1
+3. Continuous BIT shall [SRS093] execute on the FCP virtual group.,,1
+4. Continuous BIT shall [SRS094] reset the processor’s built-in watchdog timer at 50 Hz. A failure to reset the watchdog timer within the allotted time (nominally 1.6 seconds) will generate a processor reset.,4. Continuous BIT shall [SRS094] reset the processor’s built-in watchdog timer at 50 Hz. A failure to reset the watchdog timer within the allotted time (nominally 2.6 seconds) will generate a processor reset.,0
+5. Continuous BIT shall [SRS095] exercise the presence test at 50 Hz to ensure that all processors in the FCP virtual group are synchronized.,,1
+"6. The presence test shall [SRS184] also ascertain that all processors are executing the same 50 Hz, 10 Hz and 1 Hz frames.",,1
+7. Continuous BIT shall [SRS096] diagnose the faulty FCR within 1 second after detecting a failure.,7. Continuous BIT shall [SRS096] diagnose the faulty FCR within 2 seconds after detecting a failure.,0
+8. Continuous BIT shall [SRS097] detect a failed ICP processor by detecting the absence of a periodic message for 2 consecutive minor cycles.,8. Continuous BIT shall [SRS097] detect a failed ICP processor by detecting the absence of a periodic message for 3 consecutive minor cycles.,0
+9. Continuous BIT shall [SRS098] report all diagnosed failures and recovery actions to the application for incorporation in the telemetry stream.,,1
+1. RAM scrub shall [SRS043] actively trigger the EDAC function by cyclically reading (and writing back if an error is found) all used RAM.,,1
+"2. RAM scrub shall [SRS044] report detected errors to the application, congruently on all channels, via an API service for inclusion in the telemetry stream.",,1
+"3. RAM scrub shall [SRS187] be capable of scrubbing at least 10 megabytes every 8 minutes, given at least 1% of the CPU is available for this processing.","3. RAM scrub shall [SRS187] be capable of scrubbing at least 10 megabytes every 8 minutes, given at least 2% of the CPU is available for this processing.",0
+4. RAM scrub shall [SRS275] not scrub the area used for telemetry data.,,1
+"1. While synchronization is being attempted, the FCP virtual group shall [SRS123] maintain synchronous operations.",,1
+"2. Only when memory alignment is permitted, Redundancy Management shall [SRS124] initiate periodic re-synchronization attempts on the FCP virtual group at a 1 second rate.","2. Only when memory alignment is permitted, Redundancy Management shall [SRS124] initiate periodic re-synchronization attempts on the FCP virtual group at a 2 seconds rate.",0
+3. Redundancy Management shall [SRS125] perform memory alignment on a major frame boundary upon successful synchronization of all members of the FCP virtual group.,,1
+"4. Redundancy Management shall [SRS281], during memory alignment, configure the NE to mask out the processor being re-synchronized.",,1
+5. Redundancy Management shall [SRS271] notify the application that alignment and reintegration of a processor will take place in 1 second.,5. Redundancy Management shall [SRS271] notify the application that alignment and reintegration of a processor will take place in 2 seconds.,0
+6. Redundancy Management shall [SRS272] wait for the ICP to signal that it has completed initialization before suspending the application for memory re-alignment.,,1
+"7. During alignment, Redundancy Management shall [SRS126] update MET (and, by extension, SEP).",,1
+"8. Redundancy Management shall [SRS214], if alignment is permitted, incorporate a new channel within 1.5 minutes after power is applied to the channel.",,1
+"9. Redundancy Management shall [SRS236], if alignment is permitted, serially incorporate two new channels if they are powered on simultaneously.",,1
+1. Memory alignment shall [SRS045] align processor state and congruent aligned memory locations. Processor state includes all registers. It also includes those timers used by FTSS.,,1
+2. The re-align function shall [SRS186] write the voted value from the currently synchronized channels into the target channel.,,1
+3. FTSS shall [SRS200] initialize congruent initialized memory locations from non-volatile memory.,,1
+4. Memory alignment shall [SRS203] take no more than 1 second per Megabyte of data to be realigned.,,1
+5. The FCP watchdog timer shall [SRS293] remain active during memory re-alignment.,,1
+"6. Memory alignment shall [SRS294] reset the watchdog timer such that, in the absence of a fault, the timer never expires and resets the processor.",,1
+2. The Mission Elapsed Time shall [SRS218] have a drift rate of at worst 50 PPM.,2. The Mission Elapsed Time shall [SRS218] have a drift rate of at worst 60 PPM.,0
+3. The Mission Elapsed Time shall [SRS144] not rollover for 30 days.,3. The Mission Elapsed Time shall [SRS144] not rollover for 14 days.,0
+4. The Separation Elapsed Time shall [SRS145] not rollover for 1 day.,4. The Separation Elapsed Time shall [SRS145] not rollover for 3 days.,0
+5. The Mission Elapsed Time shall [SRS165] be initialized to zero at the first 50 Hz frame.,,1
+"6. The Separation Elapsed Time shall [SRS161] be initialized to zero at startup, and start counting up in the next frame after being notified via an API call that the X-38 vehicle has been released from the Space Shuttle Remote Manipulator System.",,1
+7. The Separation Elapsed Time shall [SRS219] have a drift rate of at worst 50 PPM.,,1
+"8. Time Services shall [SRS246] provide a utility timer to the application. Note that this timer is not voted, and must be assigned to a variable defined using non-congruent memory.",,1
+9. The utility timer shall [SRS247] have an accuracy equal to or better than 50 PPM.,,1
+10. The utility timer shall [SRS256] have a resolution equal to or better than 60.6 nanoseconds.,10. The utility timer shall [SRS256] have a resolution equal to or better than 90.6 nanoseconds.,0
+1. Support Services shall [SRS299] switch to the redundant MPCC device to continue telemetry and/or remote commanding operations. Note that there are only two CTCs. CTC1 is connected to FCC1 and FCC3. CTC2 is connected to FCC2 and FCC4.,,1
+2. Support Services shall [SRS242] continue to close and reopen a faulty MPCC device until status shows that the device has recovered.,,1
+"3. In all error cases, Support Services shall [SRS222] attempt to choose an error-free FCC-MPCC path, switching back and forth between channels if necessary.",,1
+4. Support Services shall [SRS286] provide an API call which allows the application to specify which MPCC channels in a C&T FCR should be used for telemetry and/or command reception.,,1
+"5. The telemetry capability shall [SRS148] be capable of transferring 12,800 bytes within the 10 Hz frame from the FCP.","5. The telemetry capability shall [SRS148] be capable of transferring 12,800 bytes within the 15 Hz frame from the FCP.",0
+6. The telemetry capability shall [SRS149] transfer the telemetry block from the FCP to the FCC-MPCC connected to the CTC.,,1
+7. The telemetry capability shall [SRS150] signal the FCC-MPCC to transfer the telemetry block to the CTC.,7. The telemetry capability shall [SRS150] signal the FCC-MPCC to transfer the  block to the CTC.,0
+8. The telemetry capability shall [SRS300] provide status data to FTSS FDI about each FCC-MPCC RS-422 link to the CTC.,,1
+9. Support Services shall [SRS151] provide an API call to specify the address and length of a telemetry buffer.,,1
+10. Support Services shall [SRS257] use no more than 5.2 milliseconds of FCP processing time to move the telemetry data to the FCC-MPCC board and complete communication and error handling for the FCC-MPCC board.,,1
+1. The Command Read capability shall [SRS152] check for the presence of a command and status message from each CTC on each FCC-MPCC at 10hz.,,1
+2. The Command Read capability on each FCP shall [SRS153] read the command data received from each CTC via the FCC-MPCC.,,1
+3. FTSS shall [SRS304] provide status data to the application about each FCC-MPCC RS422 link to the CTC used for command data.,,1
+4. Support Services shall [SRS156] provide an API call to provide the current command data.,,1
+"The FTSS software and the VxWorks operating system, together shall [SRS193] utilize no more than 3 megabytes of ROM",,1
+The largest single block of data transmitted on the VME Bus by the FTSS shall [SRS223] transmit in no longer than 100 microseconds,,1
+All FTSS data provided for telemetry (as specified in the requirements) shall [SRS250] fit within the allocated budget of 5000 bits per second,,1
+"In addition, the FTSS software shall [SRS280] provide up to 600 bits of start-up data that indicates the state of the FTPP system during start-up",,1
