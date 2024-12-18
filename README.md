@@ -6,7 +6,8 @@
 This project leverages [Microsoft Graph-RAG](https://github.com/microsoft/Graph-RAG) to retrieve relevant content from domain-specific corpora.
 It then integrates modified Tree of Thoughts and Chain of Thoughts prompting techniques to assess the completeness and compliance of Software Requirement Specification (SRS) documents.
 
-![Method](https://github.com/user-attachments/assets/3a1e8ef1-7f34-4cdf-91b9-a7f22b2d6d32)
+
+![Method](https://github.com/user-attachments/assets/e0079fed-b36f-4817-831f-4a8ea2b2416b)
 
 ### Graph-RAG
 The configuration and prompts have been tailored to better fit this specific context.
